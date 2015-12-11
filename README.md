@@ -5,3 +5,4 @@ Die supertolle Anzeige für Bahnhöfe, in denen sich Aufzüge ohne Koordinaten h
 ## TODO
 
  * die Whiteboard-Grafik, mit der die Entwicklung eigentlich schon quasi fertig ist, noch kurz runtercoden.
+ * Irgendwas mit Open reinschreiben und dann 100k EU-Foerdergelder abholen

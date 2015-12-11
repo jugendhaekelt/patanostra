@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [6.0736638308, 50.7699944112]
+      },
+      "properties": {
+        "name": "Aachen Schanz",
+        "Aufzug 1": "BAHNSTEIG 1;10001649",
+	"Aufzug 2": "BAHNSTEIG 6/7;10001650"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10.3825950623, 53.8051937884]
+      },
+      "properties": {
+        "name": "Bad Oldesloe",
+        "Aufzug 1": "TUNNEL ZUM EG;10004693"
+      }
+    }
+  ]
+}
+
