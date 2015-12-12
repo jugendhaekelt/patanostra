@@ -72,11 +72,13 @@ async.parallel([
 			lookup[station[2]].name = station[3];
 			lookup[station[2]].lng = parseFloat(station[14]);
 			lookup[station[2]].lat = parseFloat(station[13]);
+			lookup[station[2]].tagged = false;
 		}
 		if (lookup_tagged[station[2]]) {
 			lookup_tagged[station[2]].name = station[3];
 			lookup_tagged[station[2]].lng = parseFloat(station[14]);
 			lookup_tagged[station[2]].lat = parseFloat(station[13]);
+			lookup_tagged[station[2]].tagged = true;
 		}
 	}
 
