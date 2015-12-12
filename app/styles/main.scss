@@ -1,0 +1,57 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  color: #333;
+  font-family: sans-serif;
+}
+
+.main {
+  @include fill-parent();
+  height: 100%;
+  width: 100%;
+
+  #map {
+	@include span-columns(8);
+	@include pad();
+	height: 100%;
+
+  }
+
+  .infobox {
+	@include span-columns(4);
+	@include pad();
+
+	h1 {
+	  font-size: 2em;
+	}
+
+	.button_wrap {
+	  @include display(flex);
+	  @include flex-wrap(wrap);
+	  @include flex-direction(row-reverse);
+	  margin-right: 3em;
+
+	  #tagme {
+		@include button;
+	  }
+
+	}
+
+  }
+}
+
+hr {
+  margin: 1em 0em;
+}
+
