@@ -58,12 +58,22 @@ async.parallel([
 			lookup[station[2]].name = station[3];
 			lookup[station[2]].lng = parseFloat(station[14]);
 			lookup[station[2]].lat = parseFloat(station[13]);
+
 		}
 	}
+
 	var a = [];
 	ar.forEach(function (id) {
-		a.push(lookup[id]);
+		var current = lookup[id];
+		if (!isNaN(current.lng) && !isNaN(current.lat)) {
+			a.push(lookup[id]);
+		}
+		else {
+			console.error("Can't parse Station for id: " + current.station_id);
+		}
 	});
+
+	console.log("Checking...");
 
 	GeoJSON.parse(a, {Point: ['lat', 'lng']}, function (geojson) {
 		fs.writeFile('missingPoints.geojson', JSON.stringify(geojson, null, 3), 'utf8', function (err) {

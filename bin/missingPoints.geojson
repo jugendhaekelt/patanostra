@@ -2026,37 +2026,6 @@
          "geometry": {
             "type": "Point",
             "coordinates": [
-               null,
-               null
-            ]
-         },
-         "properties": {
-            "station_id": "855",
-            "lifts": [
-               {
-                  "equipment_id": "10112295"
-               },
-               {
-                  "equipment_id": "10112296"
-               },
-               {
-                  "equipment_id": "10189754"
-               },
-               {
-                  "equipment_id": "10217529"
-               },
-               {
-                  "equipment_id": "10225479"
-               }
-            ],
-            "name": "\"Bremen Hbf\""
-         }
-      },
-      {
-         "type": "Feature",
-         "geometry": {
-            "type": "Point",
-            "coordinates": [
                8.62965050719903,
                53.0528457297125
             ]
@@ -6815,21 +6784,6 @@
                }
             ],
             "name": "\"Marl-Sinsen\""
-         }
-      },
-      {
-         "type": "Feature",
-         "geometry": {},
-         "properties": {
-            "station_id": "8214",
-            "lifts": [
-               {
-                  "equipment_id": "10466002"
-               },
-               {
-                  "equipment_id": "10466003"
-               }
-            ]
          }
       },
       {
