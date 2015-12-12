@@ -11,11 +11,11 @@ $(document).ready(function () {
 	}).addTo(map);
 
 	var geojsonMarkerOptions = {
-		radius: 8,
+		radius: 6,
 		fillColor: "#ff0000",
 		color: "#000",
 		weight: 1,
-		opacity: 1,
+		opacity: 0.6        ,
 		fillOpacity: 0.8
 	};
 
@@ -29,28 +29,14 @@ $(document).ready(function () {
 	};
 
 	function onEachFeature(feature, layer) {
-		var popupContent = "<strong>" + feature.properties.name + "</strong><br />";
-
-		//feature.properties.lifts.forEach(function(item){
-		//    popupContent += "Aufzug: " + item.equipment_id + "<br />";
-		//});
-		//
-		//if (feature.properties && feature.properties.popupContent) {
-		//    popupContent += feature.properties.popupContent;
-		//}
-		//
-		//layer.bindPopup(popupContent);
-
 		layer.on({
 			click: function (pin) {
 				pinId = pin.target._leaflet_id;
 
 				if (pinId === activePin) {
-
 					activePin = -1;
 				} else {
 					activePin = pinId;
-					var popupContent = '';
 					var feature = pin.target.feature.properties;
 
 
@@ -64,9 +50,6 @@ $(document).ready(function () {
 						htmlstring += '<div class="button_wrap"><button id="tagme">Tag me</button></div>';
 					}
 
-					if (feature.popupContent) {
-					    popupContent += feature.properties.popupContent;
-					}
 					$('#info').html(htmlstring);
 					console.log(feature);
 					$('#tagme').on('click', function () {
