@@ -20,7 +20,8 @@ var stations = {
                   "equipment_id": "10001650"
                }
             ],
-            "name": "\"Aachen Schanz\""
+            "name": "\"Aachen Schanz\"",
+            "tagged": false
          }
       },
       {
@@ -39,7 +40,8 @@ var stations = {
                   "equipment_id": "10004693"
                }
             ],
-            "name": "\"Bad Oldesloe\""
+            "name": "\"Bad Oldesloe\"",
+            "tagged": false
          }
       },
       {
@@ -61,7 +63,8 @@ var stations = {
                   "equipment_id": "10209956"
                }
             ],
-            "name": "\"Barmbek\""
+            "name": "\"Barmbek\"",
+            "tagged": false
          }
       },
       {
@@ -86,7 +89,8 @@ var stations = {
                   "equipment_id": "10491636"
                }
             ],
-            "name": "\"Bayreuth Hbf\""
+            "name": "\"Bayreuth Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -108,7 +112,8 @@ var stations = {
                   "equipment_id": "10007539"
                }
             ],
-            "name": "\"Berlin-Grünau\""
+            "name": "\"Berlin-Grünau\"",
+            "tagged": false
          }
       },
       {
@@ -130,7 +135,8 @@ var stations = {
                   "equipment_id": "10007919"
                }
             ],
-            "name": "\"Berlin-Wannsee\""
+            "name": "\"Berlin-Wannsee\"",
+            "tagged": false
          }
       },
       {
@@ -152,7 +158,8 @@ var stations = {
                   "equipment_id": "10008887"
                }
             ],
-            "name": "\"Bitterfeld\""
+            "name": "\"Bitterfeld\"",
+            "tagged": false
          }
       },
       {
@@ -174,7 +181,8 @@ var stations = {
                   "equipment_id": "10009296"
                }
             ],
-            "name": "\"Bochum Hbf\""
+            "name": "\"Bochum Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -196,7 +204,8 @@ var stations = {
                   "equipment_id": "10009848"
                }
             ],
-            "name": "\"Bottrop Hbf\""
+            "name": "\"Bottrop Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -227,7 +236,8 @@ var stations = {
                   "equipment_id": "10453807"
                }
             ],
-            "name": "\"Braunschweig Hbf\""
+            "name": "\"Braunschweig Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -246,7 +256,8 @@ var stations = {
                   "equipment_id": "10011656"
                }
             ],
-            "name": "\"Celle Pbf\""
+            "name": "\"Celle Pbf\"",
+            "tagged": false
          }
       },
       {
@@ -271,7 +282,8 @@ var stations = {
                   "equipment_id": "10011789"
                }
             ],
-            "name": "\"Chemnitz Hbf\""
+            "name": "\"Chemnitz Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -293,7 +305,8 @@ var stations = {
                   "equipment_id": "10012256"
                }
             ],
-            "name": "\"Leipzig Coppiplatz\""
+            "name": "\"Leipzig Coppiplatz\"",
+            "tagged": false
          }
       },
       {
@@ -312,7 +325,8 @@ var stations = {
                   "equipment_id": "10012394"
                }
             ],
-            "name": "\"Cottbus\""
+            "name": "\"Cottbus\"",
+            "tagged": false
          }
       },
       {
@@ -331,7 +345,8 @@ var stations = {
                   "equipment_id": "10012844"
                }
             ],
-            "name": "\"Darmstadt Hbf\""
+            "name": "\"Darmstadt Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -362,7 +377,8 @@ var stations = {
                   "equipment_id": "10013215"
                }
             ],
-            "name": "\"Dessau Hbf\""
+            "name": "\"Dessau Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -381,7 +397,8 @@ var stations = {
                   "equipment_id": "10013632"
                }
             ],
-            "name": "\"Dortmund-Lütgendortmund\""
+            "name": "\"Dortmund-Lütgendortmund\"",
+            "tagged": false
          }
       },
       {
@@ -409,7 +426,8 @@ var stations = {
                   "equipment_id": "10014316"
                }
             ],
-            "name": "\"Dortmund-Dorstfeld\""
+            "name": "\"Dortmund-Dorstfeld\"",
+            "tagged": false
          }
       },
       {
@@ -428,7 +446,8 @@ var stations = {
                   "equipment_id": "10014806"
                }
             ],
-            "name": "\"Duckterath\""
+            "name": "\"Duckterath\"",
+            "tagged": false
          }
       },
       {
@@ -447,7 +466,8 @@ var stations = {
                   "equipment_id": "10016218"
                }
             ],
-            "name": "\"Düsseldorf Zoo\""
+            "name": "\"Düsseldorf Zoo\"",
+            "tagged": false
          }
       },
       {
@@ -472,7 +492,8 @@ var stations = {
                   "equipment_id": "10017400"
                }
             ],
-            "name": "\"Emden Hbf\""
+            "name": "\"Emden Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -491,7 +512,8 @@ var stations = {
                   "equipment_id": "10018039"
                }
             ],
-            "name": "\"Erkrath\""
+            "name": "\"Erkrath\"",
+            "tagged": false
          }
       },
       {
@@ -531,7 +553,8 @@ var stations = {
                   "equipment_id": "10443485"
                }
             ],
-            "name": "\"Essen Hbf\""
+            "name": "\"Essen Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -553,7 +576,8 @@ var stations = {
                   "equipment_id": "10018922"
                }
             ],
-            "name": "\"Falkenstein (Vogtl)\""
+            "name": "\"Falkenstein (Vogtl)\"",
+            "tagged": false
          }
       },
       {
@@ -575,7 +599,8 @@ var stations = {
                   "equipment_id": "10277472"
                }
             ],
-            "name": "\"Stuttgart Flughafen/Messe\""
+            "name": "\"Stuttgart Flughafen/Messe\"",
+            "tagged": false
          }
       },
       {
@@ -645,7 +670,8 @@ var stations = {
                   "equipment_id": "10449075"
                }
             ],
-            "name": "\"Frankfurt (Main) Hbf\""
+            "name": "\"Frankfurt (Main) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -667,7 +693,8 @@ var stations = {
                   "equipment_id": "10475521"
                }
             ],
-            "name": "\"Freiburg (Breisgau) Hbf\""
+            "name": "\"Freiburg (Breisgau) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -686,7 +713,8 @@ var stations = {
                   "equipment_id": "10022428"
                }
             ],
-            "name": "\"Fulda\""
+            "name": "\"Fulda\"",
+            "tagged": false
          }
       },
       {
@@ -708,7 +736,8 @@ var stations = {
                   "equipment_id": "10276624"
                }
             ],
-            "name": "\"Hamburg Hbf\""
+            "name": "\"Hamburg Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -730,7 +759,8 @@ var stations = {
                   "equipment_id": "10029786"
                }
             ],
-            "name": "\"Herrenberg\""
+            "name": "\"Herrenberg\"",
+            "tagged": false
          }
       },
       {
@@ -755,7 +785,8 @@ var stations = {
                   "equipment_id": "10406752"
                }
             ],
-            "name": "\"Hildesheim Hbf\""
+            "name": "\"Hildesheim Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -780,7 +811,8 @@ var stations = {
                   "equipment_id": "10304638"
                }
             ],
-            "name": "\"Kaiserslautern Hbf\""
+            "name": "\"Kaiserslautern Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -802,7 +834,8 @@ var stations = {
                   "equipment_id": "10186520"
                }
             ],
-            "name": "\"Kassel-Wilhelmshöhe\""
+            "name": "\"Kassel-Wilhelmshöhe\"",
+            "tagged": false
          }
       },
       {
@@ -821,7 +854,8 @@ var stations = {
                   "equipment_id": "10034416"
                }
             ],
-            "name": "\"Kempten (Allgäu) Hbf\""
+            "name": "\"Kempten (Allgäu) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -849,7 +883,8 @@ var stations = {
                   "equipment_id": "10409032"
                }
             ],
-            "name": "\"Köln Hbf\""
+            "name": "\"Köln Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -871,7 +906,8 @@ var stations = {
                   "equipment_id": "10035649"
                }
             ],
-            "name": "\"Köln-Chorweiler\""
+            "name": "\"Köln-Chorweiler\"",
+            "tagged": false
          }
       },
       {
@@ -890,7 +926,8 @@ var stations = {
                   "equipment_id": "10035663"
                }
             ],
-            "name": "\"Köln-Dellbrück\""
+            "name": "\"Köln-Dellbrück\"",
+            "tagged": false
          }
       },
       {
@@ -909,7 +946,8 @@ var stations = {
                   "equipment_id": "10035746"
                }
             ],
-            "name": "\"Köln-Nippes\""
+            "name": "\"Köln-Nippes\"",
+            "tagged": false
          }
       },
       {
@@ -928,7 +966,8 @@ var stations = {
                   "equipment_id": "10037324"
                }
             ],
-            "name": "\"Landshut (Bay) Hbf\""
+            "name": "\"Landshut (Bay) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -947,7 +986,8 @@ var stations = {
                   "equipment_id": "10038200"
                }
             ],
-            "name": "\"Leipzig-Gohlis\""
+            "name": "\"Leipzig-Gohlis\"",
+            "tagged": false
          }
       },
       {
@@ -975,7 +1015,8 @@ var stations = {
                   "equipment_id": "10039762"
                }
             ],
-            "name": "\"Lübeck Hbf\""
+            "name": "\"Lübeck Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -997,7 +1038,8 @@ var stations = {
                   "equipment_id": "10191539"
                }
             ],
-            "name": "\"Lüneburg\""
+            "name": "\"Lüneburg\"",
+            "tagged": false
          }
       },
       {
@@ -1022,7 +1064,8 @@ var stations = {
                   "equipment_id": "10040497"
                }
             ],
-            "name": "\"Lutherstadt Wittenberg\""
+            "name": "\"Lutherstadt Wittenberg\"",
+            "tagged": false
          }
       },
       {
@@ -1044,7 +1087,8 @@ var stations = {
                   "equipment_id": "10044468"
                }
             ],
-            "name": "\"München-Laim Pbf\""
+            "name": "\"München-Laim Pbf\"",
+            "tagged": false
          }
       },
       {
@@ -1063,7 +1107,8 @@ var stations = {
                   "equipment_id": "10046359"
                }
             ],
-            "name": "\"Neumünster\""
+            "name": "\"Neumünster\"",
+            "tagged": false
          }
       },
       {
@@ -1082,7 +1127,8 @@ var stations = {
                   "equipment_id": "10047570"
                }
             ],
-            "name": "\"Norf\""
+            "name": "\"Norf\"",
+            "tagged": false
          }
       },
       {
@@ -1101,7 +1147,8 @@ var stations = {
                   "equipment_id": "10047836"
                }
             ],
-            "name": "\"Nürnberg-Dutzendteich\""
+            "name": "\"Nürnberg-Dutzendteich\"",
+            "tagged": false
          }
       },
       {
@@ -1120,7 +1167,8 @@ var stations = {
                   "equipment_id": "10048169"
                }
             ],
-            "name": "\"Duisburg-Großenbaum\""
+            "name": "\"Duisburg-Großenbaum\"",
+            "tagged": false
          }
       },
       {
@@ -1139,7 +1187,8 @@ var stations = {
                   "equipment_id": "10049574"
                }
             ],
-            "name": "\"Oranienburg\""
+            "name": "\"Oranienburg\"",
+            "tagged": false
          }
       },
       {
@@ -1167,7 +1216,8 @@ var stations = {
                   "equipment_id": "10086276"
                }
             ],
-            "name": "\"Osnabrück Hbf\""
+            "name": "\"Osnabrück Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -1198,7 +1248,8 @@ var stations = {
                   "equipment_id": "10272663"
                }
             ],
-            "name": "\"Regensburg Hbf\""
+            "name": "\"Regensburg Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -1217,7 +1268,8 @@ var stations = {
                   "equipment_id": "10054102"
                }
             ],
-            "name": "\"Rissen\""
+            "name": "\"Rissen\"",
+            "tagged": false
          }
       },
       {
@@ -1245,7 +1297,8 @@ var stations = {
                   "equipment_id": "10428838"
                }
             ],
-            "name": "\"Saarbrücken Hbf\""
+            "name": "\"Saarbrücken Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -1270,7 +1323,8 @@ var stations = {
                   "equipment_id": "10055511"
                }
             ],
-            "name": "\"Salzwedel\""
+            "name": "\"Salzwedel\"",
+            "tagged": false
          }
       },
       {
@@ -1289,7 +1343,8 @@ var stations = {
                   "equipment_id": "10059497"
                }
             ],
-            "name": "\"Stendal\""
+            "name": "\"Stendal\"",
+            "tagged": false
          }
       },
       {
@@ -1311,7 +1366,8 @@ var stations = {
                   "equipment_id": "10104665"
                }
             ],
-            "name": "\"Stralsund Hbf\""
+            "name": "\"Stralsund Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -1357,7 +1413,8 @@ var stations = {
                   "equipment_id": "10503721"
                }
             ],
-            "name": "\"Stuttgart Hbf\""
+            "name": "\"Stuttgart Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -1379,7 +1436,8 @@ var stations = {
                   "equipment_id": "10060388"
                }
             ],
-            "name": "\"Stuttgart Universität\""
+            "name": "\"Stuttgart Universität\"",
+            "tagged": false
          }
       },
       {
@@ -1404,7 +1462,8 @@ var stations = {
                   "equipment_id": "10469929"
                }
             ],
-            "name": "\"Wolfsburg Hbf\""
+            "name": "\"Wolfsburg Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -1423,7 +1482,8 @@ var stations = {
                   "equipment_id": "10064505"
                }
             ],
-            "name": "\"Weiden (Oberpf)\""
+            "name": "\"Weiden (Oberpf)\"",
+            "tagged": false
          }
       },
       {
@@ -1442,7 +1502,8 @@ var stations = {
                   "equipment_id": "10067244"
                }
             ],
-            "name": "\"Wuppertal Hbf\""
+            "name": "\"Wuppertal Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -1467,7 +1528,8 @@ var stations = {
                   "equipment_id": "10069431"
                }
             ],
-            "name": "\"Eisenach\""
+            "name": "\"Eisenach\"",
+            "tagged": false
          }
       },
       {
@@ -1486,7 +1548,8 @@ var stations = {
                   "equipment_id": "10070652"
                }
             ],
-            "name": "\"Berlin-Staaken\""
+            "name": "\"Berlin-Staaken\"",
+            "tagged": false
          }
       },
       {
@@ -1505,7 +1568,8 @@ var stations = {
                   "equipment_id": "10071230"
                }
             ],
-            "name": "\"Gelsenkirchen-Buer Nord\""
+            "name": "\"Gelsenkirchen-Buer Nord\"",
+            "tagged": false
          }
       },
       {
@@ -1530,7 +1594,8 @@ var stations = {
                   "equipment_id": "10332587"
                }
             ],
-            "name": "\"Rathenow\""
+            "name": "\"Rathenow\"",
+            "tagged": false
          }
       },
       {
@@ -1561,7 +1626,8 @@ var stations = {
                   "equipment_id": "10468771"
                }
             ],
-            "name": "\"Hamburg-Bergedorf\""
+            "name": "\"Hamburg-Bergedorf\"",
+            "tagged": false
          }
       },
       {
@@ -1583,7 +1649,8 @@ var stations = {
                   "equipment_id": "10074825"
                }
             ],
-            "name": "\"Castrop-Rauxel Hbf\""
+            "name": "\"Castrop-Rauxel Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -1608,7 +1675,8 @@ var stations = {
                   "equipment_id": "10075344"
                }
             ],
-            "name": "\"Potsdam Hbf\""
+            "name": "\"Potsdam Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -1627,7 +1695,8 @@ var stations = {
                   "equipment_id": "10080532"
                }
             ],
-            "name": "\"Dresden-Zschachwitz\""
+            "name": "\"Dresden-Zschachwitz\"",
+            "tagged": false
          }
       },
       {
@@ -1649,7 +1718,8 @@ var stations = {
                   "equipment_id": "10455364"
                }
             ],
-            "name": "\"Berlin-Lichtenberg\""
+            "name": "\"Berlin-Lichtenberg\"",
+            "tagged": false
          }
       },
       {
@@ -1668,7 +1738,8 @@ var stations = {
                   "equipment_id": "10082969"
                }
             ],
-            "name": "\"Albstadt-Ebingen\""
+            "name": "\"Albstadt-Ebingen\"",
+            "tagged": false
          }
       },
       {
@@ -1687,7 +1758,8 @@ var stations = {
                   "equipment_id": "10083852"
                }
             ],
-            "name": "\"Dresden Flughafen\""
+            "name": "\"Dresden Flughafen\"",
+            "tagged": false
          }
       },
       {
@@ -1745,7 +1817,8 @@ var stations = {
                   "equipment_id": "10473522"
                }
             ],
-            "name": "\"Berlin Ostbahnhof\""
+            "name": "\"Berlin Ostbahnhof\"",
+            "tagged": false
          }
       },
       {
@@ -1767,7 +1840,8 @@ var stations = {
                   "equipment_id": "10086916"
                }
             ],
-            "name": "\"Nürnberg-Eibach\""
+            "name": "\"Nürnberg-Eibach\"",
+            "tagged": false
          }
       },
       {
@@ -1786,7 +1860,8 @@ var stations = {
                   "equipment_id": "10086059"
                }
             ],
-            "name": "\"Nürnberg-Reichelsdorf\""
+            "name": "\"Nürnberg-Reichelsdorf\"",
+            "tagged": false
          }
       },
       {
@@ -1805,7 +1880,8 @@ var stations = {
                   "equipment_id": "10089428"
                }
             ],
-            "name": "\"Neustrelitz Hbf\""
+            "name": "\"Neustrelitz Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -1824,7 +1900,8 @@ var stations = {
                   "equipment_id": "10093227"
                }
             ],
-            "name": "\"Hannover-Nordstadt\""
+            "name": "\"Hannover-Nordstadt\"",
+            "tagged": false
          }
       },
       {
@@ -1852,7 +1929,8 @@ var stations = {
                   "equipment_id": "10507412"
                }
             ],
-            "name": "\"Berlin-Friedrichstraße\""
+            "name": "\"Berlin-Friedrichstraße\"",
+            "tagged": false
          }
       },
       {
@@ -1874,7 +1952,8 @@ var stations = {
                   "equipment_id": "10468777"
                }
             ],
-            "name": "\"Fürth (Bay) Hbf\""
+            "name": "\"Fürth (Bay) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -1896,7 +1975,8 @@ var stations = {
                   "equipment_id": "10097636"
                }
             ],
-            "name": "\"Hamburg-Altona\""
+            "name": "\"Hamburg-Altona\"",
+            "tagged": false
          }
       },
       {
@@ -1915,7 +1995,8 @@ var stations = {
                   "equipment_id": "10097769"
                }
             ],
-            "name": "\"Stadthagen\""
+            "name": "\"Stadthagen\"",
+            "tagged": false
          }
       },
       {
@@ -1946,7 +2027,8 @@ var stations = {
                   "equipment_id": "10428110"
                }
             ],
-            "name": "\"Hannover-Messe / Laatzen\""
+            "name": "\"Hannover-Messe / Laatzen\"",
+            "tagged": false
          }
       },
       {
@@ -1968,7 +2050,8 @@ var stations = {
                   "equipment_id": "10103622"
                }
             ],
-            "name": "\"Starnberg-Nord\""
+            "name": "\"Starnberg-Nord\"",
+            "tagged": false
          }
       },
       {
@@ -1990,7 +2073,8 @@ var stations = {
                   "equipment_id": "10495821"
                }
             ],
-            "name": "\"Berlin-Karlshorst\""
+            "name": "\"Berlin-Karlshorst\"",
+            "tagged": false
          }
       },
       {
@@ -2018,10 +2102,10 @@ var stations = {
                   "equipment_id": "10111278"
                }
             ],
-            "name": "\"Bamberg\""
+            "name": "\"Bamberg\"",
+            "tagged": false
          }
       },
-
       {
          "type": "Feature",
          "geometry": {
@@ -2041,7 +2125,8 @@ var stations = {
                   "equipment_id": "10113202"
                }
             ],
-            "name": "\"Delmenhorst\""
+            "name": "\"Delmenhorst\"",
+            "tagged": false
          }
       },
       {
@@ -2063,7 +2148,8 @@ var stations = {
                   "equipment_id": "10115665"
                }
             ],
-            "name": "\"Berlin Zoologischer Garten\""
+            "name": "\"Berlin Zoologischer Garten\"",
+            "tagged": false
          }
       },
       {
@@ -2082,7 +2168,8 @@ var stations = {
                   "equipment_id": "10116195"
                }
             ],
-            "name": "\"Oldenburg (Oldb) Hbf\""
+            "name": "\"Oldenburg (Oldb) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -2107,7 +2194,8 @@ var stations = {
                   "equipment_id": "10116344"
                }
             ],
-            "name": "\"Roth\""
+            "name": "\"Roth\"",
+            "tagged": false
          }
       },
       {
@@ -2159,7 +2247,8 @@ var stations = {
                   "equipment_id": "10504602"
                }
             ],
-            "name": "\"München Hbf\""
+            "name": "\"München Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -2178,7 +2267,8 @@ var stations = {
                   "equipment_id": "10118901"
                }
             ],
-            "name": "\"Beusselstraße\""
+            "name": "\"Beusselstraße\"",
+            "tagged": false
          }
       },
       {
@@ -2197,7 +2287,8 @@ var stations = {
                   "equipment_id": "10119184"
                }
             ],
-            "name": "\"Westend\""
+            "name": "\"Westend\"",
+            "tagged": false
          }
       },
       {
@@ -2216,7 +2307,8 @@ var stations = {
                   "equipment_id": "10119290"
                }
             ],
-            "name": "\"Westhafen\""
+            "name": "\"Westhafen\"",
+            "tagged": false
          }
       },
       {
@@ -2238,7 +2330,8 @@ var stations = {
                   "equipment_id": "10146032"
                }
             ],
-            "name": "\"Hofheim (Taunus)\""
+            "name": "\"Hofheim (Taunus)\"",
+            "tagged": false
          }
       },
       {
@@ -2257,7 +2350,8 @@ var stations = {
                   "equipment_id": "10121374"
                }
             ],
-            "name": "\"Heiligensee\""
+            "name": "\"Heiligensee\"",
+            "tagged": false
          }
       },
       {
@@ -2282,7 +2376,8 @@ var stations = {
                   "equipment_id": "10121623"
                }
             ],
-            "name": "\"Berlin-Tegel\""
+            "name": "\"Berlin-Tegel\"",
+            "tagged": false
          }
       },
       {
@@ -2301,7 +2396,8 @@ var stations = {
                   "equipment_id": "10122171"
                }
             ],
-            "name": "\"Hof Hbf\""
+            "name": "\"Hof Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -2323,7 +2419,8 @@ var stations = {
                   "equipment_id": "10185518"
                }
             ],
-            "name": "\"Borsdorf (Sachs)\""
+            "name": "\"Borsdorf (Sachs)\"",
+            "tagged": false
          }
       },
       {
@@ -2348,7 +2445,8 @@ var stations = {
                   "equipment_id": "10123096"
                }
             ],
-            "name": "\"Horb\""
+            "name": "\"Horb\"",
+            "tagged": false
          }
       },
       {
@@ -2367,7 +2465,8 @@ var stations = {
                   "equipment_id": "10124173"
                }
             ],
-            "name": "\"Berlin-Frohnau\""
+            "name": "\"Berlin-Frohnau\"",
+            "tagged": false
          }
       },
       {
@@ -2389,7 +2488,8 @@ var stations = {
                   "equipment_id": "10125980"
                }
             ],
-            "name": "\"Berlin-Hermsdorf\""
+            "name": "\"Berlin-Hermsdorf\"",
+            "tagged": false
          }
       },
       {
@@ -2414,7 +2514,8 @@ var stations = {
                   "equipment_id": "10136278"
                }
             ],
-            "name": "\"Berlin-Westkreuz\""
+            "name": "\"Berlin-Westkreuz\"",
+            "tagged": false
          }
       },
       {
@@ -2433,7 +2534,8 @@ var stations = {
                   "equipment_id": "10146029"
                }
             ],
-            "name": "\"Köllnische Heide\""
+            "name": "\"Köllnische Heide\"",
+            "tagged": false
          }
       },
       {
@@ -2452,7 +2554,8 @@ var stations = {
                   "equipment_id": "10148558"
                }
             ],
-            "name": "\"Berlin-Tempelhof\""
+            "name": "\"Berlin-Tempelhof\"",
+            "tagged": false
          }
       },
       {
@@ -2474,7 +2577,8 @@ var stations = {
                   "equipment_id": "10164796"
                }
             ],
-            "name": "\"Leipzig-Sellerhausen\""
+            "name": "\"Leipzig-Sellerhausen\"",
+            "tagged": false
          }
       },
       {
@@ -2496,7 +2600,8 @@ var stations = {
                   "equipment_id": "10170303"
                }
             ],
-            "name": "\"Schichauweg\""
+            "name": "\"Schichauweg\"",
+            "tagged": false
          }
       },
       {
@@ -2515,7 +2620,8 @@ var stations = {
                   "equipment_id": "10170315"
                }
             ],
-            "name": "\"Hermannstraße\""
+            "name": "\"Hermannstraße\"",
+            "tagged": false
          }
       },
       {
@@ -2537,7 +2643,8 @@ var stations = {
                   "equipment_id": "10172165"
                }
             ],
-            "name": "\"Priesterweg\""
+            "name": "\"Priesterweg\"",
+            "tagged": false
          }
       },
       {
@@ -2565,7 +2672,8 @@ var stations = {
                   "equipment_id": "10180977"
                }
             ],
-            "name": "\"Frankfurt am Main Flughafen Fernbahnhof\""
+            "name": "\"Frankfurt am Main Flughafen Fernbahnhof\"",
+            "tagged": false
          }
       },
       {
@@ -2599,7 +2707,8 @@ var stations = {
                   "equipment_id": "10491825"
                }
             ],
-            "name": "\"Dresden-Neustadt\""
+            "name": "\"Dresden-Neustadt\"",
+            "tagged": false
          }
       },
       {
@@ -2618,7 +2727,8 @@ var stations = {
                   "equipment_id": "10187837"
                }
             ],
-            "name": "\"Schwerin Hbf\""
+            "name": "\"Schwerin Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -2640,7 +2750,8 @@ var stations = {
                   "equipment_id": "10462916"
                }
             ],
-            "name": "\"Heilbronn Hbf\""
+            "name": "\"Heilbronn Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -2662,7 +2773,8 @@ var stations = {
                   "equipment_id": "10232381"
                }
             ],
-            "name": "\"Kassel Hbf\""
+            "name": "\"Kassel Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -2681,7 +2793,8 @@ var stations = {
                   "equipment_id": "10192946"
                }
             ],
-            "name": "\"Messe Süd (Eichkamp)\""
+            "name": "\"Messe Süd (Eichkamp)\"",
+            "tagged": false
          }
       },
       {
@@ -2700,7 +2813,8 @@ var stations = {
                   "equipment_id": "10192977"
                }
             ],
-            "name": "\"Botanischer Garten\""
+            "name": "\"Botanischer Garten\"",
+            "tagged": false
          }
       },
       {
@@ -2719,7 +2833,8 @@ var stations = {
                   "equipment_id": "10193267"
                }
             ],
-            "name": "\"Innsbrucker Platz\""
+            "name": "\"Innsbrucker Platz\"",
+            "tagged": false
          }
       },
       {
@@ -2738,7 +2853,8 @@ var stations = {
                   "equipment_id": "10193284"
                }
             ],
-            "name": "\"Berlin-Halensee\""
+            "name": "\"Berlin-Halensee\"",
+            "tagged": false
          }
       },
       {
@@ -2760,7 +2876,8 @@ var stations = {
                   "equipment_id": "10193765"
                }
             ],
-            "name": "\"Heidelberger Platz\""
+            "name": "\"Heidelberger Platz\"",
+            "tagged": false
          }
       },
       {
@@ -2779,7 +2896,8 @@ var stations = {
                   "equipment_id": "10193988"
                }
             ],
-            "name": "\"Hohenzollerndamm\""
+            "name": "\"Hohenzollerndamm\"",
+            "tagged": false
          }
       },
       {
@@ -2801,7 +2919,8 @@ var stations = {
                   "equipment_id": "10194045"
                }
             ],
-            "name": "\"Bundesplatz\""
+            "name": "\"Bundesplatz\"",
+            "tagged": false
          }
       },
       {
@@ -2820,7 +2939,8 @@ var stations = {
                   "equipment_id": "10194692"
                }
             ],
-            "name": "\"Stuttgart Stadtmitte\""
+            "name": "\"Stuttgart Stadtmitte\"",
+            "tagged": false
          }
       },
       {
@@ -2854,7 +2974,8 @@ var stations = {
                   "equipment_id": "10463060"
                }
             ],
-            "name": "\"Karlsruhe Hbf\""
+            "name": "\"Karlsruhe Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -2873,7 +2994,8 @@ var stations = {
                   "equipment_id": "10196783"
                }
             ],
-            "name": "\"Aumühle\""
+            "name": "\"Aumühle\"",
+            "tagged": false
          }
       },
       {
@@ -2895,7 +3017,8 @@ var stations = {
                   "equipment_id": "10261687"
                }
             ],
-            "name": "\"Halle (Saale) Hbf\""
+            "name": "\"Halle (Saale) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -2923,7 +3046,8 @@ var stations = {
                   "equipment_id": "10287675"
                }
             ],
-            "name": "\"Baden-Baden\""
+            "name": "\"Baden-Baden\"",
+            "tagged": false
          }
       },
       {
@@ -2942,7 +3066,8 @@ var stations = {
                   "equipment_id": "10202027"
                }
             ],
-            "name": "\"Wurzen\""
+            "name": "\"Wurzen\"",
+            "tagged": false
          }
       },
       {
@@ -2961,7 +3086,8 @@ var stations = {
                   "equipment_id": "10204264"
                }
             ],
-            "name": "\"Gröbers\""
+            "name": "\"Gröbers\"",
+            "tagged": false
          }
       },
       {
@@ -2983,7 +3109,8 @@ var stations = {
                   "equipment_id": "10224537"
                }
             ],
-            "name": "\"Montabaur\""
+            "name": "\"Montabaur\"",
+            "tagged": false
          }
       },
       {
@@ -3002,7 +3129,8 @@ var stations = {
                   "equipment_id": "10216020"
                }
             ],
-            "name": "\"Hohen Neuendorf (b Berlin)\""
+            "name": "\"Hohen Neuendorf (b Berlin)\"",
+            "tagged": false
          }
       },
       {
@@ -3036,7 +3164,8 @@ var stations = {
                   "equipment_id": "10235399"
                }
             ],
-            "name": "\"Mannheim Hbf\""
+            "name": "\"Mannheim Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -3055,7 +3184,8 @@ var stations = {
                   "equipment_id": "10222273"
                }
             ],
-            "name": "\"Wohltorf\""
+            "name": "\"Wohltorf\"",
+            "tagged": false
          }
       },
       {
@@ -3077,7 +3207,8 @@ var stations = {
                   "equipment_id": "10223420"
                }
             ],
-            "name": "\"Nürnberg Hbf\""
+            "name": "\"Nürnberg Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -3099,7 +3230,8 @@ var stations = {
                   "equipment_id": "10223960"
                }
             ],
-            "name": "\"Tamm (Württ)\""
+            "name": "\"Tamm (Württ)\"",
+            "tagged": false
          }
       },
       {
@@ -3118,7 +3250,8 @@ var stations = {
                   "equipment_id": "10225058"
                }
             ],
-            "name": "\"Stuttgart-Vaihingen\""
+            "name": "\"Stuttgart-Vaihingen\"",
+            "tagged": false
          }
       },
       {
@@ -3146,7 +3279,8 @@ var stations = {
                   "equipment_id": "10463696"
                }
             ],
-            "name": "\"Esslingen (Neckar)\""
+            "name": "\"Esslingen (Neckar)\"",
+            "tagged": false
          }
       },
       {
@@ -3171,7 +3305,8 @@ var stations = {
                   "equipment_id": "10227958"
                }
             ],
-            "name": "\"Aschersleben Pbf\""
+            "name": "\"Aschersleben Pbf\"",
+            "tagged": false
          }
       },
       {
@@ -3190,7 +3325,8 @@ var stations = {
                   "equipment_id": "10236141"
                }
             ],
-            "name": "\"Oberstdorf\""
+            "name": "\"Oberstdorf\"",
+            "tagged": false
          }
       },
       {
@@ -3221,7 +3357,8 @@ var stations = {
                   "equipment_id": "10489672"
                }
             ],
-            "name": "\"Rostock Hbf\""
+            "name": "\"Rostock Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -3243,7 +3380,8 @@ var stations = {
                   "equipment_id": "10271408"
                }
             ],
-            "name": "\"Glauchau (Sachs)\""
+            "name": "\"Glauchau (Sachs)\"",
+            "tagged": false
          }
       },
       {
@@ -3268,7 +3406,8 @@ var stations = {
                   "equipment_id": "10485624"
                }
             ],
-            "name": "\"Vilshofen (Niederbay)\""
+            "name": "\"Vilshofen (Niederbay)\"",
+            "tagged": false
          }
       },
       {
@@ -3302,7 +3441,8 @@ var stations = {
                   "equipment_id": "10495159"
                }
             ],
-            "name": "\"München Ost\""
+            "name": "\"München Ost\"",
+            "tagged": false
          }
       },
       {
@@ -3324,7 +3464,8 @@ var stations = {
                   "equipment_id": "10258071"
                }
             ],
-            "name": "\"München Rosenheimer Platz\""
+            "name": "\"München Rosenheimer Platz\"",
+            "tagged": false
          }
       },
       {
@@ -3346,7 +3487,8 @@ var stations = {
                   "equipment_id": "10258555"
                }
             ],
-            "name": "\"Flughafen Leipzig/Halle\""
+            "name": "\"Flughafen Leipzig/Halle\"",
+            "tagged": false
          }
       },
       {
@@ -3365,7 +3507,8 @@ var stations = {
                   "equipment_id": "10262372"
                }
             ],
-            "name": "\"Freital-Potschappel\""
+            "name": "\"Freital-Potschappel\"",
+            "tagged": false
          }
       },
       {
@@ -3387,7 +3530,8 @@ var stations = {
                   "equipment_id": "10269209"
                }
             ],
-            "name": "\"Weißenfels\""
+            "name": "\"Weißenfels\"",
+            "tagged": false
          }
       },
       {
@@ -3409,7 +3553,8 @@ var stations = {
                   "equipment_id": "10270872"
                }
             ],
-            "name": "\"Ludwigshafen (Rhein) Mitte\""
+            "name": "\"Ludwigshafen (Rhein) Mitte\"",
+            "tagged": false
          }
       },
       {
@@ -3431,7 +3576,8 @@ var stations = {
                   "equipment_id": "10272877"
                }
             ],
-            "name": "\"Oederan\""
+            "name": "\"Oederan\"",
+            "tagged": false
          }
       },
       {
@@ -3453,7 +3599,8 @@ var stations = {
                   "equipment_id": "10274126"
                }
             ],
-            "name": "\"Endersbach\""
+            "name": "\"Endersbach\"",
+            "tagged": false
          }
       },
       {
@@ -3472,7 +3619,8 @@ var stations = {
                   "equipment_id": "10275654"
                }
             ],
-            "name": "\"Nürnberg-Steinbühl\""
+            "name": "\"Nürnberg-Steinbühl\"",
+            "tagged": false
          }
       },
       {
@@ -3494,7 +3642,8 @@ var stations = {
                   "equipment_id": "10275718"
                }
             ],
-            "name": "\"Stuttgart Feuersee\""
+            "name": "\"Stuttgart Feuersee\"",
+            "tagged": false
          }
       },
       {
@@ -3519,7 +3668,8 @@ var stations = {
                   "equipment_id": "10277130"
                }
             ],
-            "name": "\"Betzdorf (Sieg)\""
+            "name": "\"Betzdorf (Sieg)\"",
+            "tagged": false
          }
       },
       {
@@ -3541,7 +3691,8 @@ var stations = {
                   "equipment_id": "10277470"
                }
             ],
-            "name": "\"Freiberg (Neckar)\""
+            "name": "\"Freiberg (Neckar)\"",
+            "tagged": false
          }
       },
       {
@@ -3563,7 +3714,8 @@ var stations = {
                   "equipment_id": "10277692"
                }
             ],
-            "name": "\"Weil der Stadt\""
+            "name": "\"Weil der Stadt\"",
+            "tagged": false
          }
       },
       {
@@ -3585,7 +3737,8 @@ var stations = {
                   "equipment_id": "10277696"
                }
             ],
-            "name": "\"Stuttgart-Obertürkheim\""
+            "name": "\"Stuttgart-Obertürkheim\"",
+            "tagged": false
          }
       },
       {
@@ -3604,7 +3757,8 @@ var stations = {
                   "equipment_id": "10277747"
                }
             ],
-            "name": "\"Stuttgart-Rohr\""
+            "name": "\"Stuttgart-Rohr\"",
+            "tagged": false
          }
       },
       {
@@ -3626,7 +3780,8 @@ var stations = {
                   "equipment_id": "10280476"
                }
             ],
-            "name": "\"Velbert-Langenberg\""
+            "name": "\"Velbert-Langenberg\"",
+            "tagged": false
          }
       },
       {
@@ -3648,7 +3803,8 @@ var stations = {
                   "equipment_id": "10282755"
                }
             ],
-            "name": "\"Warburg (Westf)\""
+            "name": "\"Warburg (Westf)\"",
+            "tagged": false
          }
       },
       {
@@ -3667,7 +3823,8 @@ var stations = {
                   "equipment_id": "10283453"
                }
             ],
-            "name": "\"Hebertshausen\""
+            "name": "\"Hebertshausen\"",
+            "tagged": false
          }
       },
       {
@@ -3689,7 +3846,8 @@ var stations = {
                   "equipment_id": "10284893"
                }
             ],
-            "name": "\"Dortmund-Stadthaus\""
+            "name": "\"Dortmund-Stadthaus\"",
+            "tagged": false
          }
       },
       {
@@ -3708,7 +3866,8 @@ var stations = {
                   "equipment_id": "10285670"
                }
             ],
-            "name": "\"Lippstadt\""
+            "name": "\"Lippstadt\"",
+            "tagged": false
          }
       },
       {
@@ -3730,7 +3889,8 @@ var stations = {
                   "equipment_id": "10285851"
                }
             ],
-            "name": "\"Siegburg/Bonn\""
+            "name": "\"Siegburg/Bonn\"",
+            "tagged": false
          }
       },
       {
@@ -3749,7 +3909,8 @@ var stations = {
                   "equipment_id": "10286440"
                }
             ],
-            "name": "\"Ulm Hbf\""
+            "name": "\"Ulm Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -3771,7 +3932,8 @@ var stations = {
                   "equipment_id": "10335780"
                }
             ],
-            "name": "\"Trier Hbf\""
+            "name": "\"Trier Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -3793,7 +3955,8 @@ var stations = {
                   "equipment_id": "10292588"
                }
             ],
-            "name": "\"Köln Steinstraße\""
+            "name": "\"Köln Steinstraße\"",
+            "tagged": false
          }
       },
       {
@@ -3812,7 +3975,8 @@ var stations = {
                   "equipment_id": "10293806"
                }
             ],
-            "name": "\"Dresden-Friedrichstadt\""
+            "name": "\"Dresden-Friedrichstadt\"",
+            "tagged": false
          }
       },
       {
@@ -3834,7 +3998,8 @@ var stations = {
                   "equipment_id": "10297282"
                }
             ],
-            "name": "\"Klingenberg-Colmnitz\""
+            "name": "\"Klingenberg-Colmnitz\"",
+            "tagged": false
          }
       },
       {
@@ -3856,7 +4021,8 @@ var stations = {
                   "equipment_id": "10298027"
                }
             ],
-            "name": "\"Zeitz\""
+            "name": "\"Zeitz\"",
+            "tagged": false
          }
       },
       {
@@ -3875,7 +4041,8 @@ var stations = {
                   "equipment_id": "10298312"
                }
             ],
-            "name": "\"Arnstadt Süd\""
+            "name": "\"Arnstadt Süd\"",
+            "tagged": false
          }
       },
       {
@@ -3894,7 +4061,8 @@ var stations = {
                   "equipment_id": "10304169"
                }
             ],
-            "name": "\"Unterföhring\""
+            "name": "\"Unterföhring\"",
+            "tagged": false
          }
       },
       {
@@ -3928,7 +4096,8 @@ var stations = {
                   "equipment_id": "10306675"
                }
             ],
-            "name": "\"Berlin Potsdamer Platz\""
+            "name": "\"Berlin Potsdamer Platz\"",
+            "tagged": false
          }
       },
       {
@@ -3953,7 +4122,8 @@ var stations = {
                   "equipment_id": "10307753"
                }
             ],
-            "name": "\"Schorndorf\""
+            "name": "\"Schorndorf\"",
+            "tagged": false
          }
       },
       {
@@ -3978,7 +4148,8 @@ var stations = {
                   "equipment_id": "10314789"
                }
             ],
-            "name": "\"Kiel Hbf\""
+            "name": "\"Kiel Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -3997,7 +4168,8 @@ var stations = {
                   "equipment_id": "10310537"
                }
             ],
-            "name": "\"Babelsberg\""
+            "name": "\"Babelsberg\"",
+            "tagged": false
          }
       },
       {
@@ -4016,7 +4188,8 @@ var stations = {
                   "equipment_id": "10311112"
                }
             ],
-            "name": "\"Berlin-Marzahn\""
+            "name": "\"Berlin-Marzahn\"",
+            "tagged": false
          }
       },
       {
@@ -4035,7 +4208,8 @@ var stations = {
                   "equipment_id": "10311305"
                }
             ],
-            "name": "\"Oranienburger Straße\""
+            "name": "\"Oranienburger Straße\"",
+            "tagged": false
          }
       },
       {
@@ -4054,7 +4228,8 @@ var stations = {
                   "equipment_id": "10311537"
                }
             ],
-            "name": "\"Berlin-Rummelsburg\""
+            "name": "\"Berlin-Rummelsburg\"",
+            "tagged": false
          }
       },
       {
@@ -4073,7 +4248,8 @@ var stations = {
                   "equipment_id": "10312109"
                }
             ],
-            "name": "\"Berlin Brandenburger Tor\""
+            "name": "\"Berlin Brandenburger Tor\"",
+            "tagged": false
          }
       },
       {
@@ -4095,7 +4271,8 @@ var stations = {
                   "equipment_id": "10312803"
                }
             ],
-            "name": "\"Berlin-Mahlsdorf\""
+            "name": "\"Berlin-Mahlsdorf\"",
+            "tagged": false
          }
       },
       {
@@ -4117,7 +4294,8 @@ var stations = {
                   "equipment_id": "10447402"
                }
             ],
-            "name": "\"Nikolassee\""
+            "name": "\"Nikolassee\"",
+            "tagged": false
          }
       },
       {
@@ -4136,7 +4314,8 @@ var stations = {
                   "equipment_id": "10313427"
                }
             ],
-            "name": "\"Rahnsdorf\""
+            "name": "\"Rahnsdorf\"",
+            "tagged": false
          }
       },
       {
@@ -4158,7 +4337,8 @@ var stations = {
                   "equipment_id": "10313577"
                }
             ],
-            "name": "\"Nürtingen\""
+            "name": "\"Nürtingen\"",
+            "tagged": false
          }
       },
       {
@@ -4180,7 +4360,8 @@ var stations = {
                   "equipment_id": "10313702"
                }
             ],
-            "name": "\"Viersen-Dülken\""
+            "name": "\"Viersen-Dülken\"",
+            "tagged": false
          }
       },
       {
@@ -4199,7 +4380,8 @@ var stations = {
                   "equipment_id": "10313703"
                }
             ],
-            "name": "\"Erkelenz\""
+            "name": "\"Erkelenz\"",
+            "tagged": false
          }
       },
       {
@@ -4221,7 +4403,8 @@ var stations = {
                   "equipment_id": "10314414"
                }
             ],
-            "name": "\"Bad Hersfeld\""
+            "name": "\"Bad Hersfeld\"",
+            "tagged": false
          }
       },
       {
@@ -4261,7 +4444,8 @@ var stations = {
                   "equipment_id": "10319494"
                }
             ],
-            "name": "\"Berlin Südkreuz\""
+            "name": "\"Berlin Südkreuz\"",
+            "tagged": false
          }
       },
       {
@@ -4286,7 +4470,8 @@ var stations = {
                   "equipment_id": "10319741"
                }
             ],
-            "name": "\"Ludwigshafen (Rhein) Hbf\""
+            "name": "\"Ludwigshafen (Rhein) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -4392,7 +4577,8 @@ var stations = {
                   "equipment_id": "10473786"
                }
             ],
-            "name": "\"Berlin Hauptbahnhof\""
+            "name": "\"Berlin Hauptbahnhof\"",
+            "tagged": false
          }
       },
       {
@@ -4411,7 +4597,8 @@ var stations = {
                   "equipment_id": "10318054"
                }
             ],
-            "name": "\"Verden (Aller)\""
+            "name": "\"Verden (Aller)\"",
+            "tagged": false
          }
       },
       {
@@ -4430,7 +4617,8 @@ var stations = {
                   "equipment_id": "10319860"
                }
             ],
-            "name": "\"Keitum\""
+            "name": "\"Keitum\"",
+            "tagged": false
          }
       },
       {
@@ -4455,7 +4643,8 @@ var stations = {
                   "equipment_id": "10320738"
                }
             ],
-            "name": "\"Angermünde\""
+            "name": "\"Angermünde\"",
+            "tagged": false
          }
       },
       {
@@ -4474,7 +4663,8 @@ var stations = {
                   "equipment_id": "10323458"
                }
             ],
-            "name": "\"Spich\""
+            "name": "\"Spich\"",
+            "tagged": false
          }
       },
       {
@@ -4493,7 +4683,8 @@ var stations = {
                   "equipment_id": "10323601"
                }
             ],
-            "name": "\"Wandsbeker Chaussee\""
+            "name": "\"Wandsbeker Chaussee\"",
+            "tagged": false
          }
       },
       {
@@ -4515,7 +4706,8 @@ var stations = {
                   "equipment_id": "10323741"
                }
             ],
-            "name": "\"Brück (Mark)\""
+            "name": "\"Brück (Mark)\"",
+            "tagged": false
          }
       },
       {
@@ -4534,7 +4726,8 @@ var stations = {
                   "equipment_id": "10335679"
                }
             ],
-            "name": "\"Werne (a d Lippe)\""
+            "name": "\"Werne (a d Lippe)\"",
+            "tagged": false
          }
       },
       {
@@ -4559,7 +4752,8 @@ var stations = {
                   "equipment_id": "10348330"
                }
             ],
-            "name": "\"Gelsenkirchen Hbf\""
+            "name": "\"Gelsenkirchen Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -4578,7 +4772,8 @@ var stations = {
                   "equipment_id": "10348886"
                }
             ],
-            "name": "\"Klein Flottbek\""
+            "name": "\"Klein Flottbek\"",
+            "tagged": false
          }
       },
       {
@@ -4597,7 +4792,8 @@ var stations = {
                   "equipment_id": "10349399"
                }
             ],
-            "name": "\"Wuppertal-Sonnborn\""
+            "name": "\"Wuppertal-Sonnborn\"",
+            "tagged": false
          }
       },
       {
@@ -4616,7 +4812,8 @@ var stations = {
                   "equipment_id": "10349437"
                }
             ],
-            "name": "\"Altbach\""
+            "name": "\"Altbach\"",
+            "tagged": false
          }
       },
       {
@@ -4635,7 +4832,8 @@ var stations = {
                   "equipment_id": "10350283"
                }
             ],
-            "name": "\"Stuttgart-Bad Cannstatt\""
+            "name": "\"Stuttgart-Bad Cannstatt\"",
+            "tagged": false
          }
       },
       {
@@ -4657,7 +4855,8 @@ var stations = {
                   "equipment_id": "10350379"
                }
             ],
-            "name": "\"Frankfurt (Main) Süd\""
+            "name": "\"Frankfurt (Main) Süd\"",
+            "tagged": false
          }
       },
       {
@@ -4679,7 +4878,8 @@ var stations = {
                   "equipment_id": "10350922"
                }
             ],
-            "name": "\"Rotenburg (Wümme)\""
+            "name": "\"Rotenburg (Wümme)\"",
+            "tagged": false
          }
       },
       {
@@ -4698,7 +4898,8 @@ var stations = {
                   "equipment_id": "10351032"
                }
             ],
-            "name": "\"Frankfurt (Main) Hauptwache\""
+            "name": "\"Frankfurt (Main) Hauptwache\"",
+            "tagged": false
          }
       },
       {
@@ -4717,7 +4918,8 @@ var stations = {
                   "equipment_id": "10351034"
                }
             ],
-            "name": "\"Frankfurt (Main) Stresemannallee\""
+            "name": "\"Frankfurt (Main) Stresemannallee\"",
+            "tagged": false
          }
       },
       {
@@ -4736,7 +4938,8 @@ var stations = {
                   "equipment_id": "10352295"
                }
             ],
-            "name": "\"Wuppertal Zoologischer Garten\""
+            "name": "\"Wuppertal Zoologischer Garten\"",
+            "tagged": false
          }
       },
       {
@@ -4755,7 +4958,8 @@ var stations = {
                   "equipment_id": "10352932"
                }
             ],
-            "name": "\"Elbgaustraße\""
+            "name": "\"Elbgaustraße\"",
+            "tagged": false
          }
       },
       {
@@ -4774,7 +4978,8 @@ var stations = {
                   "equipment_id": "10354309"
                }
             ],
-            "name": "\"Köln/Bonn Flughafen\""
+            "name": "\"Köln/Bonn Flughafen\"",
+            "tagged": false
          }
       },
       {
@@ -4793,7 +4998,8 @@ var stations = {
                   "equipment_id": "10354891"
                }
             ],
-            "name": "\"Frankfurt (Main) Flughafen Regionalbahnhof\""
+            "name": "\"Frankfurt (Main) Flughafen Regionalbahnhof\"",
+            "tagged": false
          }
       },
       {
@@ -4815,7 +5021,8 @@ var stations = {
                   "equipment_id": "10357517"
                }
             ],
-            "name": "\"Neuwirtshaus-Porscheplatz\""
+            "name": "\"Neuwirtshaus-Porscheplatz\"",
+            "tagged": false
          }
       },
       {
@@ -4834,7 +5041,8 @@ var stations = {
                   "equipment_id": "10357726"
                }
             ],
-            "name": "\"Elmshorn\""
+            "name": "\"Elmshorn\"",
+            "tagged": false
          }
       },
       {
@@ -4856,7 +5064,8 @@ var stations = {
                   "equipment_id": "10358867"
                }
             ],
-            "name": "\"Paderborn Hbf\""
+            "name": "\"Paderborn Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -4878,7 +5087,8 @@ var stations = {
                   "equipment_id": "10407102"
                }
             ],
-            "name": "\"Bielefeld Hbf\""
+            "name": "\"Bielefeld Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -4900,7 +5110,8 @@ var stations = {
                   "equipment_id": "10360025"
                }
             ],
-            "name": "\"Hamburg Airport (Flughafen)\""
+            "name": "\"Hamburg Airport (Flughafen)\"",
+            "tagged": false
          }
       },
       {
@@ -4922,7 +5133,8 @@ var stations = {
                   "equipment_id": "50012034"
                }
             ],
-            "name": "\"Betriebsbahnhof Berlin-Rummelsburg\""
+            "name": "\"Betriebsbahnhof Berlin-Rummelsburg\"",
+            "tagged": false
          }
       },
       {
@@ -4941,7 +5153,8 @@ var stations = {
                   "equipment_id": "10378137"
                }
             ],
-            "name": "\"Berlin-Blankenburg\""
+            "name": "\"Berlin-Blankenburg\"",
+            "tagged": false
          }
       },
       {
@@ -4960,7 +5173,8 @@ var stations = {
                   "equipment_id": "10409124"
                }
             ],
-            "name": "\"Heidelberg Hbf\""
+            "name": "\"Heidelberg Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -4979,7 +5193,8 @@ var stations = {
                   "equipment_id": "10410615"
                }
             ],
-            "name": "\"Wollankstraße\""
+            "name": "\"Wollankstraße\"",
+            "tagged": false
          }
       },
       {
@@ -4998,7 +5213,8 @@ var stations = {
                   "equipment_id": "10410616"
                }
             ],
-            "name": "\"Waidmannslust\""
+            "name": "\"Waidmannslust\"",
+            "tagged": false
          }
       },
       {
@@ -5020,7 +5236,8 @@ var stations = {
                   "equipment_id": "10468024"
                }
             ],
-            "name": "\"Messe Nord / ICC (Witzleben)\""
+            "name": "\"Messe Nord / ICC (Witzleben)\"",
+            "tagged": false
          }
       },
       {
@@ -5039,7 +5256,8 @@ var stations = {
                   "equipment_id": "10421888"
                }
             ],
-            "name": "\"Sternschanze\""
+            "name": "\"Sternschanze\"",
+            "tagged": false
          }
       },
       {
@@ -5070,7 +5288,8 @@ var stations = {
                   "equipment_id": "10439301"
                }
             ],
-            "name": "\"Hannover Hbf\""
+            "name": "\"Hannover Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -5089,7 +5308,8 @@ var stations = {
                   "equipment_id": "10426539"
                }
             ],
-            "name": "\"Berlin-Adlershof\""
+            "name": "\"Berlin-Adlershof\"",
+            "tagged": false
          }
       },
       {
@@ -5108,7 +5328,8 @@ var stations = {
                   "equipment_id": "10428509"
                }
             ],
-            "name": "\"Gladbeck West\""
+            "name": "\"Gladbeck West\"",
+            "tagged": false
          }
       },
       {
@@ -5127,7 +5348,8 @@ var stations = {
                   "equipment_id": "10431359"
                }
             ],
-            "name": "\"Werl\""
+            "name": "\"Werl\"",
+            "tagged": false
          }
       },
       {
@@ -5149,7 +5371,8 @@ var stations = {
                   "equipment_id": "10432053"
                }
             ],
-            "name": "\"Berlin-Lichterfelde West\""
+            "name": "\"Berlin-Lichterfelde West\"",
+            "tagged": false
          }
       },
       {
@@ -5171,7 +5394,8 @@ var stations = {
                   "equipment_id": "10460195"
                }
             ],
-            "name": "\"Gronau (Westf)\""
+            "name": "\"Gronau (Westf)\"",
+            "tagged": false
          }
       },
       {
@@ -5190,7 +5414,8 @@ var stations = {
                   "equipment_id": "10436681"
                }
             ],
-            "name": "\"Bad Harzburg\""
+            "name": "\"Bad Harzburg\"",
+            "tagged": false
          }
       },
       {
@@ -5215,7 +5440,8 @@ var stations = {
                   "equipment_id": "10437022"
                }
             ],
-            "name": "\"Waiblingen\""
+            "name": "\"Waiblingen\"",
+            "tagged": false
          }
       },
       {
@@ -5234,7 +5460,8 @@ var stations = {
                   "equipment_id": "10438535"
                }
             ],
-            "name": "\"Rostock Parkstraße\""
+            "name": "\"Rostock Parkstraße\"",
+            "tagged": false
          }
       },
       {
@@ -5253,7 +5480,8 @@ var stations = {
                   "equipment_id": "10438588"
                }
             ],
-            "name": "\"Rostock-Marienehe\""
+            "name": "\"Rostock-Marienehe\"",
+            "tagged": false
          }
       },
       {
@@ -5272,7 +5500,8 @@ var stations = {
                   "equipment_id": "10439658"
                }
             ],
-            "name": "\"Soest\""
+            "name": "\"Soest\"",
+            "tagged": false
          }
       },
       {
@@ -5297,7 +5526,8 @@ var stations = {
                   "equipment_id": "10440073"
                }
             ],
-            "name": "\"Gießen\""
+            "name": "\"Gießen\"",
+            "tagged": false
          }
       },
       {
@@ -5328,7 +5558,8 @@ var stations = {
                   "equipment_id": "10480257"
                }
             ],
-            "name": "\"Dortmund-Hörde\""
+            "name": "\"Dortmund-Hörde\"",
+            "tagged": false
          }
       },
       {
@@ -5347,7 +5578,8 @@ var stations = {
                   "equipment_id": "10443343"
                }
             ],
-            "name": "\"Oberhausen Hbf\""
+            "name": "\"Oberhausen Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -5369,7 +5601,8 @@ var stations = {
                   "equipment_id": "10444201"
                }
             ],
-            "name": "\"Halle-Neustadt\""
+            "name": "\"Halle-Neustadt\"",
+            "tagged": false
          }
       },
       {
@@ -5388,7 +5621,8 @@ var stations = {
                   "equipment_id": "10444451"
                }
             ],
-            "name": "\"Zepernick (b Bernau)\""
+            "name": "\"Zepernick (b Bernau)\"",
+            "tagged": false
          }
       },
       {
@@ -5407,7 +5641,8 @@ var stations = {
                   "equipment_id": "10444616"
                }
             ],
-            "name": "\"Othmarschen\""
+            "name": "\"Othmarschen\"",
+            "tagged": false
          }
       },
       {
@@ -5426,7 +5661,8 @@ var stations = {
                   "equipment_id": "10445192"
                }
             ],
-            "name": "\"Garmisch-Partenkirchen\""
+            "name": "\"Garmisch-Partenkirchen\"",
+            "tagged": false
          }
       },
       {
@@ -5448,7 +5684,8 @@ var stations = {
                   "equipment_id": "10445650"
                }
             ],
-            "name": "\"Bernburg\""
+            "name": "\"Bernburg\"",
+            "tagged": false
          }
       },
       {
@@ -5470,7 +5707,8 @@ var stations = {
                   "equipment_id": "10456682"
                }
             ],
-            "name": "\"Bautzen\""
+            "name": "\"Bautzen\"",
+            "tagged": false
          }
       },
       {
@@ -5489,7 +5727,8 @@ var stations = {
                   "equipment_id": "10447007"
                }
             ],
-            "name": "\"Halstenbek\""
+            "name": "\"Halstenbek\"",
+            "tagged": false
          }
       },
       {
@@ -5514,7 +5753,8 @@ var stations = {
                   "equipment_id": "10457218"
                }
             ],
-            "name": "\"Biesdorf\""
+            "name": "\"Biesdorf\"",
+            "tagged": false
          }
       },
       {
@@ -5536,7 +5776,8 @@ var stations = {
                   "equipment_id": "10447700"
                }
             ],
-            "name": "\"Hannover Karl-Wiechert-Allee\""
+            "name": "\"Hannover Karl-Wiechert-Allee\"",
+            "tagged": false
          }
       },
       {
@@ -5567,7 +5808,8 @@ var stations = {
                   "equipment_id": "10447963"
                }
             ],
-            "name": "\"Zwickau (Sachs) Hbf\""
+            "name": "\"Zwickau (Sachs) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -5589,7 +5831,8 @@ var stations = {
                   "equipment_id": "10447991"
                }
             ],
-            "name": "\"Crimmitschau\""
+            "name": "\"Crimmitschau\"",
+            "tagged": false
          }
       },
       {
@@ -5608,7 +5851,8 @@ var stations = {
                   "equipment_id": "10448156"
                }
             ],
-            "name": "\"Hoheneichen\""
+            "name": "\"Hoheneichen\"",
+            "tagged": false
          }
       },
       {
@@ -5627,7 +5871,8 @@ var stations = {
                   "equipment_id": "10448237"
                }
             ],
-            "name": "\"Hochkamp\""
+            "name": "\"Hochkamp\"",
+            "tagged": false
          }
       },
       {
@@ -5646,7 +5891,8 @@ var stations = {
                   "equipment_id": "10448351"
                }
             ],
-            "name": "\"Altglienicke\""
+            "name": "\"Altglienicke\"",
+            "tagged": false
          }
       },
       {
@@ -5665,7 +5911,8 @@ var stations = {
                   "equipment_id": "10448899"
                }
             ],
-            "name": "\"Südende\""
+            "name": "\"Südende\"",
+            "tagged": false
          }
       },
       {
@@ -5684,7 +5931,8 @@ var stations = {
                   "equipment_id": "10448904"
                }
             ],
-            "name": "\"Wittenau (Wilhelmsruher Damm)\""
+            "name": "\"Wittenau (Wilhelmsruher Damm)\"",
+            "tagged": false
          }
       },
       {
@@ -5706,7 +5954,8 @@ var stations = {
                   "equipment_id": "10448912"
                }
             ],
-            "name": "\"Berlin-Nordbahnhof\""
+            "name": "\"Berlin-Nordbahnhof\"",
+            "tagged": false
          }
       },
       {
@@ -5725,7 +5974,8 @@ var stations = {
                   "equipment_id": "10448914"
                }
             ],
-            "name": "\"Birkenwerder (b Berlin)\""
+            "name": "\"Birkenwerder (b Berlin)\"",
+            "tagged": false
          }
       },
       {
@@ -5747,7 +5997,8 @@ var stations = {
                   "equipment_id": "10448917"
                }
             ],
-            "name": "\"Griebnitzsee\""
+            "name": "\"Griebnitzsee\"",
+            "tagged": false
          }
       },
       {
@@ -5766,7 +6017,8 @@ var stations = {
                   "equipment_id": "10450716"
                }
             ],
-            "name": "\"Ohlsdorf\""
+            "name": "\"Ohlsdorf\"",
+            "tagged": false
          }
       },
       {
@@ -5785,7 +6037,8 @@ var stations = {
                   "equipment_id": "10451154"
                }
             ],
-            "name": "\"Thesdorf\""
+            "name": "\"Thesdorf\"",
+            "tagged": false
          }
       },
       {
@@ -5807,7 +6060,8 @@ var stations = {
                   "equipment_id": "10452117"
                }
             ],
-            "name": "\"Neuhaus (Pegnitz)\""
+            "name": "\"Neuhaus (Pegnitz)\"",
+            "tagged": false
          }
       },
       {
@@ -5826,7 +6080,8 @@ var stations = {
                   "equipment_id": "10452894"
                }
             ],
-            "name": "\"Veddel\""
+            "name": "\"Veddel\"",
+            "tagged": false
          }
       },
       {
@@ -5848,7 +6103,8 @@ var stations = {
                   "equipment_id": "10466418"
                }
             ],
-            "name": "\"Bernau (b Berlin)\""
+            "name": "\"Bernau (b Berlin)\"",
+            "tagged": false
          }
       },
       {
@@ -5870,7 +6126,8 @@ var stations = {
                   "equipment_id": "10454922"
                }
             ],
-            "name": "\"Berlin-Grunewald\""
+            "name": "\"Berlin-Grunewald\"",
+            "tagged": false
          }
       },
       {
@@ -5889,7 +6146,8 @@ var stations = {
                   "equipment_id": "10455103"
                }
             ],
-            "name": "\"Ochenbruck\""
+            "name": "\"Ochenbruck\"",
+            "tagged": false
          }
       },
       {
@@ -5911,7 +6169,8 @@ var stations = {
                   "equipment_id": "10455222"
                }
             ],
-            "name": "\"Tübingen Hbf\""
+            "name": "\"Tübingen Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -5930,7 +6189,8 @@ var stations = {
                   "equipment_id": "10455367"
                }
             ],
-            "name": "\"Wuhlheide\""
+            "name": "\"Wuhlheide\"",
+            "tagged": false
          }
       },
       {
@@ -5949,7 +6209,8 @@ var stations = {
                   "equipment_id": "10455436"
                }
             ],
-            "name": "\"Bernau-Friedenstal\""
+            "name": "\"Bernau-Friedenstal\"",
+            "tagged": false
          }
       },
       {
@@ -5968,7 +6229,8 @@ var stations = {
                   "equipment_id": "10455437"
                }
             ],
-            "name": "\"Osdorferstraße\""
+            "name": "\"Osdorferstraße\"",
+            "tagged": false
          }
       },
       {
@@ -5987,7 +6249,8 @@ var stations = {
                   "equipment_id": "10455442"
                }
             ],
-            "name": "\"Bellevue\""
+            "name": "\"Bellevue\"",
+            "tagged": false
          }
       },
       {
@@ -6006,7 +6269,8 @@ var stations = {
                   "equipment_id": "10455443"
                }
             ],
-            "name": "\"Berlin-Friedrichshagen\""
+            "name": "\"Berlin-Friedrichshagen\"",
+            "tagged": false
          }
       },
       {
@@ -6028,7 +6292,8 @@ var stations = {
                   "equipment_id": "10455449"
                }
             ],
-            "name": "\"Lichterfelde Süd\""
+            "name": "\"Lichterfelde Süd\"",
+            "tagged": false
          }
       },
       {
@@ -6047,7 +6312,8 @@ var stations = {
                   "equipment_id": "10455454"
                }
             ],
-            "name": "\"Schönhauser Allee\""
+            "name": "\"Schönhauser Allee\"",
+            "tagged": false
          }
       },
       {
@@ -6069,7 +6335,8 @@ var stations = {
                   "equipment_id": "10456525"
                }
             ],
-            "name": "\"Delitzsch unt Bf\""
+            "name": "\"Delitzsch unt Bf\"",
+            "tagged": false
          }
       },
       {
@@ -6091,7 +6358,8 @@ var stations = {
                   "equipment_id": "10457321"
                }
             ],
-            "name": "\"Süßen\""
+            "name": "\"Süßen\"",
+            "tagged": false
          }
       },
       {
@@ -6110,7 +6378,8 @@ var stations = {
                   "equipment_id": "10457810"
                }
             ],
-            "name": "\"Berlin-Schönholz\""
+            "name": "\"Berlin-Schönholz\"",
+            "tagged": false
          }
       },
       {
@@ -6132,7 +6401,8 @@ var stations = {
                   "equipment_id": "10458000"
                }
             ],
-            "name": "\"Grunbach\""
+            "name": "\"Grunbach\"",
+            "tagged": false
          }
       },
       {
@@ -6154,7 +6424,8 @@ var stations = {
                   "equipment_id": "10458724"
                }
             ],
-            "name": "\"Radeberg\""
+            "name": "\"Radeberg\"",
+            "tagged": false
          }
       },
       {
@@ -6173,7 +6444,8 @@ var stations = {
                   "equipment_id": "10458728"
                }
             ],
-            "name": "\"Friedrichsberg\""
+            "name": "\"Friedrichsberg\"",
+            "tagged": false
          }
       },
       {
@@ -6195,7 +6467,8 @@ var stations = {
                   "equipment_id": "10492004"
                }
             ],
-            "name": "\"Frankfurt-Rödelheim\""
+            "name": "\"Frankfurt-Rödelheim\"",
+            "tagged": false
          }
       },
       {
@@ -6217,7 +6490,8 @@ var stations = {
                   "equipment_id": "10460189"
                }
             ],
-            "name": "\"Rheine\""
+            "name": "\"Rheine\"",
+            "tagged": false
          }
       },
       {
@@ -6239,7 +6513,8 @@ var stations = {
                   "equipment_id": "10460280"
                }
             ],
-            "name": "\"Ebersbach (Fils)\""
+            "name": "\"Ebersbach (Fils)\"",
+            "tagged": false
          }
       },
       {
@@ -6258,7 +6533,8 @@ var stations = {
                   "equipment_id": "10460416"
                }
             ],
-            "name": "\"Bietigheim-Bissingen\""
+            "name": "\"Bietigheim-Bissingen\"",
+            "tagged": false
          }
       },
       {
@@ -6277,7 +6553,8 @@ var stations = {
                   "equipment_id": "10460743"
                }
             ],
-            "name": "\"Berlin Frankfurter Allee\""
+            "name": "\"Berlin Frankfurter Allee\"",
+            "tagged": false
          }
       },
       {
@@ -6296,7 +6573,8 @@ var stations = {
                   "equipment_id": "10461181"
                }
             ],
-            "name": "\"Hennef Im Siegbogen\""
+            "name": "\"Hennef Im Siegbogen\"",
+            "tagged": false
          }
       },
       {
@@ -6318,7 +6596,8 @@ var stations = {
                   "equipment_id": "10461208"
                }
             ],
-            "name": "\"Unna\""
+            "name": "\"Unna\"",
+            "tagged": false
          }
       },
       {
@@ -6340,7 +6619,8 @@ var stations = {
                   "equipment_id": "10461211"
                }
             ],
-            "name": "\"Mülheim (Ruhr) Hbf\""
+            "name": "\"Mülheim (Ruhr) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -6359,7 +6639,8 @@ var stations = {
                   "equipment_id": "10461384"
                }
             ],
-            "name": "\"Köln Geldernstr/Parkgürtel\""
+            "name": "\"Köln Geldernstr/Parkgürtel\"",
+            "tagged": false
          }
       },
       {
@@ -6381,7 +6662,8 @@ var stations = {
                   "equipment_id": "10461386"
                }
             ],
-            "name": "\"Köln-Worringen\""
+            "name": "\"Köln-Worringen\"",
+            "tagged": false
          }
       },
       {
@@ -6400,7 +6682,8 @@ var stations = {
                   "equipment_id": "10461582"
                }
             ],
-            "name": "\"Dortmund-Brackel\""
+            "name": "\"Dortmund-Brackel\"",
+            "tagged": false
          }
       },
       {
@@ -6419,7 +6702,8 @@ var stations = {
                   "equipment_id": "10462458"
                }
             ],
-            "name": "\"Dortmund Hbf\""
+            "name": "\"Dortmund Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -6438,7 +6722,8 @@ var stations = {
                   "equipment_id": "10462958"
                }
             ],
-            "name": "\"Ötigheim\""
+            "name": "\"Ötigheim\"",
+            "tagged": false
          }
       },
       {
@@ -6457,7 +6742,8 @@ var stations = {
                   "equipment_id": "10463376"
                }
             ],
-            "name": "\"Heide (Holst)\""
+            "name": "\"Heide (Holst)\"",
+            "tagged": false
          }
       },
       {
@@ -6479,7 +6765,8 @@ var stations = {
                   "equipment_id": "10463440"
                }
             ],
-            "name": "\"Schwaan\""
+            "name": "\"Schwaan\"",
+            "tagged": false
          }
       },
       {
@@ -6504,7 +6791,8 @@ var stations = {
                   "equipment_id": "10463525"
                }
             ],
-            "name": "\"Groß Gerau-Dornberg\""
+            "name": "\"Groß Gerau-Dornberg\"",
+            "tagged": false
          }
       },
       {
@@ -6526,7 +6814,8 @@ var stations = {
                   "equipment_id": "10463627"
                }
             ],
-            "name": "\"Bad Homburg\""
+            "name": "\"Bad Homburg\"",
+            "tagged": false
          }
       },
       {
@@ -6545,7 +6834,8 @@ var stations = {
                   "equipment_id": "10463634"
                }
             ],
-            "name": "\"Offenbach-Kaiserlei\""
+            "name": "\"Offenbach-Kaiserlei\"",
+            "tagged": false
          }
       },
       {
@@ -6567,7 +6857,8 @@ var stations = {
                   "equipment_id": "10463677"
                }
             ],
-            "name": "\"Aschaffenburg Hbf\""
+            "name": "\"Aschaffenburg Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -6592,7 +6883,8 @@ var stations = {
                   "equipment_id": "10463849"
                }
             ],
-            "name": "\"Pforzheim Hbf\""
+            "name": "\"Pforzheim Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -6614,7 +6906,8 @@ var stations = {
                   "equipment_id": "10464309"
                }
             ],
-            "name": "\"Olympiastadion\""
+            "name": "\"Olympiastadion\"",
+            "tagged": false
          }
       },
       {
@@ -6633,7 +6926,8 @@ var stations = {
                   "equipment_id": "10464311"
                }
             ],
-            "name": "\"Bergfelde (b Berlin)\""
+            "name": "\"Bergfelde (b Berlin)\"",
+            "tagged": false
          }
       },
       {
@@ -6652,7 +6946,8 @@ var stations = {
                   "equipment_id": "10464312"
                }
             ],
-            "name": "\"Heerstraße\""
+            "name": "\"Heerstraße\"",
+            "tagged": false
          }
       },
       {
@@ -6674,7 +6969,8 @@ var stations = {
                   "equipment_id": "10464321"
                }
             ],
-            "name": "\"Potsdam Park Sanssouci\""
+            "name": "\"Potsdam Park Sanssouci\"",
+            "tagged": false
          }
       },
       {
@@ -6699,7 +6995,8 @@ var stations = {
                   "equipment_id": "10464324"
                }
             ],
-            "name": "\"Brandenburg Hbf\""
+            "name": "\"Brandenburg Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -6718,7 +7015,8 @@ var stations = {
                   "equipment_id": "10464327"
                }
             ],
-            "name": "\"Berlin-Spandau\""
+            "name": "\"Berlin-Spandau\"",
+            "tagged": false
          }
       },
       {
@@ -6746,7 +7044,8 @@ var stations = {
                   "equipment_id": "10491002"
                }
             ],
-            "name": "\"Ostkreuz\""
+            "name": "\"Ostkreuz\"",
+            "tagged": false
          }
       },
       {
@@ -6765,7 +7064,8 @@ var stations = {
                   "equipment_id": "10464510"
                }
             ],
-            "name": "\"Nürnberg-Stein\""
+            "name": "\"Nürnberg-Stein\"",
+            "tagged": false
          }
       },
       {
@@ -6784,7 +7084,8 @@ var stations = {
                   "equipment_id": "10465326"
                }
             ],
-            "name": "\"Marl-Sinsen\""
+            "name": "\"Marl-Sinsen\"",
+            "tagged": false
          }
       },
       {
@@ -6803,7 +7104,8 @@ var stations = {
                   "equipment_id": "10466657"
                }
             ],
-            "name": "\"Augsburg Hbf\""
+            "name": "\"Augsburg Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -6822,7 +7124,8 @@ var stations = {
                   "equipment_id": "10467562"
                }
             ],
-            "name": "\"München Karlsplatz\""
+            "name": "\"München Karlsplatz\"",
+            "tagged": false
          }
       },
       {
@@ -6844,7 +7147,8 @@ var stations = {
                   "equipment_id": "10467777"
                }
             ],
-            "name": "\"Jüterbog\""
+            "name": "\"Jüterbog\"",
+            "tagged": false
          }
       },
       {
@@ -6863,7 +7167,8 @@ var stations = {
                   "equipment_id": "10467819"
                }
             ],
-            "name": "\"Hackescher Markt\""
+            "name": "\"Hackescher Markt\"",
+            "tagged": false
          }
       },
       {
@@ -6885,7 +7190,8 @@ var stations = {
                   "equipment_id": "10467888"
                }
             ],
-            "name": "\"Gütersloh Hbf\""
+            "name": "\"Gütersloh Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -6904,7 +7210,8 @@ var stations = {
                   "equipment_id": "10467950"
                }
             ],
-            "name": "\"Rübenkamp\""
+            "name": "\"Rübenkamp\"",
+            "tagged": false
          }
       },
       {
@@ -6929,7 +7236,8 @@ var stations = {
                   "equipment_id": "10467969"
                }
             ],
-            "name": "\"Hamburg-Harburg\""
+            "name": "\"Hamburg-Harburg\"",
+            "tagged": false
          }
       },
       {
@@ -6948,7 +7256,8 @@ var stations = {
                   "equipment_id": "10468113"
                }
             ],
-            "name": "\"Rostock Holbeinplatz\""
+            "name": "\"Rostock Holbeinplatz\"",
+            "tagged": false
          }
       },
       {
@@ -6967,7 +7276,8 @@ var stations = {
                   "equipment_id": "10468334"
                }
             ],
-            "name": "\"Yorckstraße (Großgörschenstraße)\""
+            "name": "\"Yorckstraße (Großgörschenstraße)\"",
+            "tagged": false
          }
       },
       {
@@ -6989,7 +7299,8 @@ var stations = {
                   "equipment_id": "10468413"
                }
             ],
-            "name": "\"Marbach (Neckar)\""
+            "name": "\"Marbach (Neckar)\"",
+            "tagged": false
          }
       },
       {
@@ -7011,7 +7322,8 @@ var stations = {
                   "equipment_id": "10468607"
                }
             ],
-            "name": "\"Mainz Römisches Theater\""
+            "name": "\"Mainz Römisches Theater\"",
+            "tagged": false
          }
       },
       {
@@ -7030,7 +7342,8 @@ var stations = {
                   "equipment_id": "10469091"
                }
             ],
-            "name": "\"Nürnberg Rothenburger Straße\""
+            "name": "\"Nürnberg Rothenburger Straße\"",
+            "tagged": false
          }
       },
       {
@@ -7052,7 +7365,8 @@ var stations = {
                   "equipment_id": "10470153"
                }
             ],
-            "name": "\"Ilsenburg\""
+            "name": "\"Ilsenburg\"",
+            "tagged": false
          }
       },
       {
@@ -7071,7 +7385,8 @@ var stations = {
                   "equipment_id": "10470213"
                }
             ],
-            "name": "\"Etelsen\""
+            "name": "\"Etelsen\"",
+            "tagged": false
          }
       },
       {
@@ -7093,7 +7408,8 @@ var stations = {
                   "equipment_id": "10472095"
                }
             ],
-            "name": "\"München-Pasing\""
+            "name": "\"München-Pasing\"",
+            "tagged": false
          }
       },
       {
@@ -7112,7 +7428,8 @@ var stations = {
                   "equipment_id": "10472358"
                }
             ],
-            "name": "\"Erlangen\""
+            "name": "\"Erlangen\"",
+            "tagged": false
          }
       },
       {
@@ -7131,7 +7448,8 @@ var stations = {
                   "equipment_id": "10472578"
                }
             ],
-            "name": "\"Überlingen\""
+            "name": "\"Überlingen\"",
+            "tagged": false
          }
       },
       {
@@ -7156,7 +7474,8 @@ var stations = {
                   "equipment_id": "10472778"
                }
             ],
-            "name": "\"Landau (Pfalz) Hbf\""
+            "name": "\"Landau (Pfalz) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -7175,7 +7494,8 @@ var stations = {
                   "equipment_id": "10472833"
                }
             ],
-            "name": "\"Esslingen-Mettingen\""
+            "name": "\"Esslingen-Mettingen\"",
+            "tagged": false
          }
       },
       {
@@ -7194,7 +7514,8 @@ var stations = {
                   "equipment_id": "10472990"
                }
             ],
-            "name": "\"Frankfurt (Main) Taunusanlage\""
+            "name": "\"Frankfurt (Main) Taunusanlage\"",
+            "tagged": false
          }
       },
       {
@@ -7219,7 +7540,8 @@ var stations = {
                   "equipment_id": "10473534"
                }
             ],
-            "name": "\"Wittlich Hbf\""
+            "name": "\"Wittlich Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -7238,7 +7560,8 @@ var stations = {
                   "equipment_id": "10473743"
                }
             ],
-            "name": "\"Leipzig-Plagwitz\""
+            "name": "\"Leipzig-Plagwitz\"",
+            "tagged": false
          }
       },
       {
@@ -7263,7 +7586,8 @@ var stations = {
                   "equipment_id": "10479378"
                }
             ],
-            "name": "\"Leipzig-Leutzsch\""
+            "name": "\"Leipzig-Leutzsch\"",
+            "tagged": false
          }
       },
       {
@@ -7282,7 +7606,8 @@ var stations = {
                   "equipment_id": "10474275"
                }
             ],
-            "name": "\"Wicklesgreuth\""
+            "name": "\"Wicklesgreuth\"",
+            "tagged": false
          }
       },
       {
@@ -7304,7 +7629,8 @@ var stations = {
                   "equipment_id": "10475286"
                }
             ],
-            "name": "\"Völklingen\""
+            "name": "\"Völklingen\"",
+            "tagged": false
          }
       },
       {
@@ -7323,7 +7649,8 @@ var stations = {
                   "equipment_id": "10475371"
                }
             ],
-            "name": "\"Merseburg\""
+            "name": "\"Merseburg\"",
+            "tagged": false
          }
       },
       {
@@ -7345,7 +7672,8 @@ var stations = {
                   "equipment_id": "10476461"
                }
             ],
-            "name": "\"Dresden Hbf\""
+            "name": "\"Dresden Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -7364,7 +7692,8 @@ var stations = {
                   "equipment_id": "10477624"
                }
             ],
-            "name": "\"Hammerbrook\""
+            "name": "\"Hammerbrook\"",
+            "tagged": false
          }
       },
       {
@@ -7386,7 +7715,8 @@ var stations = {
                   "equipment_id": "10477641"
                }
             ],
-            "name": "\"Leipzig Bayerischer Bahnhof\""
+            "name": "\"Leipzig Bayerischer Bahnhof\"",
+            "tagged": false
          }
       },
       {
@@ -7405,7 +7735,8 @@ var stations = {
                   "equipment_id": "10478167"
                }
             ],
-            "name": "\"Winsen (Luhe)\""
+            "name": "\"Winsen (Luhe)\"",
+            "tagged": false
          }
       },
       {
@@ -7427,7 +7758,8 @@ var stations = {
                   "equipment_id": "10478632"
                }
             ],
-            "name": "\"Tutzing\""
+            "name": "\"Tutzing\"",
+            "tagged": false
          }
       },
       {
@@ -7446,7 +7778,8 @@ var stations = {
                   "equipment_id": "10479018"
                }
             ],
-            "name": "\"Meißen Altstadt\""
+            "name": "\"Meißen Altstadt\"",
+            "tagged": false
          }
       },
       {
@@ -7468,7 +7801,8 @@ var stations = {
                   "equipment_id": "10479035"
                }
             ],
-            "name": "\"Leipzig Wilhelm-Leuschner-Platz\""
+            "name": "\"Leipzig Wilhelm-Leuschner-Platz\"",
+            "tagged": false
          }
       },
       {
@@ -7487,7 +7821,8 @@ var stations = {
                   "equipment_id": "10479041"
                }
             ],
-            "name": "\"Meißen\""
+            "name": "\"Meißen\"",
+            "tagged": false
          }
       },
       {
@@ -7509,7 +7844,8 @@ var stations = {
                   "equipment_id": "10500224"
                }
             ],
-            "name": "\"Coswig (Bz Dresden)\""
+            "name": "\"Coswig (Bz Dresden)\"",
+            "tagged": false
          }
       },
       {
@@ -7528,7 +7864,8 @@ var stations = {
                   "equipment_id": "10479404"
                }
             ],
-            "name": "\"Leipzig Markt\""
+            "name": "\"Leipzig Markt\"",
+            "tagged": false
          }
       },
       {
@@ -7550,7 +7887,8 @@ var stations = {
                   "equipment_id": "10479454"
                }
             ],
-            "name": "\"Betriebsbahnhof Berlin-Schöneweide\""
+            "name": "\"Betriebsbahnhof Berlin-Schöneweide\"",
+            "tagged": false
          }
       },
       {
@@ -7572,7 +7910,8 @@ var stations = {
                   "equipment_id": "10479456"
                }
             ],
-            "name": "\"Wustermark\""
+            "name": "\"Wustermark\"",
+            "tagged": false
          }
       },
       {
@@ -7600,7 +7939,8 @@ var stations = {
                   "equipment_id": "10479466"
                }
             ],
-            "name": "\"Ingolstadt Hbf\""
+            "name": "\"Ingolstadt Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -7625,7 +7965,8 @@ var stations = {
                   "equipment_id": "10479473"
                }
             ],
-            "name": "\"Euskirchen\""
+            "name": "\"Euskirchen\"",
+            "tagged": false
          }
       },
       {
@@ -7647,7 +7988,8 @@ var stations = {
                   "equipment_id": "10479523"
                }
             ],
-            "name": "\"Neuss Hbf\""
+            "name": "\"Neuss Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -7666,7 +8008,8 @@ var stations = {
                   "equipment_id": "10479524"
                }
             ],
-            "name": "\"Leipzig-Völkerschlachtdenkmal\""
+            "name": "\"Leipzig-Völkerschlachtdenkmal\"",
+            "tagged": false
          }
       },
       {
@@ -7685,7 +8028,8 @@ var stations = {
                   "equipment_id": "10479526"
                }
             ],
-            "name": "\"Leipzig-Stötteritz\""
+            "name": "\"Leipzig-Stötteritz\"",
+            "tagged": false
          }
       },
       {
@@ -7704,7 +8048,8 @@ var stations = {
                   "equipment_id": "10479527"
                }
             ],
-            "name": "\"Markkleeberg\""
+            "name": "\"Markkleeberg\"",
+            "tagged": false
          }
       },
       {
@@ -7726,7 +8071,8 @@ var stations = {
                   "equipment_id": "10479529"
                }
             ],
-            "name": "\"Leipzig-Connewitz\""
+            "name": "\"Leipzig-Connewitz\"",
+            "tagged": false
          }
       },
       {
@@ -7748,7 +8094,8 @@ var stations = {
                   "equipment_id": "10479543"
                }
             ],
-            "name": "\"Berlin-Kaulsdorf\""
+            "name": "\"Berlin-Kaulsdorf\"",
+            "tagged": false
          }
       },
       {
@@ -7770,7 +8117,8 @@ var stations = {
                   "equipment_id": "10479688"
                }
             ],
-            "name": "\"Wilhelmsburg\""
+            "name": "\"Wilhelmsburg\"",
+            "tagged": false
          }
       },
       {
@@ -7792,7 +8140,8 @@ var stations = {
                   "equipment_id": "10480228"
                }
             ],
-            "name": "\"Essen-Werden\""
+            "name": "\"Essen-Werden\"",
+            "tagged": false
          }
       },
       {
@@ -7814,7 +8163,8 @@ var stations = {
                   "equipment_id": "10491323"
                }
             ],
-            "name": "\"Essen Stadtwald\""
+            "name": "\"Essen Stadtwald\"",
+            "tagged": false
          }
       },
       {
@@ -7836,7 +8186,8 @@ var stations = {
                   "equipment_id": "10480231"
                }
             ],
-            "name": "\"Kettwig\""
+            "name": "\"Kettwig\"",
+            "tagged": false
          }
       },
       {
@@ -7855,7 +8206,8 @@ var stations = {
                   "equipment_id": "10480246"
                }
             ],
-            "name": "\"Essen-Borbeck\""
+            "name": "\"Essen-Borbeck\"",
+            "tagged": false
          }
       },
       {
@@ -7877,7 +8229,8 @@ var stations = {
                   "equipment_id": "10482349"
                }
             ],
-            "name": "\"Essen-Gerschede\""
+            "name": "\"Essen-Gerschede\"",
+            "tagged": false
          }
       },
       {
@@ -7896,7 +8249,8 @@ var stations = {
                   "equipment_id": "10480647"
                }
             ],
-            "name": "\"München-Mittersendling\""
+            "name": "\"München-Mittersendling\"",
+            "tagged": false
          }
       },
       {
@@ -7918,7 +8272,8 @@ var stations = {
                   "equipment_id": "10480718"
                }
             ],
-            "name": "\"Albrechtshof\""
+            "name": "\"Albrechtshof\"",
+            "tagged": false
          }
       },
       {
@@ -7937,7 +8292,8 @@ var stations = {
                   "equipment_id": "10482483"
                }
             ],
-            "name": "\"Bochum-Langendreer\""
+            "name": "\"Bochum-Langendreer\"",
+            "tagged": false
          }
       },
       {
@@ -7956,7 +8312,8 @@ var stations = {
                   "equipment_id": "10483097"
                }
             ],
-            "name": "\"Hilden\""
+            "name": "\"Hilden\"",
+            "tagged": false
          }
       },
       {
@@ -7975,7 +8332,8 @@ var stations = {
                   "equipment_id": "10483098"
                }
             ],
-            "name": "\"Hochdahl-Millrath\""
+            "name": "\"Hochdahl-Millrath\"",
+            "tagged": false
          }
       },
       {
@@ -7997,7 +8355,8 @@ var stations = {
                   "equipment_id": "10483532"
                }
             ],
-            "name": "\"Potsdam Charlottenhof\""
+            "name": "\"Potsdam Charlottenhof\"",
+            "tagged": false
          }
       },
       {
@@ -8022,7 +8381,8 @@ var stations = {
                   "equipment_id": "10483535"
                }
             ],
-            "name": "\"Michendorf\""
+            "name": "\"Michendorf\"",
+            "tagged": false
          }
       },
       {
@@ -8041,7 +8401,8 @@ var stations = {
                   "equipment_id": "10484788"
                }
             ],
-            "name": "\"Emmendingen\""
+            "name": "\"Emmendingen\"",
+            "tagged": false
          }
       },
       {
@@ -8063,7 +8424,8 @@ var stations = {
                   "equipment_id": "10484798"
                }
             ],
-            "name": "\"Deggendorf Hbf\""
+            "name": "\"Deggendorf Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -8085,7 +8447,8 @@ var stations = {
                   "equipment_id": "10485333"
                }
             ],
-            "name": "\"Kreiensen\""
+            "name": "\"Kreiensen\"",
+            "tagged": false
          }
       },
       {
@@ -8104,7 +8467,8 @@ var stations = {
                   "equipment_id": "10485752"
                }
             ],
-            "name": "\"Berlin-Buch\""
+            "name": "\"Berlin-Buch\"",
+            "tagged": false
          }
       },
       {
@@ -8123,7 +8487,8 @@ var stations = {
                   "equipment_id": "10485755"
                }
             ],
-            "name": "\"Friedenau\""
+            "name": "\"Friedenau\"",
+            "tagged": false
          }
       },
       {
@@ -8142,7 +8507,8 @@ var stations = {
                   "equipment_id": "10486814"
                }
             ],
-            "name": "\"Radebeul-Kötzschenbroda\""
+            "name": "\"Radebeul-Kötzschenbroda\"",
+            "tagged": false
          }
       },
       {
@@ -8161,7 +8527,8 @@ var stations = {
                   "equipment_id": "10486815"
                }
             ],
-            "name": "\"Radebeul-Weintraube\""
+            "name": "\"Radebeul-Weintraube\"",
+            "tagged": false
          }
       },
       {
@@ -8186,7 +8553,8 @@ var stations = {
                   "equipment_id": "10486819"
                }
             ],
-            "name": "\"Radebeul Ost\""
+            "name": "\"Radebeul Ost\"",
+            "tagged": false
          }
       },
       {
@@ -8208,7 +8576,8 @@ var stations = {
                   "equipment_id": "10486854"
                }
             ],
-            "name": "\"Kirchweyhe\""
+            "name": "\"Kirchweyhe\"",
+            "tagged": false
          }
       },
       {
@@ -8230,7 +8599,8 @@ var stations = {
                   "equipment_id": "10486935"
                }
             ],
-            "name": "\"Essen-Steele Ost\""
+            "name": "\"Essen-Steele Ost\"",
+            "tagged": false
          }
       },
       {
@@ -8252,7 +8622,8 @@ var stations = {
                   "equipment_id": "10486962"
                }
             ],
-            "name": "\"Dortmund-Oespel\""
+            "name": "\"Dortmund-Oespel\"",
+            "tagged": false
          }
       },
       {
@@ -8274,7 +8645,8 @@ var stations = {
                   "equipment_id": "10487083"
                }
             ],
-            "name": "\"Seesen\""
+            "name": "\"Seesen\"",
+            "tagged": false
          }
       },
       {
@@ -8293,7 +8665,8 @@ var stations = {
                   "equipment_id": "10487334"
                }
             ],
-            "name": "\"Neckarsulm Mitte\""
+            "name": "\"Neckarsulm Mitte\"",
+            "tagged": false
          }
       },
       {
@@ -8312,7 +8685,8 @@ var stations = {
                   "equipment_id": "10487447"
                }
             ],
-            "name": "\"Berlin-Wilhelmsruh\""
+            "name": "\"Berlin-Wilhelmsruh\"",
+            "tagged": false
          }
       },
       {
@@ -8334,7 +8708,8 @@ var stations = {
                   "equipment_id": "10487449"
                }
             ],
-            "name": "\"Twistringen\""
+            "name": "\"Twistringen\"",
+            "tagged": false
          }
       },
       {
@@ -8362,7 +8737,8 @@ var stations = {
                   "equipment_id": "10487455"
                }
             ],
-            "name": "\"Neunkirchen (Saar) Hbf\""
+            "name": "\"Neunkirchen (Saar) Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -8384,7 +8760,8 @@ var stations = {
                   "equipment_id": "10487473"
                }
             ],
-            "name": "\"Birkenstein\""
+            "name": "\"Birkenstein\"",
+            "tagged": false
          }
       },
       {
@@ -8403,7 +8780,8 @@ var stations = {
                   "equipment_id": "10487761"
                }
             ],
-            "name": "\"Stadthausbrücke\""
+            "name": "\"Stadthausbrücke\"",
+            "tagged": false
          }
       },
       {
@@ -8422,7 +8800,8 @@ var stations = {
                   "equipment_id": "10487852"
                }
             ],
-            "name": "\"Alt-Reinickendorf\""
+            "name": "\"Alt-Reinickendorf\"",
+            "tagged": false
          }
       },
       {
@@ -8441,7 +8820,8 @@ var stations = {
                   "equipment_id": "10487855"
                }
             ],
-            "name": "\"Eichborndamm\""
+            "name": "\"Eichborndamm\"",
+            "tagged": false
          }
       },
       {
@@ -8463,7 +8843,8 @@ var stations = {
                   "equipment_id": "10488282"
                }
             ],
-            "name": "\"Maxhütte-Haidhof\""
+            "name": "\"Maxhütte-Haidhof\"",
+            "tagged": false
          }
       },
       {
@@ -8485,7 +8866,8 @@ var stations = {
                   "equipment_id": "10488409"
                }
             ],
-            "name": "\"Meppen\""
+            "name": "\"Meppen\"",
+            "tagged": false
          }
       },
       {
@@ -8504,7 +8886,8 @@ var stations = {
                   "equipment_id": "10488432"
                }
             ],
-            "name": "\"Düsseldorf-Eller Süd\""
+            "name": "\"Düsseldorf-Eller Süd\"",
+            "tagged": false
          }
       },
       {
@@ -8529,7 +8912,8 @@ var stations = {
                   "equipment_id": "10488507"
                }
             ],
-            "name": "\"Langen (Hess)\""
+            "name": "\"Langen (Hess)\"",
+            "tagged": false
          }
       },
       {
@@ -8548,7 +8932,8 @@ var stations = {
                   "equipment_id": "10488508"
                }
             ],
-            "name": "\"Dreieich-Buchschlag\""
+            "name": "\"Dreieich-Buchschlag\"",
+            "tagged": false
          }
       },
       {
@@ -8567,7 +8952,8 @@ var stations = {
                   "equipment_id": "10488658"
                }
             ],
-            "name": "\"Heimfeld\""
+            "name": "\"Heimfeld\"",
+            "tagged": false
          }
       },
       {
@@ -8589,7 +8975,8 @@ var stations = {
                   "equipment_id": "10488793"
                }
             ],
-            "name": "\"Ludwigshafen-Oggersheim\""
+            "name": "\"Ludwigshafen-Oggersheim\"",
+            "tagged": false
          }
       },
       {
@@ -8611,7 +8998,8 @@ var stations = {
                   "equipment_id": "10488801"
                }
             ],
-            "name": "\"Lübben (Spreewald)\""
+            "name": "\"Lübben (Spreewald)\"",
+            "tagged": false
          }
       },
       {
@@ -8630,7 +9018,8 @@ var stations = {
                   "equipment_id": "10488944"
                }
             ],
-            "name": "\"Düsseldorf Wehrhahn\""
+            "name": "\"Düsseldorf Wehrhahn\"",
+            "tagged": false
          }
       },
       {
@@ -8649,7 +9038,8 @@ var stations = {
                   "equipment_id": "10488945"
                }
             ],
-            "name": "\"Düsseldorf-Derendorf\""
+            "name": "\"Düsseldorf-Derendorf\"",
+            "tagged": false
          }
       },
       {
@@ -8668,7 +9058,8 @@ var stations = {
                   "equipment_id": "10489132"
                }
             ],
-            "name": "\"Wächtersbach\""
+            "name": "\"Wächtersbach\"",
+            "tagged": false
          }
       },
       {
@@ -8687,7 +9078,8 @@ var stations = {
                   "equipment_id": "10489177"
                }
             ],
-            "name": "\"Marburg (Lahn)\""
+            "name": "\"Marburg (Lahn)\"",
+            "tagged": false
          }
       },
       {
@@ -8712,7 +9104,8 @@ var stations = {
                   "equipment_id": "10489237"
                }
             ],
-            "name": "\"Bad Kreuznach\""
+            "name": "\"Bad Kreuznach\"",
+            "tagged": false
          }
       },
       {
@@ -8734,7 +9127,8 @@ var stations = {
                   "equipment_id": "10489484"
                }
             ],
-            "name": "\"Heilbad Heiligenstadt\""
+            "name": "\"Heilbad Heiligenstadt\"",
+            "tagged": false
          }
       },
       {
@@ -8756,7 +9150,8 @@ var stations = {
                   "equipment_id": "10489603"
                }
             ],
-            "name": "\"Syke\""
+            "name": "\"Syke\"",
+            "tagged": false
          }
       },
       {
@@ -8775,7 +9170,8 @@ var stations = {
                   "equipment_id": "10489669"
                }
             ],
-            "name": "\"Falkensee\""
+            "name": "\"Falkensee\"",
+            "tagged": false
          }
       },
       {
@@ -8797,7 +9193,8 @@ var stations = {
                   "equipment_id": "10489683"
                }
             ],
-            "name": "\"Freinsheim\""
+            "name": "\"Freinsheim\"",
+            "tagged": false
          }
       },
       {
@@ -8816,7 +9213,8 @@ var stations = {
                   "equipment_id": "10490036"
                }
             ],
-            "name": "\"Düsseldorf-Eller\""
+            "name": "\"Düsseldorf-Eller\"",
+            "tagged": false
          }
       },
       {
@@ -8838,7 +9236,8 @@ var stations = {
                   "equipment_id": "10490130"
                }
             ],
-            "name": "\"Einbeck-Salzderhelden\""
+            "name": "\"Einbeck-Salzderhelden\"",
+            "tagged": false
          }
       },
       {
@@ -8857,7 +9256,8 @@ var stations = {
                   "equipment_id": "10490688"
                }
             ],
-            "name": "\"Nürnberg-Frankenstadion\""
+            "name": "\"Nürnberg-Frankenstadion\"",
+            "tagged": false
          }
       },
       {
@@ -8882,7 +9282,8 @@ var stations = {
                   "equipment_id": "10490841"
                }
             ],
-            "name": "\"München Donnersbergerbrücke\""
+            "name": "\"München Donnersbergerbrücke\"",
+            "tagged": false
          }
       },
       {
@@ -8904,7 +9305,8 @@ var stations = {
                   "equipment_id": "10491608"
                }
             ],
-            "name": "\"Erbach (Württ)\""
+            "name": "\"Erbach (Württ)\"",
+            "tagged": false
          }
       },
       {
@@ -8923,7 +9325,8 @@ var stations = {
                   "equipment_id": "10491655"
                }
             ],
-            "name": "\"München-Lochhausen\""
+            "name": "\"München-Lochhausen\"",
+            "tagged": false
          }
       },
       {
@@ -8942,7 +9345,8 @@ var stations = {
                   "equipment_id": "10491667"
                }
             ],
-            "name": "\"Herne\""
+            "name": "\"Herne\"",
+            "tagged": false
          }
       },
       {
@@ -8967,7 +9371,8 @@ var stations = {
                   "equipment_id": "10507700"
                }
             ],
-            "name": "\"Wanne-Eickel Hbf\""
+            "name": "\"Wanne-Eickel Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -8989,7 +9394,8 @@ var stations = {
                   "equipment_id": "10491736"
                }
             ],
-            "name": "\"Berlin-Hohenschönhausen\""
+            "name": "\"Berlin-Hohenschönhausen\"",
+            "tagged": false
          }
       },
       {
@@ -9014,7 +9420,8 @@ var stations = {
                   "equipment_id": "10491739"
                }
             ],
-            "name": "\"Mühlacker\""
+            "name": "\"Mühlacker\"",
+            "tagged": false
          }
       },
       {
@@ -9033,7 +9440,8 @@ var stations = {
                   "equipment_id": "10492076"
                }
             ],
-            "name": "\"Barnstorf (Han)\""
+            "name": "\"Barnstorf (Han)\"",
+            "tagged": false
          }
       },
       {
@@ -9055,7 +9463,8 @@ var stations = {
                   "equipment_id": "10492163"
                }
             ],
-            "name": "\"Gau Algesheim\""
+            "name": "\"Gau Algesheim\"",
+            "tagged": false
          }
       },
       {
@@ -9086,7 +9495,8 @@ var stations = {
                   "equipment_id": "10492309"
                }
             ],
-            "name": "\"Bad Friedrichshall Hbf\""
+            "name": "\"Bad Friedrichshall Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -9108,7 +9518,8 @@ var stations = {
                   "equipment_id": "10492329"
                }
             ],
-            "name": "\"Neckarsulm Nord\""
+            "name": "\"Neckarsulm Nord\"",
+            "tagged": false
          }
       },
       {
@@ -9130,7 +9541,8 @@ var stations = {
                   "equipment_id": "10492553"
                }
             ],
-            "name": "\"Elstal\""
+            "name": "\"Elstal\"",
+            "tagged": false
          }
       },
       {
@@ -9152,7 +9564,8 @@ var stations = {
                   "equipment_id": "10492806"
                }
             ],
-            "name": "\"Königs Wusterhausen\""
+            "name": "\"Königs Wusterhausen\"",
+            "tagged": false
          }
       },
       {
@@ -9174,7 +9587,8 @@ var stations = {
                   "equipment_id": "10493118"
                }
             ],
-            "name": "\"Efringen-Kirchen\""
+            "name": "\"Efringen-Kirchen\"",
+            "tagged": false
          }
       },
       {
@@ -9196,7 +9610,8 @@ var stations = {
                   "equipment_id": "10493412"
                }
             ],
-            "name": "\"Werder (Havel)\""
+            "name": "\"Werder (Havel)\"",
+            "tagged": false
          }
       },
       {
@@ -9218,7 +9633,8 @@ var stations = {
                   "equipment_id": "10493414"
                }
             ],
-            "name": "\"Ludwigsfelde\""
+            "name": "\"Ludwigsfelde\"",
+            "tagged": false
          }
       },
       {
@@ -9240,7 +9656,8 @@ var stations = {
                   "equipment_id": "10493540"
                }
             ],
-            "name": "\"Sottrum\""
+            "name": "\"Sottrum\"",
+            "tagged": false
          }
       },
       {
@@ -9259,7 +9676,8 @@ var stations = {
                   "equipment_id": "10495161"
                }
             ],
-            "name": "\"Lauf (links Pegnitz)\""
+            "name": "\"Lauf (links Pegnitz)\"",
+            "tagged": false
          }
       },
       {
@@ -9284,7 +9702,8 @@ var stations = {
                   "equipment_id": "10495164"
                }
             ],
-            "name": "\"Memmingen\""
+            "name": "\"Memmingen\"",
+            "tagged": false
          }
       },
       {
@@ -9306,7 +9725,8 @@ var stations = {
                   "equipment_id": "10495187"
                }
             ],
-            "name": "\"Esslingen-Zell\""
+            "name": "\"Esslingen-Zell\"",
+            "tagged": false
          }
       },
       {
@@ -9328,7 +9748,8 @@ var stations = {
                   "equipment_id": "10495189"
                }
             ],
-            "name": "\"Oberesslingen\""
+            "name": "\"Oberesslingen\"",
+            "tagged": false
          }
       },
       {
@@ -9350,7 +9771,8 @@ var stations = {
                   "equipment_id": "10495411"
                }
             ],
-            "name": "\"Heidenheim\""
+            "name": "\"Heidenheim\"",
+            "tagged": false
          }
       },
       {
@@ -9369,7 +9791,8 @@ var stations = {
                   "equipment_id": "10495456"
                }
             ],
-            "name": "\"Meinerzhagen\""
+            "name": "\"Meinerzhagen\"",
+            "tagged": false
          }
       },
       {
@@ -9388,7 +9811,8 @@ var stations = {
                   "equipment_id": "10495457"
                }
             ],
-            "name": "\"Arnsberg (Westf)\""
+            "name": "\"Arnsberg (Westf)\"",
+            "tagged": false
          }
       },
       {
@@ -9410,7 +9834,8 @@ var stations = {
                   "equipment_id": "10496151"
                }
             ],
-            "name": "\"Blankenloch\""
+            "name": "\"Blankenloch\"",
+            "tagged": false
          }
       },
       {
@@ -9432,7 +9857,8 @@ var stations = {
                   "equipment_id": "10496153"
                }
             ],
-            "name": "\"Karlsruhe-Hagsfeld\""
+            "name": "\"Karlsruhe-Hagsfeld\"",
+            "tagged": false
          }
       },
       {
@@ -9454,7 +9880,8 @@ var stations = {
                   "equipment_id": "10496401"
                }
             ],
-            "name": "\"Feucht\""
+            "name": "\"Feucht\"",
+            "tagged": false
          }
       },
       {
@@ -9473,7 +9900,8 @@ var stations = {
                   "equipment_id": "10496750"
                }
             ],
-            "name": "\"Attilastraße\""
+            "name": "\"Attilastraße\"",
+            "tagged": false
          }
       },
       {
@@ -9498,7 +9926,8 @@ var stations = {
                   "equipment_id": "10499217"
                }
             ],
-            "name": "\"Bebra\""
+            "name": "\"Bebra\"",
+            "tagged": false
          }
       },
       {
@@ -9520,7 +9949,8 @@ var stations = {
                   "equipment_id": "10499220"
                }
             ],
-            "name": "\"Eppstein\""
+            "name": "\"Eppstein\"",
+            "tagged": false
          }
       },
       {
@@ -9551,7 +9981,8 @@ var stations = {
                   "equipment_id": "10499226"
                }
             ],
-            "name": "\"Frankfurt-Höchst\""
+            "name": "\"Frankfurt-Höchst\"",
+            "tagged": false
          }
       },
       {
@@ -9573,7 +10004,8 @@ var stations = {
                   "equipment_id": "10499280"
                }
             ],
-            "name": "\"Anwanden\""
+            "name": "\"Anwanden\"",
+            "tagged": false
          }
       },
       {
@@ -9595,7 +10027,8 @@ var stations = {
                   "equipment_id": "10499358"
                }
             ],
-            "name": "\"Bassum\""
+            "name": "\"Bassum\"",
+            "tagged": false
          }
       },
       {
@@ -9617,7 +10050,8 @@ var stations = {
                   "equipment_id": "10499373"
                }
             ],
-            "name": "\"Babenhausen (Hess)\""
+            "name": "\"Babenhausen (Hess)\"",
+            "tagged": false
          }
       },
       {
@@ -9639,7 +10073,8 @@ var stations = {
                   "equipment_id": "10499610"
                }
             ],
-            "name": "\"Hude\""
+            "name": "\"Hude\"",
+            "tagged": false
          }
       },
       {
@@ -9661,7 +10096,8 @@ var stations = {
                   "equipment_id": "10499642"
                }
             ],
-            "name": "\"Löbau (Sachs)\""
+            "name": "\"Löbau (Sachs)\"",
+            "tagged": false
          }
       },
       {
@@ -9683,7 +10119,8 @@ var stations = {
                   "equipment_id": "10499935"
                }
             ],
-            "name": "\"Rangsdorf\""
+            "name": "\"Rangsdorf\"",
+            "tagged": false
          }
       },
       {
@@ -9708,7 +10145,8 @@ var stations = {
                   "equipment_id": "10500179"
                }
             ],
-            "name": "\"Jena-Göschwitz\""
+            "name": "\"Jena-Göschwitz\"",
+            "tagged": false
          }
       },
       {
@@ -9730,7 +10168,8 @@ var stations = {
                   "equipment_id": "10501084"
                }
             ],
-            "name": "\"Bacharach\""
+            "name": "\"Bacharach\"",
+            "tagged": false
          }
       },
       {
@@ -9755,7 +10194,8 @@ var stations = {
                   "equipment_id": "10501496"
                }
             ],
-            "name": "\"Lauda\""
+            "name": "\"Lauda\"",
+            "tagged": false
          }
       },
       {
@@ -9777,7 +10217,8 @@ var stations = {
                   "equipment_id": "10501667"
                }
             ],
-            "name": "\"Türkismühle\""
+            "name": "\"Türkismühle\"",
+            "tagged": false
          }
       },
       {
@@ -9799,7 +10240,8 @@ var stations = {
                   "equipment_id": "10501961"
                }
             ],
-            "name": "\"Bad Salzungen\""
+            "name": "\"Bad Salzungen\"",
+            "tagged": false
          }
       },
       {
@@ -9821,7 +10263,8 @@ var stations = {
                   "equipment_id": "10502006"
                }
             ],
-            "name": "\"Elsterwerda\""
+            "name": "\"Elsterwerda\"",
+            "tagged": false
          }
       },
       {
@@ -9843,7 +10286,8 @@ var stations = {
                   "equipment_id": "10502484"
                }
             ],
-            "name": "\"Wörrstadt\""
+            "name": "\"Wörrstadt\"",
+            "tagged": false
          }
       },
       {
@@ -9865,7 +10309,8 @@ var stations = {
                   "equipment_id": "10504727"
                }
             ],
-            "name": "\"Nierstein\""
+            "name": "\"Nierstein\"",
+            "tagged": false
          }
       },
       {
@@ -9884,7 +10329,8 @@ var stations = {
                   "equipment_id": "10505067"
                }
             ],
-            "name": "\"Frankenthal-Süd\""
+            "name": "\"Frankenthal-Süd\"",
+            "tagged": false
          }
       },
       {
@@ -9903,7 +10349,8 @@ var stations = {
                   "equipment_id": "10505068"
                }
             ],
-            "name": "\"Bobenheim\""
+            "name": "\"Bobenheim\"",
+            "tagged": false
          }
       },
       {
@@ -9925,7 +10372,8 @@ var stations = {
                   "equipment_id": "10505070"
                }
             ],
-            "name": "\"Frankenthal Hbf\""
+            "name": "\"Frankenthal Hbf\"",
+            "tagged": false
          }
       },
       {
@@ -9950,7 +10398,8 @@ var stations = {
                   "equipment_id": "10505356"
                }
             ],
-            "name": "\"Ludwigsburg\""
+            "name": "\"Ludwigsburg\"",
+            "tagged": false
          }
       },
       {
@@ -9972,7 +10421,8 @@ var stations = {
                   "equipment_id": "10505425"
                }
             ],
-            "name": "\"Opladen\""
+            "name": "\"Opladen\"",
+            "tagged": false
          }
       },
       {
@@ -9994,7 +10444,8 @@ var stations = {
                   "equipment_id": "10505578"
                }
             ],
-            "name": "\"Osthofen\""
+            "name": "\"Osthofen\"",
+            "tagged": false
          }
       },
       {
@@ -10016,7 +10467,8 @@ var stations = {
                   "equipment_id": "10505583"
                }
             ],
-            "name": "\"Guntersblum\""
+            "name": "\"Guntersblum\"",
+            "tagged": false
          }
       },
       {
@@ -10041,7 +10493,8 @@ var stations = {
                   "equipment_id": "10506199"
                }
             ],
-            "name": "\"Wörth (Rhein)\""
+            "name": "\"Wörth (Rhein)\"",
+            "tagged": false
          }
       }
    ]
