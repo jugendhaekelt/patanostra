@@ -97,16 +97,24 @@ $(document).ready(function() {
                     var popupContent = '';
                     var feature = pin.target.feature.properties;
 
+
+                    var htmlstring = "<h1>" + feature.name + "</h1><hr />" + "Aufzüge : <br /><ul>";
                     if (feature.lifts)
                         feature.lifts.forEach(function(item){
-                            popupContent += "Aufzug: " + item.equipment_id + "<br />";
+                            htmlstring += "<li>Aufzug: " + item.equipment_id + "</li>";
                     });
-
-                    if (feature.popupContent) {
-                        popupContent += feature.properties.popupContent;
+                    htmlstring += "</ul>";
+                    if (!feature.tagged) {
+                        htmlstring += '<button id="tagme">Tag me</button>';
                     }
+                    //
+                    //if (feature.popupContent) {
+                    //    popupContent += feature.properties.popupContent;
+                    //}
+                    $('.infobox').html(htmlstring);
                     console.log(feature);
                     console.log(popupContent);
+                    console.log(pin);
                 }
 
                 console.log("Active Pin: " + pin.target._leaflet_id);
