@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+#map {
+    position: absolute; !important;
+    height: 100%;
+    width: 100%;
+}
+
+.infobox {
+    background-color: aquamarine;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -20%;
+}
+
+/* The animation code */
+@keyframes info-slide-in {
+    from {right: -20%;}
+    to {right: 0}
+}
+
+/* The element to apply the animation to */
+.infobox-slide-in {
+    animation-name: info-slide-in;
+    animation-duration: 1s;
+    right: 0;
+}
+
+/* The animation code */
+@keyframes info-slide-out {
+    from {right: 0%;}
+    to {right: -20%;}
+}
+
+.infobox-slide-out {
+    animation-name: info-slide-out;
+    animation-duration: 1s;
+    right: -20%;
+}
