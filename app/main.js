@@ -1,4 +1,44 @@
 $(document).ready(function() {
+    swal({
+            title: "Tag Lift",
+            text: "Input Latitude:",
+            type: "input",
+            showCancelButton: true,
+            closeOnConfirm: false,
+            animation: "slide-from-top",
+            inputPlaceholder: "Latitude" },
+        function(latitude){ if (latitude === false) return false;
+            if (latitude === "") {
+                swal.showInputError("Error");
+                return false
+            }
+            swal({
+                    title: "Tag Lift",
+                    text: "Input Longitude",
+                    type: "input",
+                    showCancelButton: true,
+                    closeOnConfirm: false,
+                    animation: "slide-from-top",
+                    inputPlaceholder: "Longitude" },
+                function(longitude){ if (longitude === false) return false;
+                    if (longitude === "") {
+                        swal.showInputError("Invalid Value");
+                        return false
+                    }
+                    swal({
+                            title:"Nice!",
+                            text: "You wrote:<br />Latitude: " + latitude + "<br/>Longitude:" + longitude,
+                            html:true,
+                            showConfirmButton: "true",
+                            confirmButtonText: "Send Mail",
+                            closeOnConfirm: false,
+                        },
+                        function() {
+                            swal("Mail snet", "Sent Mail to Deutsche Bahn", "success")
+                        });
+                });
+        });
+
     var map = L.map('map').setView([52, 10], 7);
     var activePin = -1;
 
