@@ -52,8 +52,9 @@ $(document).ready(function () {
 
 					$('#info').html(htmlstring);
 					console.log(feature);
-					$('#tagme').on('click', function () {
-						getPopUp();
+					$('#tagme').on('click', function (id) {
+						console.log(feature);
+						getPopUp(feature);
 					});
 				}
 			}
@@ -90,7 +91,7 @@ $(document).ready(function () {
 		activePin = -1;
 	});
 
-	function getPopUp() {
+	function getPopUp(feature) {
 		swal({
 					title: "Tag Lift",
 					text: "Input Latitude:",
@@ -102,8 +103,8 @@ $(document).ready(function () {
 				},
 				function (latitude) {
 					if (latitude === false) return false;
-					if (latitude === "") {
-						swal.showInputError("Error");
+					if (parseFloat(latitude) !== NaN) {
+						swal.showInputError("Error, ungültiger Wert");
 						return false
 					}
 					swal({
@@ -117,7 +118,7 @@ $(document).ready(function () {
 							},
 							function (longitude) {
 								if (longitude === false) return false;
-								if (longitude === "") {
+								if (parseFloat(longitude) !== "") {
 									swal.showInputError("Invalid Value");
 									return false
 								}
@@ -130,7 +131,7 @@ $(document).ready(function () {
 											closeOnConfirm: false,
 										},
 										function () {
-											swal("Mail snet", "Sent Mail to Deutsche Bahn", "success")
+
 											$.ajax({
 												'type': 'POST',
 												'url': 'https://mandrillapp.com/api/1.0/messages/send.json',
@@ -150,13 +151,21 @@ $(document).ready(function () {
 														}
 													],
 													'autotext': 'true',
-													'subject': 'My Subject',
-													'html': 'toller content'
+													'subject': 'Juhu, ein Aufzug wurde gefunden!',
+													'html': 'Liebe Open-Data-Begeisterte bei der DB, <br /><br />ein heimatloser Aufzug hat ' +
+													'seine Orientierung gefunden  \\o/<br /><br />Über paternoster wurde durch eine großzügige ' +
+													'Datenspende unter CC-0-Lizenz von der awesomen Community der Aufzug mit der ' +
+													'Equipmentnummer ' + feature.lifts[0].equipment_id + ' in ' + feature.name + ' und der Koordinate ' + latitude +  ', ' + longitude + ' zugeordnet! <br /><br />Das ist ein Grund ' +
+													'zu feiern – und wir freuen uns sehr über einen vielleicht bald noch viel ' +
+													'passenderen Prozess, um euch die paar restlichen Aufzüge mit _allen_ fehlenden ' +
+													'Daten nach und nach geben zu dürfen <3 <br /><br />Mit vielen Grüßen und Dank für euren Einsatz,' +
+													'<br />die paternostra-datenmafia'
 													}
 												}
-										}).done(function(response) {
+											}).done(function(response) {
 												console.log(response); // if you're into that sorta thing
 											});
+											swal("Mail sent", "Sent Mail to Deutsche Bahn", "success");
 										});
 							});
 				});
