@@ -131,6 +131,32 @@ $(document).ready(function () {
 										},
 										function () {
 											swal("Mail snet", "Sent Mail to Deutsche Bahn", "success")
+											$.ajax({
+												'type': 'POST',
+												'url': 'https://mandrillapp.com/api/1.0/messages/send.json',
+												'data': {
+													'key': 'qpHU2y0BBP2bvtBUCp7XTQ',
+													'message': {
+														'from_email': 'mail@patanostra.me',
+														'to': [{
+            												'email': 'knut.perseke@gmail.com',
+															'name': 'Knut Perseke',
+															'type': 'to'
+														},
+														{
+															'email': 'knut.perseke@okfn.de',
+															'name': 'Knut Perseke',
+															'type': 'to'
+														}
+													],
+													'autotext': 'true',
+													'subject': 'My Subject',
+													'html': 'toller content'
+													}
+												}
+										}).done(function(response) {
+												console.log(response); // if you're into that sorta thing
+											});
 										});
 							});
 				});
