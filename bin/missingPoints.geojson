@@ -7798,21 +7798,6 @@
       },
       {
          "type": "Feature",
-         "geometry": {},
-         "properties": {
-            "station_id": "",
-            "lifts": [
-               {
-                  "equipment_id": "10479581"
-               },
-               {
-                  "equipment_id": "10502113"
-               }
-            ]
-         }
-      },
-      {
-         "type": "Feature",
          "geometry": {
             "type": "Point",
             "coordinates": [
