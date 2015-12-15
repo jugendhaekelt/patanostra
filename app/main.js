@@ -43,12 +43,12 @@ $(document).ready(function () {
 					var htmlstring = "<h1>" + feature.name + "</h1><hr />" + " <h2>Aufzüge: </h2><ul>";
 					if (feature.lifts)
 						feature.lifts.forEach(function (item) {
-							htmlstring += "<li>Aufzug: " + item.equipment_id + "</li>";
+							htmlstring += "<li>DB-ID: " + item.equipment_id + "</li>";
+							if (!item.tagged) {
+								htmlstring += '<div class="button_wrap"><button id="tagme">Tag me</button></div>';
+							}
 						});
 					htmlstring += "</ul>";
-					if (!feature.tagged) {
-						htmlstring += '<div class="button_wrap"><button id="tagme">Tag me</button></div>';
-					}
 
 					$('#info').html(htmlstring);
 					console.log(feature);
