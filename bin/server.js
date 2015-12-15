@@ -28,11 +28,24 @@ async.parallel([
 	var ar = [];
 	var ar_valid = [];
 
-	//geokoordinate 24 u 25
+	/**
+	 * 0 Standort Equipment (free text 1)
+	 * 1 TechnPlatzBezeichnung (free text 2)
+	 * 2 EquipmentNr
+	 * 5 BahnhofNr (Wirtschafseinheit) 
+	 * 6 Hersteller (manufacturer)
+	 * 7 Baujahr (year of manufacture)
+	 * 16 erweiterte ortsangabe (free text 3)
+	 * 22: Fabriknummer (ref)
+	 * 24/25: geokoordinate
+	 * 28: AUSFTEXTLICHEBESCHREIBUNG (free text 4)
+	 **/
 	var lifts = l_.split('\n');
 	for (var i = 1; i < lifts.length; i++) {
 		var lift = lifts[i].split('\t');
+		// if either coordinate field is empty
 		if (lift[24] === '' || lift[25] === '') {
+			// if no station has been created with this BahnhofNr yet
 			if (!lookup[lift[5]]) {
 				var o = lookup[lift[5]] = {
 					station_id: lift[5],
@@ -42,9 +55,13 @@ async.parallel([
 				ar.push(lift[5]);
 			}
 			lookup[lift[5]].lifts.push({
-				equipment_id: lift[2]
+				equipment_id: lift[2],
+				tagged: false
 			});
+			//lookup[lift[5]].needsTag: true;
+		// if coordinates of lift are set
 		} else {
+			// if no station has been created with this BahnhofNr yet
 			if (!lookup_tagged[lift[5]]) {
 				var o = lookup_tagged[lift[5]] = {
 					station_id: lift[5],
@@ -54,7 +71,8 @@ async.parallel([
 				ar_valid.push(lift[5]);
 			}
 			lookup_tagged[lift[5]].lifts.push({
-				equipment_id: lift[2]
+				equipment_id: lift[2],
+				tagged: true
 			});
 		}
 	}
@@ -69,13 +87,13 @@ async.parallel([
 	for (var i = 1; i < stations.length; i++) {
 		var station = stations[i].split('\,');
 		if (lookup[station[2]]) {
-			lookup[station[2]].name = station[3];
+			lookup[station[2]].name = station[3].replace(/"/g,"");
 			lookup[station[2]].lng = parseFloat(station[14]);
 			lookup[station[2]].lat = parseFloat(station[13]);
 			lookup[station[2]].tagged = false;
 		}
 		if (lookup_tagged[station[2]]) {
-			lookup_tagged[station[2]].name = station[3];
+			lookup_tagged[station[2]].name = station[3].replace(/"/g,"");
 			lookup_tagged[station[2]].lng = parseFloat(station[14]);
 			lookup_tagged[station[2]].lat = parseFloat(station[13]);
 			lookup_tagged[station[2]].tagged = true;
