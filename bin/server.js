@@ -4,7 +4,7 @@
 
 var fs = require('fs');
 var async = require('async');
-var GeoJSON = require('GeoJSON');
+var GeoJSON = require('geojson');
 
 async.parallel([
 	function (callback) {
