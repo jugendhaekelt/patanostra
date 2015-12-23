@@ -15,7 +15,7 @@ $(document).ready(function () {
 		fillColor: "#ff0000",
 		color: "#000",
 		weight: 1,
-		opacity: 0.6        ,
+		opacity: 0.6,
 		fillOpacity: 0.8
 	};
 
