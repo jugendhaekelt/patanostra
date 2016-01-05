@@ -1,35 +1,64 @@
 $(document).ready(function () {
-      var map = L.map('map').setView([52, 10], 7);
-      var activePin = -1;
+  var map = L.map('map').setView([52, 10], 7);
+  var activePin = -1;
 
-      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-      maxZoom: 18,
-      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-        id: 'osm'
-    }).addTo(map);
-    
-    var geojsonMarkerOptions_valid = {
-     radius: 4,
-     fillColor: "#00ff00",
-     color: "#000",
-     weight: 1,
-     opacity: 1,
-     fillOpacity: 0.8
-    };
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+      '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+      id: 'osm'
+  }).addTo(map);
 
-    var tagged_elevators_geojson = $.getJSON("/aufzuege");
-    tagged_elevators_geojson.then(function(data) {
-        var tagged_elevators = L.geoJson(data, {
-            onEachFeature: onEachFeature,
-            pointToLayer: function(feature, latlng) {
-                return L.circleMarker(latlng, geojsonMarkerOptions_valid);
-            }
-        });
-        tagged_elevators.addTo(map);
-    });
+  var geojsonMarkerOptions_valid = {
+   radius: 4,
+   fillColor: "#00ff00",
+   color: "#000",
+   weight: 1,
+   opacity: 1,
+   fillOpacity: 0.8
+  };
 
-  function onEachFeature(feature, layer) {
+  var geojsonMarkerOptions = {
+   radius: 6,
+   fillColor: "#ff0000",
+   color: "#000",
+   weight: 1,
+   opacity: 0.6,
+   fillOpacity: 0.8
+  };
+
+  var untagged_stations_geojson = $.getJSON("/stations/untagged");
+  untagged_stations_geojson.then(function(data) {
+      var untagged_stations = L.geoJson(data, {
+          onEachFeature: onUntaggedStations,
+          pointToLayer: function(feature, latlng) {
+              return L.circleMarker(latlng, geojsonMarkerOptions);
+          }
+      });
+      untagged_stations.addTo(map);
+  });
+
+  var tagged_elevators_geojson = $.getJSON("/aufzuege");
+  tagged_elevators_geojson.then(function(data) {
+      var tagged_elevators = L.geoJson(data, {
+          onEachFeature: onTaggedElevators,
+          pointToLayer: function(feature, latlng) {
+              return L.circleMarker(latlng, geojsonMarkerOptions_valid);
+          }
+      });
+      tagged_elevators.addTo(map);
+  });
+
+  var baseLayers = {};
+
+  var overlays = {
+    "Untagged": untagged_stations,
+    "Tagged": tagged_elevators
+  };
+
+  L.control.layers(baseLayers, overlays).addTo(map);
+
+  function onTaggedElevators(feature, layer) {
     layer.on({
       click: function (pin) {
         pinId = pin.target._leaflet_id;
@@ -65,7 +94,45 @@ $(document).ready(function () {
       }
    });
   }
-  
+
+  function onUntaggedStations(feature, layer) {
+    layer.on({
+      click: function (pin) {
+        pinId = pin.target._leaflet_id;
+
+        if (pinId === activePin) {
+          activePin = -1;
+        } else {
+          activePin = pinId;
+          var feature = pin.target.feature;
+
+          var htmlstring = "<h1>" + feature.properties.ort + "</h1><hr />" + " <h2></h2><ul>";
+          
+          for (var prop in feature.properties) {
+            htmlstring += "<li>" + prop + ": " + feature.properties[prop] + "</li>";
+          }
+          
+          if (feature.lifts)
+            feature.lifts.forEach(function (item) {
+             htmlstring += "<li>DB-ID: " + item.equipment_id + "</li>";
+              if (!item.tagged) {
+               htmlstring += '<div class="button_wrap"><button id="tagme">Tag me</button></div>';
+              }
+            });
+          htmlstring += "</ul>";
+
+          $('#info').html(htmlstring);
+          console.log(feature);
+          $('#tagme').on('click', function (id) {
+            console.log(feature);
+            getPopUp(feature);
+          });
+        }
+      }
+   });
+  }
+
+
   function getPopUp(feature) {
     swal({
           title: "Tag Lift",

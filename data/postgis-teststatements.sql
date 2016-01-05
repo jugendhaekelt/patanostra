@@ -38,10 +38,25 @@ SELECT row_to_json(fc)
    As f )  
   As fc
 
-standortequipment, technplatzbezeichng, equipment, equipmentname, stations.ort, hersteller, baujahr, antriebsart,anzahl_haltestellen,anzahl_tueren_kabine, anzahl_tueren_schacht, lage, tragkraft, erweiterte_ortsangabe, min_tuerbreite, kabinentiefe, kabinenbreite, kabinenhoehe, tuerhohe, fabriknummer, tuerart, ausftextlichebeschreibung
 
-SELECT equipment, stations.ort FROM aufzuege JOIN stations on (aufzuege.wirtschaftseinheit = stations.bahnhofnr) WHERE aufzuege.the_geom IS null
+# STATIONEN MIT JEWEILIGEM ARRAY UNGETAGGTER AUFZUEGE:
 
-SELECT ST_AsGeoJSON(stations.the_geom)::json As geometry
-   , row_to_json(l FROM (SELECT equipment, stations.ort) As l)) As properties
-   FROM aufzuege JOIN stations on (aufzuege.wirtschaftseinheit = stations.bahnhofnr) WHERE aufzuege.the_geom IS null
+SELECT row_to_json(fc)
+ FROM ( 
+  SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features
+  FROM (
+   SELECT 'Feature' As type
+   , ST_AsGeoJSON(stations.the_geom)::json As geometry, row_to_json((SELECT l FROM (SELECT aufzuege.ort, array_to_json(array_agg(equipment)) as untagged_elevators) As l)) As properties FROM aufzuege JOIN stations on (aufzuege.wirtschaftseinheit = stations.bahnhofnr) WHERE aufzuege.the_geom IS null group by aufzuege.ort, stations.the_geom) 
+   As f )  
+  As fc
+
+# STATIONEN MIT JEWEILIGEM ARRAY ALLER AUFZUEGE
+
+SELECT row_to_json(fc)
+ FROM ( 
+  SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features
+  FROM (
+   SELECT 'Feature' As type
+   , ST_AsGeoJSON(stations.the_geom)::json As geometry, row_to_json((SELECT l FROM (SELECT aufzuege.ort, array_to_json(array_agg(equipment)) as elevators) As l)) As properties FROM aufzuege JOIN stations on (aufzuege.wirtschaftseinheit = stations.bahnhofnr) group by aufzuege.ort, stations.the_geom) 
+   As f )  
+  As fc
