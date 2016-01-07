@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET pg json data.for tagged elevators */
-router.get('/aufzuege', function (req, res) {
+router.get('/equipment/tagged', function (req, res) {
   var client = new pg.Client(conString);
   client.connect();
  
@@ -61,7 +61,29 @@ router.get('/stations/untagged', function (req, res) {
 
 /* GET details for elevator by equipment ID */
 router.get('/equipment/:keyName', function (req, res) {
- /* TODO implement function */
+
+  var client = new pg.Client(conString);
+  client.connect();
+ 
+  var queryText = "SELECT row_to_json(fc)"
+    + "FROM ( SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features "
+    + "FROM ( SELECT 'Feature' As type "
+    + ", ST_AsGeoJSON(lg.the_geom)::json As geometry, row_to_json((SELECT l FROM (SELECT standortequipment, technplatzbezeichng, equipment, equipmentname, ort, hersteller, baujahr, antriebsart,anzahl_haltestellen,anzahl_tueren_kabine, anzahl_tueren_schacht, lage, tragkraft, erweiterte_ortsangabe, min_tuerbreite, kabinentiefe, kabinenbreite, kabinenhoehe, tuerhohe, fabriknummer, tuerart, ausftextlichebeschreibung) As l)) As properties FROM aufzuege AS lg WHERE equipment=$1) As f ) "
+    + "As fc";
+
+  client.query(queryText, [req.params.keyName], function(err, result) {
+    if (err) {
+      //TODO Handle error better?
+      res.set('Content-Type', 'application/json');
+      res.send(JSON.stringify({error: "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++"}, null, 2));
+      res.end();
+    }
+    else {
+      res.set('Content-Type', 'application/json');
+      res.send(JSON.stringify(result.rows[0].row_to_json, null, 2));
+      res.end();
+    }
+  });
 });
 
 router.get('/map', function(req,res) {

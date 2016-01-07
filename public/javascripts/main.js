@@ -38,7 +38,7 @@ $(document).ready(function () {
       untagged_stations.addTo(map);
   });
 
-  var tagged_elevators_geojson = $.getJSON("/aufzuege");
+  var tagged_elevators_geojson = $.getJSON("/equipment/tagged");
   tagged_elevators_geojson.then(function(data) {
       var tagged_elevators = L.geoJson(data, {
           onEachFeature: onTaggedElevators,
@@ -49,14 +49,6 @@ $(document).ready(function () {
       tagged_elevators.addTo(map);
   });
 
-  var baseLayers = {};
-
-  var overlays = {
-    "Untagged": untagged_stations,
-    "Tagged": tagged_elevators
-  };
-
-  L.control.layers(baseLayers, overlays).addTo(map);
 
   function onTaggedElevators(feature, layer) {
     layer.on({
@@ -67,29 +59,23 @@ $(document).ready(function () {
           activePin = -1;
         } else {
           activePin = pinId;
-          var feature = pin.target.feature;
-
-          var htmlstring = "<h1> Aufzug " + feature.properties.equipment + ", " + feature.properties.ort + "</h1><hr />" + " <h2></h2><ul>";
-          
-          for (var prop in feature.properties) {
-            htmlstring += "<li>" + prop + ": " + feature.properties[prop] + "</li>";
-          }
-          
-          if (feature.lifts)
-            feature.lifts.forEach(function (item) {
-             htmlstring += "<li>DB-ID: " + item.equipment_id + "</li>";
-              if (!item.tagged) {
-               htmlstring += '<div class="button_wrap"><button id="tagme">Tag me</button></div>';
-              }
+          var currentElevatorId = pin.target.feature.properties.equipment;
+          $.getJSON("/equipment/" + currentElevatorId, function( data ) {
+            var items = [];
+            items.push('<h1>Aufzug ID ' + currentElevatorId + '</h1><hr>');
+            $.each( data.features, function( key, val ) {
+              $.each(val.properties, function(columnHeader,columnContent){
+                items.push('<li id="' + columnHeader + '">' + columnContent + '</li>');
+              });
             });
-          htmlstring += "</ul>";
-
-          $('#info').html(htmlstring);
-          console.log(feature);
-          $('#tagme').on('click', function (id) {
-            console.log(feature);
-            getPopUp(feature);
+          
+            var htmlstring = $( "<ul/>", {
+               html: items.join( "" )
+            });
+            $('#info').html(htmlstring);
+            
           });
+          console.log(feature);
         }
       }
    });
@@ -106,12 +92,31 @@ $(document).ready(function () {
           activePin = pinId;
           var feature = pin.target.feature;
 
-          var htmlstring = "<h1>" + feature.properties.ort + "</h1><hr />" + " <h2></h2><ul>";
-          
-          for (var prop in feature.properties) {
-            htmlstring += "<li>" + prop + ": " + feature.properties[prop] + "</li>";
+          $('#info').empty();
+          $('#info').append("<h1>" + feature.properties.ort + "</h1><hr />" + " <h2>Aufzüge ohne Koordinaten</h2><ul>");
+          for (var prop in feature.properties.untagged_elevators) {
+            var curElevId = feature.properties.untagged_elevators[prop];
+            var newLink = $('<li><a href="#" id ="' + curElevId + '_link">' + curElevId + '</a></li>');
+            newLink.click(function() {
+              $.getJSON("/equipment/" + curElevId, function( data ) {
+                var items = [];
+                items.push('<h1>Aufzug ID ' + curElevId + '</h1><hr>');
+                $.each( data.features, function( key, val ) {
+                  $.each(val.properties, function(columnHeader,columnContent){
+                    items.push('<li id="' + columnHeader + '">' + columnContent + '</li>');
+                  });
+                });
+
+                var new_htmlstring = $( "<ul/>", {
+                   html: items.join( "" )
+                });
+                $('#info').html(new_htmlstring);
+
+              });
+            });
+            $('#info').append(newLink);
           }
-          
+
           if (feature.lifts)
             feature.lifts.forEach(function (item) {
              htmlstring += "<li>DB-ID: " + item.equipment_id + "</li>";
@@ -119,14 +124,6 @@ $(document).ready(function () {
                htmlstring += '<div class="button_wrap"><button id="tagme">Tag me</button></div>';
               }
             });
-          htmlstring += "</ul>";
-
-          $('#info').html(htmlstring);
-          console.log(feature);
-          $('#tagme').on('click', function (id) {
-            console.log(feature);
-            getPopUp(feature);
-          });
         }
       }
    });
