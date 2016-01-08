@@ -9,6 +9,17 @@ $(document).ready(function () {
       id: 'osm'
   }).addTo(map);
 
+
+  var sidebar = L.control.sidebar('sidebar', {
+      closeButton: true,
+      position: 'right'
+  });
+  map.addControl(sidebar);
+
+  map.on('click', function () {
+      sidebar.hide();
+  })
+
   var geojsonMarkerOptions_valid = {
    radius: 4,
    fillColor: "#00ff00",
@@ -76,24 +87,17 @@ $(document).ready(function () {
           activePin = pinId;
           var feature = pin.target.feature;
 
-          $('#info').empty();
-          $('#info').append("<h1>" + feature.properties.ort + "</h1><hr />" + " <h2>Aufzüge ohne Koordinaten</h2><ul>");
+          $('#sidebar').empty();
+          $('#sidebar').append("<h1>" + feature.properties.ort + "</h1><hr />" + " <h2>Aufzüge ohne Koordinaten</h2><ul>");
           for (var prop in feature.properties.untagged_elevators) {
             var curElevId = feature.properties.untagged_elevators[prop];
             var newLink = $('<li><a href="#" id ="' + curElevId + '_link">' + curElevId + '</a></li>');
             newLink.click(function() {
               displayEquipment(curElevId);
             });
-            $('#info').append(newLink);
+            $('#sidebar').append(newLink);
+            sidebar.show();
           }
-
-          if (feature.lifts)
-            feature.lifts.forEach(function (item) {
-             htmlstring += "<li>DB-ID: " + item.equipment_id + "</li>";
-              if (!item.tagged) {
-               htmlstring += '<div class="button_wrap"><button id="tagme">Tag me</button></div>';
-              }
-            });
         }
       }
    });
@@ -104,7 +108,7 @@ $(document).ready(function () {
   *
   * Requests (Geo)JSON information for the elevator id passed as
   *  an argument, formats the parameters into HTML and displays
-  *  it into the #info div
+  *  it into the #sidebar div
   */
 
   function displayEquipment(elevatorId) {
@@ -112,25 +116,26 @@ $(document).ready(function () {
       var items = [];
       items.push('<h1>Aufzug ID ' + elevatorId + '</h1><hr />');
       $.each( data.features, function( key, val ) {
+        items.push('<label for="coords">Coordinates (lon, lat):</label><input id="coords" placeholder="Coordinates (longitude, latitude)"');
+        if (val.geometry != null) {
+          items.push(' value = "' + val.geometry.coordinates + '"');
+        }
+        items.push('></input>');
         $.each(val.properties, function(columnHeader,columnContent){
           items.push('<label for="' + columnHeader + '">' + columnHeader + ':</label>');
           items.push('<input id="' + columnHeader + '" placeholder="' + columnHeader + '"');
             if (columnContent != null) {
               items.push(' value = "' + columnContent + '"');
             }
-          items.push('></input>');
+          items.push('></input><br />');
         });
         
-        items.push('<label for="coords">Coordinates (lon, lat):</label><input id="coords" placeholder="Coordinates (longitude, latitude)"');
-            if (val.geometry.coordinates != null) {
-              items.push(' value = "' + val.geometry.coordinates + '"');
-            }
-        items.push('></input>');
         });
       var htmlstring = $( "<form/>", {
          html: items.join( "" )
       });
-      $('#info').html(htmlstring);
+      $('#sidebar').html(htmlstring);
+      sidebar.show();
     });
   }
 

@@ -1,9 +1,10 @@
 
 extends layout
 block content
- .main
-   #map
-   .infobox
-   #info
-   script(src='/javascripts/main.js')
-   script(src='/javascripts/sweetalert.min.js')
+ #sidebar
+ #map
+ script(src='/javascripts/sweetalert.min.js')
+ script(src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js')
+ script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+ script(src='/javascripts/L.Control.Sidebar.js')
+ script(src='/javascripts/main.js')
