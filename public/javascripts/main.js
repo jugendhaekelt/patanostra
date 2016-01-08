@@ -54,28 +54,12 @@ $(document).ready(function () {
     layer.on({
       click: function (pin) {
         pinId = pin.target._leaflet_id;
-
         if (pinId === activePin) {
           activePin = -1;
         } else {
           activePin = pinId;
           var currentElevatorId = pin.target.feature.properties.equipment;
-          $.getJSON("/equipment/" + currentElevatorId, function( data ) {
-            var items = [];
-            items.push('<h1>Aufzug ID ' + currentElevatorId + '</h1><hr>');
-            $.each( data.features, function( key, val ) {
-              $.each(val.properties, function(columnHeader,columnContent){
-                items.push('<li id="' + columnHeader + '">' + columnContent + '</li>');
-              });
-            });
-          
-            var htmlstring = $( "<ul/>", {
-               html: items.join( "" )
-            });
-            $('#info').html(htmlstring);
-            
-          });
-          console.log(feature);
+          displayEquipment(currentElevatorId);
         }
       }
    });
@@ -98,21 +82,7 @@ $(document).ready(function () {
             var curElevId = feature.properties.untagged_elevators[prop];
             var newLink = $('<li><a href="#" id ="' + curElevId + '_link">' + curElevId + '</a></li>');
             newLink.click(function() {
-              $.getJSON("/equipment/" + curElevId, function( data ) {
-                var items = [];
-                items.push('<h1>Aufzug ID ' + curElevId + '</h1><hr>');
-                $.each( data.features, function( key, val ) {
-                  $.each(val.properties, function(columnHeader,columnContent){
-                    items.push('<li id="' + columnHeader + '">' + columnContent + '</li>');
-                  });
-                });
-
-                var new_htmlstring = $( "<ul/>", {
-                   html: items.join( "" )
-                });
-                $('#info').html(new_htmlstring);
-
-              });
+              displayEquipment(curElevId);
             });
             $('#info').append(newLink);
           }
@@ -129,6 +99,35 @@ $(document).ready(function () {
    });
   }
 
+  /*
+  * displayEquipment(int)
+  *
+  * Requests (Geo)JSON information for the elevator id passed as
+  *  an argument, formats the parameters into HTML and displays
+  *  it into the #info div
+  */
+
+  function displayEquipment(elevatorId) {
+    $.getJSON("/equipment/" + elevatorId, function( data ) {
+      var items = [];
+      items.push('<h1>Aufzug ID ' + elevatorId + '</h1><hr />');
+      $.each( data.features, function( key, val ) {
+        $.each(val.properties, function(columnHeader,columnContent){
+          items.push('<label for="' + columnHeader + '">' + columnHeader + ':</label>');
+          items.push('<input id="' + columnHeader + '" placeholder="' + columnHeader + '"');
+            if (columnContent != null) {
+              items.push(' value = "' + columnContent + '"');
+            }
+          items.push('></input>')
+        });
+      });
+  
+      var htmlstring = $( "<form/>", {
+         html: items.join( "" )
+      });
+      $('#info').html(htmlstring);
+    });
+  }
 
   function getPopUp(feature) {
     swal({
