@@ -118,10 +118,15 @@ $(document).ready(function () {
             if (columnContent != null) {
               items.push(' value = "' + columnContent + '"');
             }
-          items.push('></input>')
+          items.push('></input>');
         });
-      });
-  
+        
+        items.push('<label for="coords">Coordinates (lon, lat):</label><input id="coords" placeholder="Coordinates (longitude, latitude)"');
+            if (val.geometry.coordinates != null) {
+              items.push(' value = "' + val.geometry.coordinates + '"');
+            }
+        items.push('></input>');
+        });
       var htmlstring = $( "<form/>", {
          html: items.join( "" )
       });
