@@ -131,6 +131,7 @@ $(document).ready(function () {
         });
         
         });
+      items.push('<input type="Submit" />');
       var htmlstring = $( "<form/>", {
          html: items.join( "" )
       });
