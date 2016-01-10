@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 	var geojsonMarkerOptions = {
 		radius: 6,
-		fillColor: "#ff0000",
+		fillColor: "#e55c90",
 		color: "#000",
 		weight: 1,
 		opacity: 0.6,
@@ -21,7 +21,7 @@ $(document).ready(function () {
 
 	var geojsonMarkerOptions_valid = {
 		radius: 4,
-		fillColor: "#00ff00",
+		fillColor: "#5CE5B1",
 		color: "#000",
 		weight: 1,
 		opacity: 1,
