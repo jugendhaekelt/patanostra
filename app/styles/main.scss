@@ -36,17 +36,29 @@ body {
 	  font-size: 2em;
 	}
 
-	.button_wrap {
-	  @include display(flex);
-	  @include flex-wrap(wrap);
-	  @include flex-direction(row-reverse);
-	  margin-right: 3em;
+	  .liftbox {
+		  @include display(flex);
+		  @include flex-wrap(nowrap);
+		  justify-content: space-between;
+		  padding:0.75em;
+		  margin-top:0.5em;
+		  margin-bottom:0.5em;
+		  box-shadow: 0 2px 4px darken($base-background-color, 20%);
+		  //border-bottom: 1px solid #acbcac;
 
-	  #tagme {
-		@include button;
+		  .db_id{
+			  //margin-right: 1em;
+		  }
+
+		  .button_wrap {
+			  margin-left: 3em;
+
+			  #tagme {
+				  @include button;
+			  }
+
+		  }
 	  }
-
-	}
 
   }
 }

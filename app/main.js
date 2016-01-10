@@ -43,10 +43,11 @@ $(document).ready(function () {
 					var htmlstring = "<h1>" + feature.name + "</h1><hr />" + " <h2>Aufzüge: </h2><ul>";
 					if (feature.lifts)
 						feature.lifts.forEach(function (item) {
-							htmlstring += "<li>DB-ID: " + item.equipment_id + "</li>";
+							htmlstring += "<li><div class='liftbox'><div ='db_id'>DB-ID: " + item.equipment_id + "</div>";
 							if (!item.tagged) {
 								htmlstring += '<div class="button_wrap"><button id="tagme">Tag me</button></div>';
 							}
+							htmlstring += "</div></li>";
 						});
 					htmlstring += "</ul>";
 
