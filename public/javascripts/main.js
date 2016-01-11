@@ -169,6 +169,7 @@
     $.getJSON("/equipment/" + elevatorId, function( data ) {
       $('#sidebar').empty();
       $('#sidebar').append('<h1>Aufzug ID ' + elevatorId + '</h1><hr />');
+      $('#sidebar').append('<p>Bahnhof ' + data.features[0].properties["ort"] + ', Standortbeschreibungen: "' + data.features[0].properties["standortequipment"] + '", "' + data.features[0].properties["technplatzbezeichng"] + '", "' + data.features[0].properties["erweiterte_ortsangabe"] + '", "' +  data.features[0].properties["ausftextlichebeschreibung"] + '"</p>');
       $('#sidebar').append( '<form id="elevator_form" class="bootstrap-frm">' );
       $.each( data.features, function( key, val ) {
         var coordsField = '<label for="coords">Coordinates (lon, lat):</label><input type="text" id="coords" placeholder="Coordinates (longitude, latitude)" name="coords"';
