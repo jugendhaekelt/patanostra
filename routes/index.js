@@ -91,4 +91,44 @@ router.get('/map', function(req,res) {
   });
 });
 
+/*
+  Experimental POST route for updating elevators starts here
+*/
+
+var bodyParser = require('body-parser');
+router.use(bodyParser.json()); // support json encoded bodies
+router.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+
+router.post('/equipment/update', function(req, res) {
+  var content = req.body;
+  console.log(content);
+
+  var client = new pg.Client(conString);
+  client.connect();
+  
+//  Object.keys(content).forEach(function(key){
+//  console.log(key +"is " + req.params(key) )
+//  })
+
+  var queryText = "UPDATE aufzuege SET standortequipment=$1, technplatzbezeichng=$2, equipmentname=$4, ort=$5, hersteller=$6, baujahr=$7, antriebsart=$8,anzahl_haltestellen=$9,anzahl_tueren_kabine=$10, anzahl_tueren_schacht=$11, lage=$12, tragkraft=$13, erweiterte_ortsangabe=$14, min_tuerbreite=$15, kabinentiefe=$16, kabinenbreite=$17, kabinenhoehe=$18, tuerhohe=$19, fabriknummer=$20, tuerart=$21, ausftextlichebeschreibung=$22 WHERE equipment=$3";
+
+  client.query(queryText, [req.body.standortequipment, req.body.technplatzbezeichng, req.body.equipment, req.body.equipmentname, req.body.ort, req.body.hersteller, req.body.baujahr, req.body.antriebsart, req.body.anzahl_haltestellen, req.body.anzahl_tueren_kabine, req.body.anzahl_tueren_schacht, req.body.lage, req.body.tragkraft, req.body.erweiterte_ortsangabe, req.body.min_tuerbreite, req.body.kabinentiefe, req.body.kabinenbreite, req.body.kabinenhoehe, req.body.tuerhohe, req.body.fabriknummer, req.body.tuerart, req.body.ausftextlichebeschreibung], function(err, result) {
+    if (err) {
+      //TODO Handle error better?
+      res.set('Content-Type', 'application/json');
+      res.send(JSON.stringify({error: "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++"}, null, 2));
+      res.end();
+      console.log(err);
+    }
+    else {
+      res.set('Content-Type', 'application/json');
+      res.send('OK');
+      res.end();
+      console.log("ok");
+    }
+  });
+
+
+});
+
 module.exports = router;

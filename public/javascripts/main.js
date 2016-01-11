@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
   var map = L.map('map').setView([52, 10], 7);
   var activePin = -1;
 
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
   var geojsonMarkerOptions_valid = {
    radius: 4,
-   fillColor: "#00ff00",
+   fillColor: "#5CE5B1",
    color: "#000",
    weight: 1,
    opacity: 1,
@@ -31,7 +31,7 @@ $(document).ready(function () {
 
   var geojsonMarkerOptions = {
    radius: 6,
-   fillColor: "#ff0000",
+   fillColor: "#e55c90",
    color: "#000",
    weight: 1,
    opacity: 0.6,
@@ -92,16 +92,70 @@ $(document).ready(function () {
           for (var prop in feature.properties.untagged_elevators) {
             var curElevId = feature.properties.untagged_elevators[prop];
             var newLink = $('<li><a href="#" id ="' + curElevId + '_link">' + curElevId + '</a></li>');
+            // FIXME This assigns the last added elevator to all elevator links
             newLink.click(function() {
-              displayEquipment(curElevId);
+              displayEquipment(feature.properties.untagged_elevators[prop]);
             });
             $('#sidebar').append(newLink);
-            sidebar.show();
           }
+          sidebar.show();
         }
       }
    });
   }
+
+
+
+ /*
+  Routine lifts the submit function of the form, serializes the
+  form data and performs an AJAX POST request to the server
+ */
+
+  $(document).on('submit', '#elevator_form', function(e){
+    var frmdata = $("#elevator_form");
+    var frmdata_json = frmdata.serializeObject();
+    console.log(frmdata_json);
+    
+    $.ajax({
+      type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+      contentType: "application/json",
+      url         : '/equipment/update', // the url where we want to POST
+      data        : JSON.stringify(frmdata_json), // our data object
+      dataType    : 'json', // what type of data do we expect back from the server
+                  encode          : true
+     }).done(function(data) {
+        // log data to the console so we can see
+          console.log(data); 
+        // here we will handle errors and validation messages
+      });
+    return false;
+  });
+
+  /*
+   Custom serialization function in order to get JSON post parameters
+   shamelessly lifted from https://jsfiddle.net/gabrieleromanato/bynaK/
+  */
+
+  $.fn.serializeObject = function()
+  {
+      var o = {};
+      var a = this.serializeArray();
+      $.each(a, function() {
+          if (o[this.name] !== undefined) {
+              if (!o[this.name].push) {
+                  o[this.name] = [o[this.name]];
+              }
+              o[this.name].push(this.value || null);
+          } else {
+              if (this.value == '') {
+                o[this.name] = null;
+              } else {
+                o[this.name] = this.value;
+              }
+          }
+      });
+      return o;
+  };
 
   /*
   * displayEquipment(int)
@@ -113,112 +167,29 @@ $(document).ready(function () {
 
   function displayEquipment(elevatorId) {
     $.getJSON("/equipment/" + elevatorId, function( data ) {
-      var items = [];
-      items.push('<h1>Aufzug ID ' + elevatorId + '</h1><hr />');
+      $('#sidebar').empty();
+      $('#sidebar').append('<h1>Aufzug ID ' + elevatorId + '</h1><hr />');
+      $('#sidebar').append( '<form id="elevator_form" class="bootstrap-frm">' );
       $.each( data.features, function( key, val ) {
-        items.push('<label for="coords">Coordinates (lon, lat):</label><input id="coords" placeholder="Coordinates (longitude, latitude)"');
+        var coordsField = '<label for="coords">Coordinates (lon, lat):</label><input type="text" id="coords" placeholder="Coordinates (longitude, latitude)" name="coords"';
         if (val.geometry != null) {
-          items.push(' value = "' + val.geometry.coordinates + '"');
+          coordsField += ' value = "' + val.geometry.coordinates + '"';
         }
-        items.push('></input>');
+        coordsField += ('></input><br />');
+        $('#sidebar form').append(coordsField);
         $.each(val.properties, function(columnHeader,columnContent){
-          items.push('<label for="' + columnHeader + '">' + columnHeader + ':</label>');
-          items.push('<input id="' + columnHeader + '" placeholder="' + columnHeader + '"');
+          var formField = '<label for="' + columnHeader + '">' + columnHeader + ':</label>';
+          formField += ('<input type="text" id="' + columnHeader + '" name="' + columnHeader + '" placeholder="' + columnHeader + '"');
             if (columnContent != null) {
-              items.push(' value = "' + columnContent + '"');
+              formField += (' value = "' + columnContent + '"');
             }
-          items.push('></input><br />');
+          formField += ('></input><br />');
+          $('#sidebar form').append(formField);
         });
         
         });
-      items.push('<input type="Submit" />');
-      var htmlstring = $( "<form/>", {
-         html: items.join( "" )
-      });
-      $('#sidebar').html(htmlstring);
+      $('#sidebar form').append('<input class="button" type="submit" value="Änderungen speichern"/>');
       sidebar.show();
     });
   }
 
-  function getPopUp(feature) {
-    swal({
-          title: "Tag Lift",
-          text: "Input Latitude:",
-          type: "input",
-          showCancelButton: true,
-          closeOnConfirm: false,
-          animation: "slide-from-top",
-          inputPlaceholder: "Latitude"
-        },
-        function (latitude) {
-          if (latitude === false) return false;
-          if (parseFloat(latitude) !== NaN) {
-            swal.showInputError("Error, ungültiger Wert");
-            return false
-          }
-          swal({
-                title: "Tag Lift",
-                text: "Input Longitude",
-                type: "input",
-                showCancelButton: true,
-                closeOnConfirm: false,
-                animation: "slide-from-top",
-                inputPlaceholder: "Longitude"
-              },
-              function (longitude) {
-                if (longitude === false) return false;
-                if (parseFloat(longitude) !== "") {
-                  swal.showInputError("Invalid Value");
-                  return false
-                }
-                swal({
-                      title: "Nice!",
-                      text: "You wrote:<br />Latitude: " + latitude + "<br/>Longitude:" + longitude,
-                      html: true,
-                      showConfirmButton: "true",
-                      confirmButtonText: "Send Mail",
-                      closeOnConfirm: false,
-                    },
-                    function () {
-
-                      $.ajax({
-                        'type': 'POST',
-                        'url': 'https://mandrillapp.com/api/1.0/messages/send.json',
-                        'data': {
-                          'key': 'qpHU2y0BBP2bvtBUCp7XTQ',
-                          'message': {
-                            'from_email': 'mail@patanostra.me',
-                            'to': [{
-                                    'email': 'knut.perseke@gmail.com',
-                              'name': 'Knut Perseke',
-                              'type': 'to'
-                            },
-                            {
-                              'email': 'knut.perseke@okfn.de',
-                              'name': 'Knut Perseke',
-                              'type': 'to'
-                            }
-                          ],
-                          'autotext': 'true',
-                          'subject': 'Juhu, ein Aufzug wurde gefunden!',
-                          'html': 'Liebe Open-Data-Begeisterte bei der DB, <br /><br />ein heimatloser Aufzug hat ' +
-                          'seine Orientierung gefunden  \\o/<br /><br />Über paternoster wurde durch eine großzügige ' +
-                          'Datenspende unter CC-0-Lizenz von der awesomen Community der Aufzug mit der ' +
-                          'Equipmentnummer ' + feature.lifts[0].equipment_id + ' in ' + feature.name + ' und der Koordinate ' + latitude +  ', ' + longitude + ' zugeordnet! <br /><br />Das ist ein Grund ' +
-                          'zu feiern – und wir freuen uns sehr über einen vielleicht bald noch viel ' +
-                          'passenderen Prozess, um euch die paar restlichen Aufzüge mit _allen_ fehlenden ' +
-                          'Daten nach und nach geben zu dürfen <3 <br /><br />Mit vielen Grüßen und Dank für euren Einsatz,' +
-                          '<br />die paternostra-datenmafia'
-                          }
-                        }
-                      }).done(function(response) {
-                        console.log(response); // if you're into that sorta thing
-                      });
-                      swal("Mail sent", "Sent Mail to Deutsche Bahn", "success");
-                    });
-              });
-        });
-  }
-
-
-});
