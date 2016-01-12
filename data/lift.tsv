@@ -607,7 +607,7 @@ MITTELBAHNSTEIG LÖVENICH	S-Bahnsteig 01	10211440	HA 0031 Aufzugsanlage	Lövenic
 BAHNSTEIG 2/3	Bahnsteig 02	10211729	HA 0032 Aufzugsanlage	Köln-Ehrenfeld	3330	Mahler u. Paulus Aufzugsdienst	2000	HYDRAULISCH	2	2	2	0.39	7.77		1000									3353617.218	5648313.863	6.9157187	50.95146601	Aufzug zu Bstg 2/3
 	Bahnsteig 01 (Gleis 1)	10212148	HA 1091	Düsseldorf Flughafen	1400	OTIS GmbH & Co. OHG	2000	HYDRAULISCH	2	1	2	0.4	7		2500									3345673.926	5686409.917	6.786465943	51.29157774	Aufzug zu Gleis 1
 EMPFANGSHALLE	Empfangshalle ( e 120 )	10213456	Personenaufzug EG	Magdeburg Hbf	3881	OTIS GmbH & Co. OHG	2002	HYDRAULISCH	2	2	2				1600									3679996.862	5780670.552	11.62769745	52.13039202	
-	Bahnsteig 01	10213787	Personenaufzug Bstg 1	Arnstadt Hbf	180	OTIS GmbH & Co. OHG	2003	HYDRAULISCH	2	2	2	0.4	3.97		1200,25									3637281.601	5635874.904	10.94805927	50.84196822	
+	Bahnsteig 01	10213787	Personenaufzug Bstg 1	Arnstadt Hbf	180	OTIS GmbH & Co. OHG	2003	HYDRAULISCH	2	2	2	0.4	3.97		1200.25									3637281.601	5635874.904	10.94805927	50.84196822	
 	Bahnsteig 02	10213788	Personenaufzug Bstg 2/3	Arnstadt Hbf	180	OTIS GmbH & Co. OHG	2003	SEIL	2	2		0.4	4.16		1250									3637295.184	5635887.067	10.94825656	50.84207427	Aufzug zu Bstg 2/3
 GLEIS 1 HA 1060	Bahnsteig 01	10215982	Personenaufzug Gl. 1 46101-001	Saarlouis Hbf	5458	Alois Kasper	2002	SEIL	2	2	2	0.63	4.05		1000									3336514.516	5468073.466	6.749799448	49.3277529	Aufzug zu Gleis 1
 GLEIS 2-3 HA 1061	Bahnsteig 02	10215983	Personenaufzug Gl. 2/3 46101-002	Saarlouis Hbf	5458	Alois Kasper	2002	SEIL	2	2	2	0.63	3.93		1000									3336521.01	5468093.024	6.749880708	49.32793036	Aufzug zu Gleis 2/3
@@ -1917,7 +1917,7 @@ BAHNSTEIG 1 / GLEIS 1/2	Bahnsteig 01	10479535	Personenaufzug Bstg. 1	Neuss Hbf	4
 BAHNSTEIG 2 / GLEIS 3/4	Bahnsteig 02	10479536	Personenaufzug Bstg. 2	Neuss Hbf	4440		2013	SEIL	2															3338253.704	5676890.697	6.684476707	51.20402575	Aufzug zu Gleis 3/4
 	Bahnhofsvorplatz	10479542	AZ Vorplatz FGBR-PÜ/Fabrik-Nr: 284013045	Berlin-Kaulsdorf	547	Thyssen Krupp AG	2013	SEIL	2	2	2	1	4.9		1050	BRUECKE;AUSGANG	1000	2100	1100	2200	2100	284013045	ZS2					
 	Mittelbahnsteig	10479543	AZ Gl. 1/2 - FGBR / Fabrik-Nr: 284013046	Berlin-Kaulsdorf	547	Thyssen Krupp AG	2013	SEIL	2	2	2	1	4.9		1050	GL1/2;AUSGANG	1000	2100	1100	2200	2100	284013046	ZS2					Aufzug zwischen Gleis 1/2 und Brücke
-	Bahnsteigsbereich	10479581	Personenaufzug	Markkleeberg Nord	8297	Thyssen Krupp AG	2013	SEIL	2	1	2
+	Bahnsteigsbereich	10479581	Personenaufzug	Markkleeberg Nord	8297	Thyssen Krupp AG	2013	SEIL	2	1	2																	
 GLEIS 5/8	Bahnsteig 03 / (Gleis 5/8)	10479589	Personenaufzug HA 422	Marburg (Lahn)	3943	Thyssen Krupp AG	2014	SEIL	2	2	2													3484219.574	5631556.775	8.775013404	50.81920823	Aufzug zu Gleis 5/8
 	Bahnsteig 01 / (Gleis 1 / 1a)	10479590	Personenaufzüge Bstg 1            HA 420	Marburg (Lahn)	3943	Thyssen Krupp AG	2013	SEIL	2	2	2	1		AUßEN	1050									3484206.661	5631546.922	8.774830589	50.81911931	Aufzug zu Gleis 1/1a
 BRÜCKE  STRAßE	Überführung als Bahnsteigszugang	10479687	Personenaufzug HA 025 Neu	Wilhelmsburg	2523	Thyssen Krupp AG	2013	SEIL	2	1	2	1	6.2	AUßEN	1000			1400	1100	2100								Aufzug zwischen Bstg und Brücke
@@ -2134,7 +2134,7 @@ AUFZUG BSTG 2 MITTELBAHNSTEIG	Bahnsteig 2	10501084	Aufzug Bstg 2/3	Bacharach	240
 	Personenunterführung 01	10501961	Personenaufzug zu PU	Bad Salzungen	333		2015	SEIL	2	1	2																	
 BAHNSTEIG 2/3>AM TUNNELEINGANG	Bahnsteig 2/3	10502005	AZ Bstg 2-3 zu PU Fab.Nr. 10792555	Elsterwerda	1569	Schindler Aufzüge und Fahrtrep	2015	SEIL	2	1	2	1	4.2	TUNNEL > BSTG. 2/3	1000	GL. 2/3; PERSONENUNTERFUEHRUNG	1000	2250	1050	2200	2100	10792555	ZS2					
 BAHNSTEIG 1 > AM TUNNELEINGANG	Bahnsteig 1 (Hausbahnsteig)	10502006	AZ Bstg 1 zu PU Fabr. Nr. 10792556	Elsterwerda	1569	Schindler Aufzüge und Fahrtrep	2015	SEIL	2	2	2	1	4.373	TUNNEL > BSTG. 1	1050	GL. 1; PERSONENUNTERFUEHRUNG	1000	2250	1100	2200	2100	10792556	ZS2					
-	Bahnsteig 01  Plauen (Vogtl) Mitte	10502113	Personenaufzug Bstg 1	Plauen (Vogtl) Mitte	8292	Schindler Aufzüge	2015	SEIL	2	1	2
+	Bahnsteig 01  Plauen (Vogtl) Mitte	10502113	Personenaufzug Bstg 1	Plauen (Vogtl) Mitte	8292	Schindler Aufzüge	2015	SEIL	2	1	2																	
 AUFZUG BAHNSTEIG 1	Bahnsteig 01	10502483	Aufzug Bstg 1 - HA ???	Wörrstadt	6889	Schindler	2015	SEIL	2	2	2	1	6.6		1050							10760633						
 AUFZUG BAHNSTEIG 2	Bahnsteig 02	10502484	Aufzug Bstg 2 - HA ???	Wörrstadt	6889	Schindler	2015	SEIL	2	2	2	1	6.441		1050							10760634						
 TECHNIKGEBÄUDE RAUM 301	301_Aufzugsschacht	10503721	PAufzug_HA1301_Technikgebäude, Raum 301	Stuttgart Hbf	6071	ATH GmbH & Co. KG	2013	SEIL	2	2	2	1	4.415		2200							20136203223						

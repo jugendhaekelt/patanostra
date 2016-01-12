@@ -72,3 +72,5 @@ SELECT row_to_json(fc)
    As f )  
   As fc
 
+tabelle bahnoefe brauchen liebe, kommentar
+aufzuege nichtoeffentlich, kommentar

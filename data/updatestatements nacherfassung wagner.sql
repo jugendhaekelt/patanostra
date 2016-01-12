@@ -1,61 +1,61 @@
-UPDATE aufzuege SET lat = 52.5779827, lon = 13.3497994 WHERE equipment = 10487852
-UPDATE aufzuege SET lat = 52.39128276, lon = 13.091279 WHERE equipment = 10310537
-UPDATE aufzuege SET lat = 52.50941757, lon = 13.37651595 WHERE equipment = 10304800
-UPDATE aufzuege SET lat = 52.50943502, lon = 13.37677772 WHERE equipment = 10304801
-UPDATE aufzuege SET lat = 52.50748293, lon = 13.33275603 WHERE equipment = 10114450
-UPDATE aufzuege SET lat = 52.5070558, lon = 13.33211737 WHERE equipment = 10115540
-UPDATE aufzuege SET lat = 52.50695982, lon = 13.33164403 WHERE equipment = 10115665
-UPDATE aufzuege SET lat = 52.5131823, lon = 13.554977 WHERE equipment = 10447482
-UPDATE aufzuege SET lat = 52.51307, lon = 13.5549769 WHERE equipment = 10447483
-UPDATE aufzuege SET lat = 52.5129188, lon = 13.5549706 WHERE equipment = 10457218
-UPDATE aufzuege SET lat = 52.6365595, lon = 13.4925915 WHERE equipment = 10485752
-UPDATE aufzuege SET lat = 52.4573723, lon = 13.624935 WHERE equipment = 10455443
-UPDATE aufzuege SET lat = 52.4812254, lon = 13.5256174 WHERE equipment = 10109740
-UPDATE aufzuege SET lat = 52.4814399, lon = 13.5249833 WHERE equipment = 10495821
-UPDATE aufzuege SET lat = 52.5123076, lon = 13.6116402 WHERE equipment = 10312802
-UPDATE aufzuege SET lat = 52.5121505, lon = 13.6117002 WHERE equipment = 10312803
-UPDATE aufzuege SET lat = 52.5439346, lon = 13.5416038 WHERE equipment = 10311112
-UPDATE aufzuege SET lat = 52.5320342, lon = 13.3880377 WHERE equipment = 10448911
-UPDATE aufzuege SET lat = 52.532127, lon = 13.3881988 WHERE equipment = 10448912
-UPDATE aufzuege SET lat = 52.5014597, lon = 13.4775664 WHERE equipment = 10311537
-UPDATE aufzuege SET lat = 52.53463582, lon = 13.19826547 WHERE equipment = 10464325
-UPDATE aufzuege SET lat = 52.53447385, lon = 13.19819526 WHERE equipment = 10464326
-UPDATE aufzuege SET lat = 52.53433605, lon = 13.19814359 WHERE equipment = 10464327
-UPDATE aufzuege SET lat = 52.4212849, lon = 13.17934337 WHERE equipment = 10007919
-UPDATE aufzuege SET lat = 52.42116601, lon = 13.17960907 WHERE equipment = 10007929
-UPDATE aufzuege SET lat = 52.5012936, lon = 13.2834892 WHERE equipment = 10135258
-UPDATE aufzuege SET lat = 52.5006475, lon = 13.2839932 WHERE equipment = 10136278
-UPDATE aufzuege SET lat = 52.6684202, lon = 13.5644806 WHERE equipment = 10455436
-UPDATE aufzuege SET lat = 51.19821006, lon = 6.835868593 WHERE equipment = 10488432
-UPDATE aufzuege SET lat = 52.5775976, lon = 13.3157024 WHERE equipment = 10487855
-UPDATE aufzuege SET lat = 52.54759918, lon = 12.99884656 WHERE equipment = 10492552
-UPDATE aufzuege SET lat = 5.14507248, lon = 7.013693222 WHERE equipment = 10018406
-UPDATE aufzuege SET lat = 52.5595438368, lon = 13.0907936257 WHERE equipment = 10489669
-UPDATE aufzuege SET lat = 52.4699506657, lon = 13.3405234955 WHERE equipment = 10485755
-UPDATE aufzuege SET lat = 51.50459952, lon = 7.10242609 WHERE equipment = 10348330
-UPDATE aufzuege SET lat = 52.5082887, lon = 13.25878273 WHERE equipment = 10464312
-UPDATE aufzuege SET lat = 52.6251496, lon = 13.2285495 WHERE equipment = 10121374
-UPDATE aufzuege SET lat = 51.36321903, lon = 6.953311015 WHERE equipment = 10480230
-UPDATE aufzuege SET lat = 51.3630764, lon = 6.953373282 WHERE equipment = 10480231
-UPDATE aufzuege SET lat = 52.46949948, lon = 13.46721923 WHERE equipment = 10146029
-UPDATE aufzuege SET lat = 50.9685435, lon = 6.941338001 WHERE equipment = 10461384
-UPDATE aufzuege SET lat = 50.9436416861, lon = 6.9589834919 WHERE equipment = 10409032
-UPDATE aufzuege SET lat = 50.9435607904, lon = 6.9587727554 WHERE equipment = 10035603
-UPDATE aufzuege SET lat = 50.9434635882, lon = 6.958536494 WHERE equipment = 10035602
-UPDATE aufzuege SET lat = 50.9433636069, lon = 6.9582951706 WHERE equipment = 10035596
-UPDATE aufzuege SET lat = 50.9432657083, lon = 6.9580555001 WHERE equipment = 10408997
-UPDATE aufzuege SET lat = 50.9430980041, lon = 6.9577711273 WHERE equipment = 10482243
-UPDATE aufzuege SET lat = 50.89512572, lon = 7.057715923 WHERE equipment = 10292586
-UPDATE aufzuege SET lat = 50.89482966, lon = 7.057897812 WHERE equipment = 10292588
-UPDATE aufzuege SET lat = 51.02045723, lon = 6.89770581 WHERE equipment = 10035648
-UPDATE aufzuege SET lat = 51.02056031, lon = 6.897470073 WHERE equipment = 10035649
-UPDATE aufzuege SET lat = 50.9815161, lon = 7.070120445 WHERE equipment = 10035663
-UPDATE aufzuege SET lat = 50.98140586, lon = 7.070282404 WHERE equipment = 10035665
-UPDATE aufzuege SET lat = 50.95848644, lon = 6.941633829 WHERE equipment = 10035746
-UPDATE aufzuege SET lat = 50.8777196, lon = 7.119142737 WHERE equipment = 10354309
-UPDATE aufzuege SET lat = 52.5067478, lon = 13.2827944 WHERE equipment = 10410630
-UPDATE aufzuege SET lat = 52.31635055, lon = 13.03104903 WHERE equipment = 10483533
-UPDATE aufzuege SET lat = 52.31641693, lon = 13.03086113 WHERE equipment = 10483534
-UPDATE aufzuege SET lat = 52.31652653, lon = 13.03068185 WHERE equipment = 10483535
-UPDATE aufzuege SET lat = 52.4514416, lon = 13.6912682 WHERE equipment = 10313427
-UPDATE aufzuege SET lat = 52.6592837, lon = 13.5330874 WHERE equipment = 10444451
+UPDATE aufzuege SET latitude = 52.5779827, longitude = 13.3497994, the_geom=ST_SetSRID(ST_MakePoint(13.3497994, 52.5779827), 4326) WHERE equipment = 10487852;
+UPDATE aufzuege SET latitude = 52.39128276, longitude = 13.091279, the_geom=ST_SetSRID(ST_MakePoint(13.091279, 52.39128276), 4326) WHERE equipment = 10310537;
+UPDATE aufzuege SET latitude = 52.50941757, longitude = 13.37651595, the_geom=ST_SetSRID(ST_MakePoint(13.37651595, 52.50941757), 4326) WHERE equipment = 10304800;
+UPDATE aufzuege SET latitude = 52.50943502, longitude = 13.37677772, the_geom=ST_SetSRID(ST_MakePoint(13.37677772, 52.50943502), 4326) WHERE equipment = 10304801;
+UPDATE aufzuege SET latitude = 52.50748293, longitude = 13.33275603, the_geom=ST_SetSRID(ST_MakePoint(13.33275603, 52.50748293), 4326) WHERE equipment = 10114450;
+UPDATE aufzuege SET latitude = 52.5070558, longitude = 13.33211737, the_geom=ST_SetSRID(ST_MakePoint(13.33211737, 52.5070558), 4326) WHERE equipment = 10115540;
+UPDATE aufzuege SET latitude = 52.50695982, longitude = 13.33164403, the_geom=ST_SetSRID(ST_MakePoint(13.33164403, 52.50695982), 4326) WHERE equipment = 10115665;
+UPDATE aufzuege SET latitude = 52.5131823, longitude = 13.554977, the_geom=ST_SetSRID(ST_MakePoint(13.554977, 52.5131823), 4326) WHERE equipment = 10447482;
+UPDATE aufzuege SET latitude = 52.51307, longitude = 13.5549769, the_geom=ST_SetSRID(ST_MakePoint(13.5549769, 52.51307), 4326) WHERE equipment = 10447483;
+UPDATE aufzuege SET latitude = 52.5129188, longitude = 13.5549706, the_geom=ST_SetSRID(ST_MakePoint(13.5549706, 52.5129188), 4326) WHERE equipment = 10457218;
+UPDATE aufzuege SET latitude = 52.6365595, longitude = 13.4925915, the_geom=ST_SetSRID(ST_MakePoint(13.4925915, 52.6365595), 4326) WHERE equipment = 10485752;
+UPDATE aufzuege SET latitude = 52.4573723, longitude = 13.624935, the_geom=ST_SetSRID(ST_MakePoint(13.624935, 52.4573723), 4326) WHERE equipment = 10455443;
+UPDATE aufzuege SET latitude = 52.4812254, longitude = 13.5256174, the_geom=ST_SetSRID(ST_MakePoint(13.5256174, 52.4812254), 4326) WHERE equipment = 10109740;
+UPDATE aufzuege SET latitude = 52.4814399, longitude = 13.5249833, the_geom=ST_SetSRID(ST_MakePoint(13.5249833, 52.4814399), 4326) WHERE equipment = 10495821;
+UPDATE aufzuege SET latitude = 52.5123076, longitude = 13.6116402, the_geom=ST_SetSRID(ST_MakePoint(13.6116402, 52.5123076), 4326) WHERE equipment = 10312802;
+UPDATE aufzuege SET latitude = 52.5121505, longitude = 13.6117002, the_geom=ST_SetSRID(ST_MakePoint(13.6117002, 52.5121505), 4326) WHERE equipment = 10312803;
+UPDATE aufzuege SET latitude = 52.5439346, longitude = 13.5416038, the_geom=ST_SetSRID(ST_MakePoint(13.5416038, 52.5439346), 4326) WHERE equipment = 10311112;
+UPDATE aufzuege SET latitude = 52.5320342, longitude = 13.3880377, the_geom=ST_SetSRID(ST_MakePoint(13.3880377, 52.5320342), 4326) WHERE equipment = 10448911;
+UPDATE aufzuege SET latitude = 52.532127, longitude = 13.3881988, the_geom=ST_SetSRID(ST_MakePoint(13.3881988, 52.532127), 4326) WHERE equipment = 10448912;
+UPDATE aufzuege SET latitude = 52.5014597, longitude = 13.4775664, the_geom=ST_SetSRID(ST_MakePoint(13.4775664, 52.5014597), 4326) WHERE equipment = 10311537;
+UPDATE aufzuege SET latitude = 52.53463582, longitude = 13.19826547, the_geom=ST_SetSRID(ST_MakePoint(13.19826547, 52.53463582), 4326) WHERE equipment = 10464325;
+UPDATE aufzuege SET latitude = 52.53447385, longitude = 13.19819526, the_geom=ST_SetSRID(ST_MakePoint(13.19819526, 52.53447385), 4326) WHERE equipment = 10464326;
+UPDATE aufzuege SET latitude = 52.53433605, longitude = 13.19814359, the_geom=ST_SetSRID(ST_MakePoint(13.19814359, 52.53433605), 4326) WHERE equipment = 10464327;
+UPDATE aufzuege SET latitude = 52.4212849, longitude = 13.17934337, the_geom=ST_SetSRID(ST_MakePoint(13.17934337, 52.4212849), 4326) WHERE equipment = 10007919;
+UPDATE aufzuege SET latitude = 52.42116601, longitude = 13.17960907, the_geom=ST_SetSRID(ST_MakePoint(13.17960907, 52.42116601), 4326) WHERE equipment = 10007929;
+UPDATE aufzuege SET latitude = 52.5012936, longitude = 13.2834892, the_geom=ST_SetSRID(ST_MakePoint(13.2834892, 52.5012936), 4326) WHERE equipment = 10135258;
+UPDATE aufzuege SET latitude = 52.5006475, longitude = 13.2839932, the_geom=ST_SetSRID(ST_MakePoint(13.2839932, 52.5006475), 4326) WHERE equipment = 10136278;
+UPDATE aufzuege SET latitude = 52.6684202, longitude = 13.5644806, the_geom=ST_SetSRID(ST_MakePoint(13.5644806, 52.6684202), 4326) WHERE equipment = 10455436;
+UPDATE aufzuege SET latitude = 51.19821006, longitude = 6.835868593, the_geom=ST_SetSRID(ST_MakePoint(6.835868593, 51.19821006), 4326) WHERE equipment = 10488432;
+UPDATE aufzuege SET latitude = 52.5775976, longitude = 13.3157024, the_geom=ST_SetSRID(ST_MakePoint(13.3157024, 52.5775976), 4326) WHERE equipment = 10487855;
+UPDATE aufzuege SET latitude = 52.54759918, longitude = 12.99884656, the_geom=ST_SetSRID(ST_MakePoint(12.99884656, 52.54759918), 4326) WHERE equipment = 10492552;
+UPDATE aufzuege SET latitude = 51.4507248, longitude = 7.013693222, the_geom=ST_SetSRID(ST_MakePoint(7.013693222, 51.4507248), 4326) WHERE equipment = 10018406;
+UPDATE aufzuege SET latitude = 52.5595438368, longitude = 13.0907936257, the_geom=ST_SetSRID(ST_MakePoint(13.0907936257, 52.5595438368), 4326) WHERE equipment = 10489669;
+UPDATE aufzuege SET latitude = 52.4699506657, longitude = 13.3405234955, the_geom=ST_SetSRID(ST_MakePoint(13.3405234955, 52.4699506657), 4326) WHERE equipment = 10485755;
+UPDATE aufzuege SET latitude = 51.50459952, longitude = 7.10242609, the_geom=ST_SetSRID(ST_MakePoint(7.10242609, 51.50459952), 4326) WHERE equipment = 10348330;
+UPDATE aufzuege SET latitude = 52.5082887, longitude = 13.25878273, the_geom=ST_SetSRID(ST_MakePoint(13.25878273, 52.5082887), 4326) WHERE equipment = 10464312;
+UPDATE aufzuege SET latitude = 52.6251496, longitude = 13.2285495, the_geom=ST_SetSRID(ST_MakePoint(13.2285495, 52.6251496), 4326) WHERE equipment = 10121374;
+UPDATE aufzuege SET latitude = 51.36321903, longitude = 6.953311015, the_geom=ST_SetSRID(ST_MakePoint(6.953311015, 51.36321903), 4326) WHERE equipment = 10480230;
+UPDATE aufzuege SET latitude = 51.3630764, longitude = 6.953373282, the_geom=ST_SetSRID(ST_MakePoint(6.953373282, 51.3630764), 4326) WHERE equipment = 10480231;
+UPDATE aufzuege SET latitude = 52.46949948, longitude = 13.46721923, the_geom=ST_SetSRID(ST_MakePoint(13.46721923, 52.46949948), 4326) WHERE equipment = 10146029;
+UPDATE aufzuege SET latitude = 50.9685435, longitude = 6.941338001, the_geom=ST_SetSRID(ST_MakePoint(6.941338001, 50.9685435), 4326) WHERE equipment = 10461384;
+UPDATE aufzuege SET latitude = 50.9436416861, longitude = 6.9589834919, the_geom=ST_SetSRID(ST_MakePoint(6.9589834919, 50.9436416861), 4326) WHERE equipment = 10409032;
+UPDATE aufzuege SET latitude = 50.9435607904, longitude = 6.9587727554, the_geom=ST_SetSRID(ST_MakePoint(6.9587727554, 50.9435607904), 4326) WHERE equipment = 10035603;
+UPDATE aufzuege SET latitude = 50.9434635882, longitude = 6.958536494, the_geom=ST_SetSRID(ST_MakePoint(6.958536494, 50.9434635882), 4326) WHERE equipment = 10035602;
+UPDATE aufzuege SET latitude = 50.9433636069, longitude = 6.9582951706, the_geom=ST_SetSRID(ST_MakePoint(6.9582951706, 50.9433636069), 4326) WHERE equipment = 10035596;
+UPDATE aufzuege SET latitude = 50.9432657083, longitude = 6.9580555001, the_geom=ST_SetSRID(ST_MakePoint(6.9580555001, 50.9432657083), 4326) WHERE equipment = 10408997;
+UPDATE aufzuege SET latitude = 50.9430980041, longitude = 6.9577711273, the_geom=ST_SetSRID(ST_MakePoint(6.9577711273, 50.9430980041), 4326) WHERE equipment = 10482243;
+UPDATE aufzuege SET latitude = 50.89512572, longitude = 7.057715923, the_geom=ST_SetSRID(ST_MakePoint(7.057715923, 50.89512572), 4326) WHERE equipment = 10292586;
+UPDATE aufzuege SET latitude = 50.89482966, longitude = 7.057897812, the_geom=ST_SetSRID(ST_MakePoint(7.057897812, 50.89482966), 4326) WHERE equipment = 10292588;
+UPDATE aufzuege SET latitude = 51.02045723, longitude = 6.89770581, the_geom=ST_SetSRID(ST_MakePoint(6.89770581, 51.02045723), 4326) WHERE equipment = 10035648;
+UPDATE aufzuege SET latitude = 51.02056031, longitude = 6.897470073, the_geom=ST_SetSRID(ST_MakePoint(6.897470073, 51.02056031), 4326) WHERE equipment = 10035649;
+UPDATE aufzuege SET latitude = 50.9815161, longitude = 7.070120445, the_geom=ST_SetSRID(ST_MakePoint(7.070120445, 50.9815161), 4326) WHERE equipment = 10035663;
+UPDATE aufzuege SET latitude = 50.98140586, longitude = 7.070282404, the_geom=ST_SetSRID(ST_MakePoint(7.070282404, 50.98140586), 4326) WHERE equipment = 10035665;
+UPDATE aufzuege SET latitude = 50.95848644, longitude = 6.941633829, the_geom=ST_SetSRID(ST_MakePoint(6.941633829, 50.95848644), 4326) WHERE equipment = 10035746;
+UPDATE aufzuege SET latitude = 50.8777196, longitude = 7.119142737, the_geom=ST_SetSRID(ST_MakePoint(7.119142737, 50.8777196), 4326) WHERE equipment = 10354309;
+UPDATE aufzuege SET latitude = 52.5067478, longitude = 13.2827944, the_geom=ST_SetSRID(ST_MakePoint(13.2827944, 52.5067478), 4326) WHERE equipment = 10410630;
+UPDATE aufzuege SET latitude = 52.31635055, longitude = 13.03104903, the_geom=ST_SetSRID(ST_MakePoint(13.03104903, 52.31635055), 4326) WHERE equipment = 10483533;
+UPDATE aufzuege SET latitude = 52.31641693, longitude = 13.03086113, the_geom=ST_SetSRID(ST_MakePoint(13.03086113, 52.31641693), 4326) WHERE equipment = 10483534;
+UPDATE aufzuege SET latitude = 52.31652653, longitude = 13.03068185, the_geom=ST_SetSRID(ST_MakePoint(13.03068185, 52.31652653), 4326) WHERE equipment = 10483535;
+UPDATE aufzuege SET latitude = 52.4514416, longitude = 13.6912682, the_geom=ST_SetSRID(ST_MakePoint(13.6912682, 52.4514416), 4326) WHERE equipment = 10313427;
+UPDATE aufzuege SET latitude = 52.6592837, longitude = 13.5330874, the_geom=ST_SetSRID(ST_MakePoint(13.5330874, 52.6592837), 4326) WHERE equipment = 10444451;
