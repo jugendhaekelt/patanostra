@@ -46,7 +46,7 @@ router.get('/stations/untagged', function (req, res) {
     + ", ST_AsGeoJSON(stations.the_geom)::json As geometry"
     + ", row_to_json((SELECT l FROM (SELECT aufzuege.ort, array_to_json(array_agg(equipment)) as untagged_elevators) As l)) As properties "
     + "FROM aufzuege JOIN stations on (aufzuege.wirtschaftseinheit = stations.bahnhofnr) "
-    + "WHERE aufzuege.the_geom IS null group by aufzuege.ort, stations.the_geom) As f ) "
+    + "WHERE aufzuege.the_geom IS null AND aufzuege.isInOSM IS NOT TRUE group by aufzuege.ort, stations.the_geom) As f ) "
     + "As fc");
 
   query.on("row", function (row, result) {
@@ -86,6 +86,30 @@ router.get('/equipment/:keyName', function (req, res) {
   });
 });
 
+/* GET details for elevator by equipment ID */
+router.get('/equipment/ignore/:keyName', function (req, res) {
+
+  var client = new pg.Client(conString);
+  client.connect();
+ 
+  var queryText = "UPDATE aufzuege SET isInOSM = TRUE WHERE equipment = $1";
+
+  client.query(queryText, [req.params.keyName], function(err, result) {
+    if (err) {
+      //TODO Handle error better?
+      res.set('Content-Type', 'application/json');
+      res.send(JSON.stringify({error: "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++"}, null, 2));
+      res.end();
+    }
+    else {
+      res.set('Content-Type', 'application/json');
+      res.send(JSON.stringify(result.rows[0].row_to_json, null, 2));
+      res.end();
+    }
+  });
+});
+
+
 router.get('/map', function(req,res) {
   res.render('map', {
   });
@@ -110,9 +134,13 @@ router.post('/equipment/update', function(req, res) {
 //  console.log(key +"is " + req.params(key) )
 //  })
 
-  var queryText = "UPDATE aufzuege SET standortequipment=$1, technplatzbezeichng=$2, equipmentname=$4, ort=$5, hersteller=$6, baujahr=$7, antriebsart=$8,anzahl_haltestellen=$9,anzahl_tueren_kabine=$10, anzahl_tueren_schacht=$11, lage=$12, tragkraft=$13, erweiterte_ortsangabe=$14, min_tuerbreite=$15, kabinentiefe=$16, kabinenbreite=$17, kabinenhoehe=$18, tuerhohe=$19, fabriknummer=$20, tuerart=$21, ausftextlichebeschreibung=$22 WHERE equipment=$3";
+  var queryText = 'UPDATE aufzuege SET the_geom=ST_PointFromText($1, 4326), hersteller=$2, baujahr=$3, antriebsart=$4,anzahl_haltestellen=$5,anzahl_tueren_kabine=$6, anzahl_tueren_schacht=$7, tragkraft=$8, min_tuerbreite=$9, kabinentiefe=$10, kabinenbreite=$11, kabinenhoehe=$12, tuerhohe=$13, fabriknummer=$14, tuerart=$15 WHERE equipment=$16';
 
-  client.query(queryText, [req.body.standortequipment, req.body.technplatzbezeichng, req.body.equipment, req.body.equipmentname, req.body.ort, req.body.hersteller, req.body.baujahr, req.body.antriebsart, req.body.anzahl_haltestellen, req.body.anzahl_tueren_kabine, req.body.anzahl_tueren_schacht, req.body.lage, req.body.tragkraft, req.body.erweiterte_ortsangabe, req.body.min_tuerbreite, req.body.kabinentiefe, req.body.kabinenbreite, req.body.kabinenhoehe, req.body.tuerhohe, req.body.fabriknummer, req.body.tuerart, req.body.ausftextlichebeschreibung], function(err, result) {
+  if (req.body.coords != null) {
+    req.body.coords = "POINT(" + req.body.coords + ")";
+  }
+
+  client.query(queryText, [ req.body.coords, req.body.hersteller, req.body.baujahr, req.body.antriebsart, req.body.anzahl_haltestellen, req.body.anzahl_tueren_kabine, req.body.anzahl_tueren_schacht, req.body.tragkraft, req.body.min_tuerbreite, req.body.kabinentiefe, req.body.kabinenbreite, req.body.kabinenhoehe, req.body.tuerhohe, req.body.fabriknummer, req.body.tuerart, req.body.equipment], function(err, result) {
     if (err) {
       //TODO Handle error better?
       res.set('Content-Type', 'application/json');

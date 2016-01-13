@@ -38,6 +38,7 @@
    fillOpacity: 0.8
   };
 
+$(document).ready(function(){
   var untagged_stations_geojson = $.getJSON("/stations/untagged");
   untagged_stations_geojson.then(function(data) {
       var untagged_stations = L.geoJson(data, {
@@ -59,7 +60,7 @@
       });
       tagged_elevators.addTo(map);
   });
-
+});
 
   function onTaggedElevators(feature, layer) {
     layer.on({
@@ -75,6 +76,7 @@
       }
    });
   }
+
 
   function onUntaggedStations(feature, layer) {
     layer.on({
@@ -92,10 +94,11 @@
           for (var prop in feature.properties.untagged_elevators) {
             var curElevId = feature.properties.untagged_elevators[prop];
             var newLink = $('<li><a href="#" id ="' + curElevId + '_link">' + curElevId + '</a></li>');
-            // FIXME This assigns the last added elevator to all elevator links
-            newLink.click(function() {
-              displayEquipment(feature.properties.untagged_elevators[prop]);
-            });
+            newLink.click(function(k) {
+              return function() {
+                displayEquipment(feature.properties.untagged_elevators[k]);
+              }
+            }(prop));
             $('#sidebar').append(newLink);
           }
           sidebar.show();
@@ -103,8 +106,6 @@
       }
    });
   }
-
-
 
  /*
   Routine lifts the submit function of the form, serializes the
@@ -171,6 +172,9 @@
       $('#sidebar').append('<h1>Aufzug ID ' + elevatorId + '</h1><hr />');
       $('#sidebar').append('<p>Bahnhof ' + data.features[0].properties["ort"] + ', Standortbeschreibungen: "' + data.features[0].properties["standortequipment"] + '", "' + data.features[0].properties["technplatzbezeichng"] + '", "' + data.features[0].properties["erweiterte_ortsangabe"] + '", "' +  data.features[0].properties["ausftextlichebeschreibung"] + '"</p>');
       $('#sidebar').append( '<form id="elevator_form" class="bootstrap-frm">' );
+      if (!data.features[0].geometry) {
+        $('#sidebar form').append('<input class="button" type="button" value="In OSM vorhanden" /> <input class="button" type="button" value="Nicht öffentlich/nicht für Reisende" />')
+      }
       $.each( data.features, function( key, val ) {
         var coordsField = '<label for="coords">Coordinates (lon, lat):</label><input type="text" id="coords" placeholder="Coordinates (longitude, latitude)" name="coords"';
         if (val.geometry != null) {

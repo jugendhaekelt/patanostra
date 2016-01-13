@@ -51,6 +51,9 @@ CREATE INDEX aufzuege_gist
 UPDATE aufzuege 
 SET the_geom = ST_GeomFromText('POINT(' || longitude || ' ' || latitude || ')',4326);
 
+ALTER TABLE aufzuege ADD COLUMN isInOSM boolean;
+ALTER TABLE aufzuege ADD COLUMN isInaccessible boolean;
+ALTER TABLE aufzuege ADD COLUMN notes text;
 
 
 CREATE TABLE stations
