@@ -89,28 +89,28 @@ router.get('/equipment/:keyName', function (req, res) {
   });
 });
 
-/* GET details for elevator by equipment ID */
-router.get('/equipment/ignore/:keyName', function (req, res) {
+/* POST this elevator is to be ignored */
+//router.get('/equipment/ignore/:keyName', function (req, res) {
 
-  var client = new pg.Client(conString);
-  client.connect();
- 
-  var queryText = "UPDATE aufzuege SET isInOSM = TRUE WHERE equipment = $1";
+//  var client = new pg.Client(conString);
+//  client.connect();
+// 
+//  var queryText = "UPDATE aufzuege SET isInOSM = TRUE WHERE equipment = $1";
 
-  client.query(queryText, [req.params.keyName], function(err, result) {
-    if (err) {
-      //TODO Handle error better?
-      res.set('Content-Type', 'application/json');
-      res.send(JSON.stringify({error: "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++"}, null, 2));
-      res.end();
-    }
-    else {
-      res.send("OK");
-      res.end();
-    }
-    pg.end();
-  });
-});
+//  client.query(queryText, [req.params.keyName], function(err, result) {
+//    if (err) {
+//      //TODO Handle error better?
+//      res.set('Content-Type', 'application/json');
+//      res.send(JSON.stringify({error: "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++"}, null, 2));
+//      res.end();
+//    }
+//    else {
+//      res.send("OK");
+//      res.end();
+//    }
+//    pg.end();
+//  });
+//});
 
 
 router.get('/map', function(req,res) {
