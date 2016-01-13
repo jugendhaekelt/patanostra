@@ -38,7 +38,19 @@
    fillOpacity: 0.8
   };
 
+  var osmMarkerOptions = {
+   radius: 4,
+   fillColor: "#56B4E9",
+   color: "#fff",
+   weight: 1,
+   opacity: 0.6,
+   fillOpacity: 0.8
+  };
+
 $(document).ready(function(){
+
+
+
   var untagged_stations_geojson = $.getJSON("/stations/untagged");
   untagged_stations_geojson.then(function(data) {
       var untagged_stations = L.geoJson(data, {
@@ -48,6 +60,17 @@ $(document).ready(function(){
           }
       });
       untagged_stations.addTo(map);
+  });
+
+  var osmtagged_stations_geojson = $.getJSON("/stations/osmtagged");
+  osmtagged_stations_geojson.then(function(data) {
+      var osmtagged_stations = L.geoJson(data, {
+          onEachFeature: onOsmtaggedStations,
+          pointToLayer: function(feature, latlng) {
+              return L.circleMarker(latlng, osmMarkerOptions);
+          }
+      });
+      osmtagged_stations.addTo(map);
   });
 
   var tagged_elevators_geojson = $.getJSON("/equipment/tagged");
@@ -91,6 +114,35 @@ $(document).ready(function(){
 
           $('#sidebar').empty();
           $('#sidebar').append("<h1>" + feature.properties.ort + "</h1><hr />" + " <h2>Aufzüge ohne Koordinaten</h2><ul>");
+          for (var prop in feature.properties.untagged_elevators) {
+            var curElevId = feature.properties.untagged_elevators[prop];
+            var newLink = $('<li><a href="#" id ="' + curElevId + '_link">' + curElevId + '</a></li>');
+            newLink.click(function(k) {
+              return function() {
+                displayEquipment(feature.properties.untagged_elevators[k]);
+              }
+            }(prop));
+            $('#sidebar').append(newLink);
+          }
+          sidebar.show();
+        }
+      }
+   });
+  }
+
+  function onOsmtaggedStations(feature, layer) {
+    layer.on({
+      click: function (pin) {
+        pinId = pin.target._leaflet_id;
+
+        if (pinId === activePin) {
+          activePin = -1;
+        } else {
+          activePin = pinId;
+          var feature = pin.target.feature;
+
+          $('#sidebar').empty();
+          $('#sidebar').append("<h1>" + feature.properties.ort + "</h1><hr />" + " <h2>Aufzüge, die in OSM, aber nicht der DB-Datenbank sind</h2><ul>");
           for (var prop in feature.properties.untagged_elevators) {
             var curElevId = feature.properties.untagged_elevators[prop];
             var newLink = $('<li><a href="#" id ="' + curElevId + '_link">' + curElevId + '</a></li>');

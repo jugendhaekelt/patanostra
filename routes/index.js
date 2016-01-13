@@ -61,6 +61,31 @@ router.get('/stations/untagged', function (req, res) {
   pg.end();
 });
 
+/* GET pg json data.for all stations with db-untagged, osm-tagged elevators */
+router.get('/stations/osmtagged', function (req, res) {
+  var client = new pg.Client(conString);
+  client.connect();
+
+  var query = client.query("SELECT row_to_json(fc)"
+    + "FROM ( SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features "
+    + "FROM ( SELECT 'Feature' As type "
+    + ", ST_AsGeoJSON(stations.the_geom)::json As geometry"
+    + ", row_to_json((SELECT l FROM (SELECT aufzuege.ort, array_to_json(array_agg(equipment)) as osmtagged_elevators) As l)) As properties "
+    + "FROM aufzuege JOIN stations on (aufzuege.wirtschaftseinheit = stations.bahnhofnr) "
+    + "WHERE aufzuege.the_geom IS null AND aufzuege.isinosm IS TRUE group by aufzuege.ort, stations.the_geom) As f ) "
+    + "As fc");
+
+  query.on("row", function (row, result) {
+    result.addRow(row);
+  });
+  query.on("end", function (result) {
+    res.set('Content-Type', 'application/json');
+    res.send(JSON.stringify(result.rows[0].row_to_json, null, 2));
+    res.end();
+  });
+  pg.end();
+});
+
 /* GET details for elevator by equipment ID */
 router.get('/equipment/:keyName', function (req, res) {
 
