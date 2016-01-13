@@ -133,6 +133,22 @@ $(document).ready(function(){
   });
 
   /*
+    Performs an AJAX get to inform the server this elevator is mapped in OSM
+  */
+
+  function isInOSM(id) {
+
+    var equipment = 
+    $.ajax({
+      type        : 'GET',
+      url         : '/equipment/ignore/' + id, // the url where we want to POST
+     }).done(function(data) {
+        alert("Aufzug als in OSM gemappt markiert!");
+      });
+  };
+
+
+  /*
    Custom serialization function in order to get JSON post parameters
    shamelessly lifted from https://jsfiddle.net/gabrieleromanato/bynaK/
   */
@@ -173,7 +189,7 @@ $(document).ready(function(){
       $('#sidebar').append('<p>Bahnhof ' + data.features[0].properties["ort"] + ', Standortbeschreibungen: "' + data.features[0].properties["standortequipment"] + '", "' + data.features[0].properties["technplatzbezeichng"] + '", "' + data.features[0].properties["erweiterte_ortsangabe"] + '", "' +  data.features[0].properties["ausftextlichebeschreibung"] + '"</p>');
       $('#sidebar').append( '<form id="elevator_form" class="bootstrap-frm">' );
       if (!data.features[0].geometry) {
-        $('#sidebar form').append('<input class="button" type="button" value="In OSM vorhanden" /> <input class="button" type="button" value="Nicht öffentlich/nicht für Reisende" />')
+        $('#sidebar form').append('<input class="button" type="button" value="In OSM vorhanden" onClick="isInOSM(' + elevatorId + ')"/> <input class="button" type="button" value="Nicht öffentlich/nicht für Reisende" />')
       }
       $.each( data.features, function( key, val ) {
         var coordsField = '<label for="coords">Coordinates (lon, lat):</label><input type="text" id="coords" placeholder="Coordinates (longitude, latitude)" name="coords"';
