@@ -165,7 +165,7 @@ router.post('/equipment/update', function(req, res) {
   var queryText = 'UPDATE aufzuege SET the_geom=ST_PointFromText($1, 4326), hersteller=$2, baujahr=$3, antriebsart=$4,anzahl_haltestellen=$5,anzahl_tueren_kabine=$6, anzahl_tueren_schacht=$7, tragkraft=$8, min_tuerbreite=$9, kabinentiefe=$10, kabinenbreite=$11, kabinenhoehe=$12, tuerhohe=$13, fabriknummer=$14, tuerart=$15 WHERE equipment=$16';
 
   if (req.body.coords != null) {
-    req.body.coords = "POINT(" + req.body.coords + ")";
+    req.body.coords = "POINT(" + req.body.coords.replace(/,/g , " ") + ")";
   }
   console.log(req.body.coords);
 
