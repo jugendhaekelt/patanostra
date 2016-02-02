@@ -143,12 +143,12 @@ $(document).ready(function(){
 
           $('#sidebar').empty();
           $('#sidebar').append("<h1>" + feature.properties.ort + "</h1><hr />" + " <h2>Aufzüge, die in OSM, aber nicht der DB-Datenbank sind</h2><ul>");
-          for (var prop in feature.properties.untagged_elevators) {
-            var curElevId = feature.properties.untagged_elevators[prop];
+          for (var prop in feature.properties.osmtagged_elevators) {
+            var curElevId = feature.properties.osmtagged_elevators[prop];
             var newLink = $('<li><a href="#" id ="' + curElevId + '_link">' + curElevId + '</a></li>');
             newLink.click(function(k) {
               return function() {
-                displayEquipment(feature.properties.untagged_elevators[k]);
+                displayEquipment(feature.properties.osmtagged_elevators[k]);
               }
             }(prop));
             $('#sidebar').append(newLink);
@@ -180,6 +180,8 @@ $(document).ready(function(){
         // log data to the console so we can see
           console.log(data); 
         // here we will handle errors and validation messages
+        swal("Daten aktualisiert", "Alle Eingaben wurden gespeichert. Dankeschön!", "success");
+        alert("success");
       });
     return false;
   });
@@ -238,19 +240,35 @@ $(document).ready(function(){
     $.getJSON("/equipment/" + elevatorId, function( data ) {
       $('#sidebar').empty();
       $('#sidebar').append('<h1>Aufzug ID ' + elevatorId + '</h1><hr />');
-      $('#sidebar').append('<p>Bahnhof ' + data.features[0].properties["ort"] + ', Standortbeschreibungen: "' + data.features[0].properties["standortequipment"] + '", "' + data.features[0].properties["technplatzbezeichng"] + '", "' + data.features[0].properties["erweiterte_ortsangabe"] + '", "' +  data.features[0].properties["ausftextlichebeschreibung"] + '"</p>');
+      $('#sidebar').append('<p>Bahnhof ' + data.features[0].properties["ort"] + '</p><p> Standortbeschreibungen: ' 
+      + '<ul>' 
+      + '<li>' + data.features[0].properties["standortequipment"] + '</li>' 
+      + '<li>' + data.features[0].properties["technplatzbezeichng"] + '</li>' 
+      + '<li>' + data.features[0].properties["equipmentname"] + '</li>' 
+      + '<li>' + data.features[0].properties["lage"] + '</li>' 
+      + '<li>' + data.features[0].properties["erweiterte_ortsangabe"] + '</li>' 
+      + '<li>' + data.features[0].properties["ausftextlichebeschreibung"] 
+      + '</li>'
+      + '</ul></p>');
       $('#sidebar').append( '<form id="elevator_form" class="bootstrap-frm">' );
-      if (!data.features[0].geometry) {
+//      if (!data.features[0].geometry) {
 //        $('#sidebar form').append('<input class="button" type="button" value="In OSM vorhanden" onClick="isInOSM(' + elevatorId + ')"/> <input class="button" type="button" value="Nicht öffentlich/nicht für Reisende" />')
-      }
+//      }
       $.each( data.features, function( key, val ) {
         var coordsField = '<label for="coords">Coordinates (lon, lat):</label><input type="text" id="coords" placeholder="Coordinates (longitude, latitude)" name="coords"';
         if (val.geometry != null) {
           coordsField += ' value = "' + val.geometry.coordinates + '"';
         }
         coordsField += ('></input><br />');
+
+        coordsField += '<input type="hidden" name="equipment" value="' + val.properties.equipment+ '" />';
+
         $('#sidebar form').append(coordsField);
+        
         $.each(val.properties, function(columnHeader,columnContent){
+
+          if ($.inArray(columnHeader, ['standortequipment', 'ausftextlichebeschreibung', 'technplatzbezeichng', 'equipment', 'equipmentname', 'ort', 'lage', 'erweiterte_ortsangabe']) >= 0 ) { return; }
+
           var formField = '<label for="' + columnHeader + '">' + columnHeader + ':</label>';
           formField += ('<input type="text" id="' + columnHeader + '" name="' + columnHeader + '" placeholder="' + columnHeader + '"');
             if (columnContent != null) {

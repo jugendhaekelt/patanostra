@@ -167,6 +167,7 @@ router.post('/equipment/update', function(req, res) {
   if (req.body.coords != null) {
     req.body.coords = "POINT(" + req.body.coords + ")";
   }
+  console.log(req.body.coords);
 
   client.query(queryText, [ req.body.coords, req.body.hersteller, req.body.baujahr, req.body.antriebsart, req.body.anzahl_haltestellen, req.body.anzahl_tueren_kabine, req.body.anzahl_tueren_schacht, req.body.tragkraft, req.body.min_tuerbreite, req.body.kabinentiefe, req.body.kabinenbreite, req.body.kabinenhoehe, req.body.tuerhohe, req.body.fabriknummer, req.body.tuerart, req.body.equipment], function(err, result) {
     if (err) {
