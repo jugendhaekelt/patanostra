@@ -279,7 +279,7 @@ $(document).ready(function(){
         });
         
         });
-      $('#sidebar form').append('<input class="button" type="submit" value="Änderungen speichern"/>');
+      $('#sidebar form').append('<p>Ich versichere, dass alle von mir eingegebenen Daten durch händische Erfassung (z.B. per GPS) erhoben wurden und veröffentliche meinen Beitrag unter der <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC-0</a>-Lizenz. </p><input class="button" type="submit" value="Änderungen speichern"/>');
       sidebar.show();
     });
   }

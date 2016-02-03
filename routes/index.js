@@ -95,7 +95,7 @@ router.get('/equipment/:keyName', function (req, res) {
   var queryText = "SELECT row_to_json(fc)"
     + "FROM ( SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features "
     + "FROM ( SELECT 'Feature' As type "
-    + ", ST_AsGeoJSON(lg.the_geom)::json As geometry, row_to_json((SELECT l FROM (SELECT standortequipment, technplatzbezeichng, equipment, equipmentname, ort, hersteller, baujahr, antriebsart,anzahl_haltestellen,anzahl_tueren_kabine, anzahl_tueren_schacht, lage, tragkraft, erweiterte_ortsangabe, min_tuerbreite, kabinentiefe, kabinenbreite, kabinenhoehe, tuerhohe, fabriknummer, tuerart, ausftextlichebeschreibung) As l)) As properties FROM aufzuege AS lg WHERE equipment=$1) As f ) "
+    + ", ST_AsGeoJSON(lg.the_geom)::json As geometry, row_to_json((SELECT l FROM (SELECT standortequipment, technplatzbezeichng, equipment, equipmentname, ort, hersteller, baujahr, antriebsart,anzahl_haltestellen,anzahl_tueren_kabine, anzahl_tueren_schacht, lage, tragkraft, erweiterte_ortsangabe, min_tuerbreite, kabinentiefe, kabinenbreite, kabinenhoehe, tuerhohe, fabriknummer, tuerart, ausftextlichebeschreibung, notes) As l)) As properties FROM aufzuege AS lg WHERE equipment=$1) As f ) "
     + "As fc";
 
   client.query(queryText, [req.params.keyName], function(err, result) {
